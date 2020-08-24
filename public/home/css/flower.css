@@ -1,0 +1,59 @@
+*{padding: 0;margin: 0;}
+a{text-decoration: none;}
+ul,li{list-style: none;}
+.big{width: 1200px;margin: 0 auto;}
+.biaoti{
+    /* width: 1200px;
+    margin: 0 auto; */
+    height: 55px;
+    line-height: 55px;
+    border-top: 1px solid #d2d2d2;
+    border-bottom: 1px solid #d2d2d2;
+}
+.paixu{font-size: 12px;line-height: 55px;float: left;margin-left: 25px;}
+.paixu span{color: #555;font-weight: bold;} 
+.paixu a{position: relative;color: #666666;margin-left: 35px;padding-right: 12px;display: inline-block;}
+.paixu a em{position: absolute;display: block;width: 10px;height: 12px;background: url(../img/flower/箭头.gif)no-repeat;right: 0;top: 22px;background-position: -62px 0;}
+.paixu a .pai_current_next{background-position: -72px 0;}
+.paixu a .pai_current_previou{background-position: -82px 0;}
+.paixu .current{color: #c3a56e;}
+
+.yeshu{float: right;margin-right: 11px;margin-top: 18px;font-size: 12px;display: inline;}
+.yeshu li{float: left;width: 20px;height: 20px;text-align: center;line-height: 20px;margin-right: 14px;box-sizing: border-box;}
+.yeshu li a{ display: inline-block;color: #333;border: 1px solid #e8e8e8;cursor: pointer; border-radius: 2px;width: 20px;height: 20px;text-align: center;box-sizing: border-box;}
+.yeshu .active{background-color: #333;color: #fff;}
+.yeshu .next_jianto,.previou_jianto{ float: left; display: inline-block;width: 20px;height: 20px;text-align: center;line-height: 20px;margin-right: 14px;}
+.yeshu .next_jianto:hover,.yeshu .previou_jianto:hover{box-sizing: border-box;color: #fff;border: 1px solid #e8e8e8;}
+.yeshu .next_jianto{text-align: center;font-size: 0 !important;background: url(../img/flower/箭头2.gif)no-repeat;background-position: -20px 0;}
+.yeshu .previou_jianto{text-align: center;font-size: 0 !important;background: url(../img/flower/箭头2.gif)no-repeat;background-position: 0 0;}
+ .jieguo {float:right;display: inline; margin: 2px 25px 0 0;color: #b3b3b3;font-size: 12px;}
+.tu_ji{margin-top: 25px;position: relative;font-size: 12px;}
+/* .tu_ji .tu_list{} */
+.tu_ji .tu_list li{float: left;width: 280px;padding: 0;margin: 0; margin: 0 24px 25px 0;border: 1px solid #fff;background: #fff;position: relative;}
+.tu_ji .tu_list li .pro_imglink{display: block;width: 280px;height: 280px;text-align: center;overflow: hidden; padding-bottom: 10px;color: #666;}
+.tu_ji .tu_list li .pro_imglink img{width: 100%; transition: all 0.2s;}
+.tu_ji .tu_list li .pro_imglink img:hover{    transform: scale(1.05);}
+.tu_ji .tu_list li .pro_name{display: block; height: 20px;line-height: 2; padding: 8px 10px 9px 20px;overflow: hidden;color: #666;}
+.tu_ji .tu_list li .pro_price{padding: 0 20px 15px 20px;}
+.tu_ji .tu_list li .pro_price .saleprice{height: 18px;line-height: 18px;padding: 1px 0;display: inline-block;}
+.tu_ji .tu_list li .pro_price .saleprice span{color: #999;}
+.tu_ji .tu_list li .pro_price .desc{ overflow: hidden; color: #b2904c;height: 20px;margin: 0;padding: 0;padding-top: 8px;}
+.tu_ji .tu_list li:nth-child(4){margin-right: 0px}
+.tu_ji .tu_list li:nth-child(8){margin-right: 0px}
+.tu_ji .tu_list li:nth-child(12){margin-right: 0px}
+.tu_ji .tu_list li:nth-child(16){margin-right: 0px}
+.bianqian_ho{margin-bottom: 20px;margin-top: 5px;overflow: hidden;}
+.bianqian_ho .yeshu{float: right;margin-right: 11px;margin-top: 18px;font-size: 12px;display: inline;}
+.bianqian_ho .yeshu span{color: #fff;background: #333;border: 1px solid #333;border-radius: 2px;display: block;float: left;width: 20px;height: 20px;text-align: center;line-height: 20px;margin-right: 18px;}
+ .bianqian_ho .yeshu a{ float: left; display: block;width: 20px;height: 20px;text-align: center;line-height: 20px;margin-right: 18px;}
+.bianqian_ho .yeshu .next_jianto{text-align: center;font-size: 0 !important;background: url(../img/flower/箭头2.gif)no-repeat;background-position: -20px 0;}
+.tu_list li:hover{box-shadow: 0 0 10px rgba(0, 0, 10, .1);}
+.jianto_yido1{left: 15px;width: 27px;height: 66px;position: absolute;cursor: pointer;background: url(../img/flower7/箭头.png) no-repeat;top: 40%;z-index: 9;background-position: 0px -201px;opacity: 0;}
+.jianto_yido2{right: 15px;width: 27px;height: 66px;position: absolute;background: url(../img/flower7/箭头.png)no-repeat;cursor: pointer;top: 40%;z-index: 9;background-position: 0px -134px;opacity: 0;}
+.mr_frbox:hover .jianto_yido1{opacity: 1;}
+.mr_frbox:hover .jianto_yido2{opacity: 1;}
+.jianto_yido1:hover{background-position: 0px 0px;}
+.jianto_yido2:hover{background-position: 0px -67px;}
+
+
+

@@ -1,0 +1,204 @@
+
+{{extend './common/layout.art'}}
+{{block 'links'}}
+    <link rel="stylesheet" href="./css/flower_detail.css">
+    {{/block}}
+
+
+    {{block 'content'}}
+{{include './common/header.art'}}
+   <!-- 内容开始 -->
+    <div class="w_fluid border"></div>
+    <div class="article_con w">
+        <div class="article_header">
+            <a href="">首页</a>
+            <code>></code>
+        <a href="">花语大全</a>
+        <code>></code>
+        <a href=""> 七夕情人节送女朋友多少花？——七夕情人节甜蜜花束</a>
+        
+        </div>
+        <!-- 上部结束 -->
+        <!-- 左布 -->
+        <div class="article_left">
+            <h3 class="article_title">七夕情人节送女朋友多少花？——七夕情人节甜蜜花束</h3>
+            <div class="noto"> 
+                类别：<a href="">情人节</a><span><i class="fa_editor"></i>编辑：Rosewin鲜花</span><span><i class="fa_calendar"></i>2020-07-17 09:50:52</span>
+            </div>
+            <div class="article_neiro">
+                <p>&emsp;&emsp; 七夕情人节是普遍有爱心的人的节日、这一天连空气都充满了温暖的甜蜜。 送到爱花的人面前把*深的爱情和爱情、连接两人的心。七夕情人节甜蜜花束——七夕情人节送女朋友多少花?七夕情人节就要宠爱女朋友，一起来和Rosewin
+                <strong>怎么在异地订花</strong>
+                和
+                <strong>玫瑰多少钱一支</strong>
+                小编为你推荐七夕情人节送女朋友多少花。</p>
+                <p><br></p>
+                <p>&emsp;&emsp; 七夕情人节送女朋友多少花?七夕情人节七夕男孩甚至送别的礼物给女孩，玫瑰是必不可少的、而且玫瑰的数量也很细心。1朵玫瑰你是我的唯一、2朵玫瑰这世界只有我们俩，3朵我爱你、4朵至死不渝的爱、5朵无怨无悔，6朵互敬、互爱、互谅，7朵初恋、8朵感谢，9朵长长久久、10朵十全十美、11朵一生一世只爱你一人。19朵意味着爱到深处永久性、爱的*高峰。这里有一种新的讲解，那便是你将19溶解为19=11+1+2+5那麼，它的花的寓意就变为是——一生一世只爱你一个+你是我的唯一+全世界只能我与你+无悔人生。</p>
+                <p><br></p>
+                <p class="neiro_tupian"><img src="./img/flower_deltitle/人物1.jpg" alt=""></p>
+                <p><br></p>
+                <p>
+                    <strong> &emsp;&emsp;  鲜花推荐：爱的纪念-抖音网红气球翅膀抱抱桶</strong>
+                </p>
+                <p>
+                    <strong><br></strong>
+                </p>
+                <p>&emsp;&emsp;  材料 33朵红玫瑰、白色、银色、黑色气球装饰。 包装 黑色抱抱桶包装。 附赠 免费附送精美贺卡、代写您的祝福。</p>
+                <p><br></p>
+                <p><strong>&emsp;&emsp;七夕情人节甜蜜花束——七夕情人节送女朋友多少花</strong>?七夕情人节就要宠爱女朋友,Rosewin为你提供更多有价值的<strong><a href="">鲜花</a></strong>资讯。Rosewin鲜花轻奢鲜花品牌,提供精品<strong>鲜花</strong>、定制各种精品礼盒时尚鲜花、个性鲜花!Rosewin鲜花是全国连锁的<strong>鲜花实体店</strong>,提供24小时<strong><a href="">网上花店订花</a></strong>、送花服务,*快3小时即可将鲜花送达!</p>
+                
+            </div>
+            <div class="article_tag">
+                <ul>
+                    <li><a href="#">七夕情人节甜蜜花束</a></li>
+                    <li><a href="#">七夕情人节送女朋友多少花</a></li>
+                </ul>
+            </div>
+            <div class="baikeprevnext">
+                <div class="baikeother">
+                    上一篇<a href="">七夕情人节甜蜜花束——七夕情人节送女朋友多少花？七夕情人节就要宠爱女朋友</a>
+                </div>
+                <div class="baikeother">
+                    下一篇<a href="">拯救单身狗——七夕情人节送异性朋友送什么花？</a>
+                </div>
+            </div>
+            <div class="taste">
+                <div class="rbox_bar">
+                    <span>你可能会感兴趣的鲜花</span>
+                </div>
+                <ul class="rec_goods">
+                    <li>
+                        <a href="#" class="p_img">
+                            <img src="./img/flower_deltitle/推荐花1.jpg" alt="">
+                        </a>
+                        <a href="#" class="flower_name">留住好时光-33朵魅影玫瑰</a>
+                        <div class="price">￥599</div>
+                    </li>
+                    <li>
+                        <a href="#" class="p_img">
+                            <img src="./img/flower_deltitle/推荐花2.jpg" alt="">
+                        </a>
+                        <a href="#" class="flower_name">纯美花开-10朵厄瓜多尔蓝色玫瑰</a>
+                        <div class="price">￥1999</div>
+                    </li>
+                    <li>
+                        <a href="#" class="p_img">
+                            <img src="./img/flower_deltitle/推荐花3.jpg" alt="">
+                        </a>
+                        <a href="#" class="flower_name">卧室床头小夜灯</a>
+                        <div class="price">￥499</div>
+                    </li>
+                    <li>
+                        <a href="#" class="p_img">
+                            <img src="./img/flower_deltitle/推荐花4.jpg" alt="">
+                        </a>
+                        <a href="#" class="flower_name">情投意合</a>
+                        <div class="price">￥699</div>
+                    </li>
+                    <li>
+                        <a href="#" class="p_img">
+                            <img src="./img/flower_deltitle/推荐花5.jpg" alt="">
+                        </a>
+                        <a href="#" class="flower_name">爱在巴黎-19朵甜心玫瑰 </a>
+                        <div class="price">￥1499</div>
+                    </li>
+                    <li>
+                        <a href="#" class="p_img">
+                            <img src="./img/flower_deltitle/推荐花6.jpg" alt="">
+                        </a>
+                        <a href="#" class="flower_name">最好的我们-蓝色满天星熊抱花束</a>
+                        <div class="price">￥999</div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- 右部 -->
+        <div class="article_right">
+            <div class="hei20"></div>
+            <div class="huayu_rbox">
+                <div class="rbox_bar">
+                    <span class="title">最新文章</span>
+                </div>
+                <div class="rbox_body">
+                    <ul class="clearfix_border">
+                        <li><a href="#">2020年七夕情人节表白必看——七夕情人节表白送什么花？七夕情人节表白送花必杀技！</a></li>
+                        <li><a href="#">[七夕情人节爆款]七夕情人节送女朋友什么花好女神推荐的暖心花束买买买</a></li>
+                        <li><a href="#">拯救单身狗——七夕情人节送异性朋友送什么花？</a></li>
+                        <li><a href="#">七夕情人节送女朋友多少花？——七夕情人节甜蜜花束</a></li>
+                        <li><a href="#">七夕情人节甜蜜花束——七夕情人节送女朋友多少花？七夕情人节就要宠爱女朋友</a></li>
+                        <li><a href="#">七夕情人节一束玫瑰花多少钱？实惠的七夕情人节玫瑰尽在Rosewin</a></li>
+                        <li><a href="#">8.25七夕情人节送什么花？七夕情人节送花全新推荐，七夕情人节送花必看</a></li>
+                        <li><a href="#">[七夕情人节创意礼物攻略]七夕情人节送老婆什么礼物最好？七夕情人节这些礼物很心动</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hei20"></div>
+            <div class="huayu_rbox">
+                <div class="rbox_bar">
+                    <span class="title">热门标签</span>
+                </div>
+                <div class="rbox_body huayu_hot_label">
+                    <ul class="clearfix_2"> 
+                        <li><a href="">白羊座</a></li>
+                        <li><a href="">狮子座</a></li>
+                        <li><a href="">处女座</a></li>
+                        <li><a href="">天枰座</a></li>
+                        <li><a href="">射手座</a></li>
+                        <li><a href="">水瓶座</a></li>
+                        <li><a href="">恋人</a></li>
+                        <li><a href="">父母</a></li>
+                        <li><a href="">老师</a></li>
+                        <li><a href="">领导</a></li>
+                        <li><a href="">女朋友</a></li>
+                        <li><a href="">栽培技术</a></li>
+                        <li><a href="">注意事项</a></li>
+                        <li><a href="">养殖方法</a></li>
+                        <li><a href="">害虫重防治</a></li>
+                        <li><a href="">更多</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="hei20"></div>
+            <div class="huayu_rbox">
+                <div class="rbox_bar">
+                    <span class="title">Rosewin推荐</span>
+                </div>
+                <div class="rbox_body">
+                    <ul class="clearfix_border">
+                        <li><a href="#">2020年七夕情人节表白必看——七夕情人节表白送什么花？七夕情人节表白送花必杀技！</a></li>
+                        <li><a href="#">[七夕情人节爆款]七夕情人节送女朋友什么花好女神推荐的暖心花束买买买</a></li>
+                        <li><a href="#">拯救单身狗——七夕情人节送异性朋友送什么花？</a></li>
+                        <li><a href="#">七夕情人节送女朋友多少花？——七夕情人节甜蜜花束</a></li>
+                        <li><a href="#">七夕情人节甜蜜花束——七夕情人节送女朋友多少花？七夕情人节就要宠爱女朋友</a></li>
+                        <li><a href="#">七夕情人节一束玫瑰花多少钱？实惠的七夕情人节玫瑰尽在Rosewin</a></li>
+                        <li><a href="#">8.25七夕情人节送什么花？七夕情人节送花全新推荐，七夕情人节送花必看</a></li>
+                        <li><a href="#">[七夕情人节创意礼物攻略]七夕情人节送老婆什么礼物最好？七夕情人节这些礼物很心动</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hei20"></div>
+            <div class="huayu_rbox">
+                <div class="rbox_bar">
+                    <span class="title">Rosewin热搜</span>
+                </div>
+                <div class="rbox_body">
+                    <ul class="clearfix_border">
+                        <li><a href="#">2020年520情人节送什么礼物最合适</a></li>
+                        <li><a href="#">礼物盘点：老婆最爱的生日礼物推荐，送老婆爱意更浓！</a></li>
+                        <li><a href="#">七夕礼物——送女性朋友礼物如何选择？这些礼物必须榜上有名！</a></li>
+                        <li><a href="#">七夕情人节送花代表你的语言，七夕情人节送这些花女方接受度更高哦</a></li>
+                        <li><a href="#">2020年最新花招——七夕情人节送多少朵玫瑰花？七夕情人节送花盘点</a></li>
+                        <li><a href="#">[七夕情人节礼物大全]七夕情人节送男友什么花？男孩子都爱这些花</a></li>
+                        <li><a href="#">8.[甜蜜攻略]送女朋友多少朵玫瑰花好？七夕情人节拒绝直男癌，999朵玫瑰送给她</a></li>
+                        <li><a href="#">2020年七夕情人节表白必看——七夕情人节表白送什么花？七夕情人节表白送花必杀技！</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!-- 内容结束 -->
+   {{include './common/footer.art'}}
+   {{/block}}
+   

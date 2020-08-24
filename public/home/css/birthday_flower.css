@@ -1,0 +1,13 @@
+#new_topic{background-color: #AF8370;}
+#new_topic .content .jinniu a{display: block;width: 200px;height: 50px;line-height: 50px;text-align: center;color: #fff;font-size: 26px;margin: 0px auto;font-family: '黑体';letter-spacing: 3px;background: #955b53;border-radius: 40px;box-shadow: 0 0 10px 0 rgba(0,0,0,0.5)}
+#new_topic .content{background-color: #DAD5D2;}
+#new_topic .content .jxlist .enlarge li{margin: 20px 0px 20px 20px;}
+.spe{overflow: hidden;}
+.enlarge{overflow: hidden;padding-left: 17px;}
+#new_topic .content .xingzuo_miaoshu{margin: 40px 35px 0px 35px;width: 1128px;height: 275px;background: url(../img/birthday_flower/xingzuo_mimi.png) no-repeat;background-size: 100%;}
+#new_topic .content .xingzuo_miaoshu img{width: 220px;margin-left: 120px;margin-top: 40px;float: left;}
+#new_topic .content .xingzuo_miaoshu>p{float: left;width: 20px;font-size: 24px;line-height: 25px;margin-left: 120px;margin-top: 57px;}
+#new_topic .content .xingzuo_miaoshu .text_mimi{border-left: 1px solid rgb(188, 188, 188);float: left;width: 515px;padding-left: 40px;padding-top: 15px;height: 138px;margin-left: 36px;margin-top: 60px;color: rgb(73, 73, 73);}
+#new_topic .content .xingzuo_miaoshu .text_mimi .mimi_title{font-size: 24px;}
+#new_topic .content .xingzuo_miaoshu .text_mimi .mimi_det{font-size: 16px;line-height: 30px;}
+

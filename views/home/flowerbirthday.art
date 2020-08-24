@@ -1,0 +1,336 @@
+{{extend './common/layout.art'}}
+{{block 'links'}}
+   <!-- 引入头部底部css样式 -->
+   <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/flowerbirthday.css">
+    {{/block}}
+
+
+    {{block 'content'}}
+    <img src="./img/flowerbirthday/banner_header.png" alt="">
+    <div class="header_center">
+    <div class="center">
+        <img class="product_decorate" src="./img/flowerbirthday/lover_decorate_flower.png" alt="">
+        <div class="main_left"></div>
+        <div class="item center_love">
+            送恋人
+            <span class="tborder"></span>
+
+        </div>
+        <div class="item center_elder">
+            送长辈
+            <span class="tborder"></span>
+
+        </div>
+        <div class="item center_mald">
+            送男性            
+            <span class="tborder"></span>
+
+        </div>
+        <div class="item center_friend">
+            送闺蜜
+            <span class="tborder"></span>
+        </div>
+        <div class="main_right"></div>
+    </div>
+</div>
+    <img class="card_img" src="./img/flowerbirthday/card.png" alt="">
+    <img src="./img/flowerbirthday/lover_title_flower.png" alt="">
+
+    <div class="product_list_type w">
+        <div class="product_list_type_1">
+            <div class="product_list_type_left">
+                <a href="" class="first_flower">
+                    <div class="product_list_type_bg"></div>
+                    <div class="product_list_type_tu">
+                        <img class="huan1" src="./img/flowerbirthday/flowerbirthday.jpg" alt="">
+                    </div>
+                    <div class="product_item_info">
+                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
+                        <p class="product-item-desc">11支卡罗拉玫瑰，代表我一生一世一心一意</br>热烈且深情爱着你</p>
+                        <p class="product_item_price">￥368</p>
+                        <div class="but_btn">立即购买</div>
+                    </div>
+                </a>
+            </div>
+            <div class="product_list_type_right">
+                <div class="product_item">
+                    <a href="">
+                        <div class="product_item_pic">
+                            <img class="huan2" src="./img/flowerbirthday/flowerbirthday2.jpg" alt="">
+                        </div>
+                    </a>
+                    <div class="product_item_info">
+                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
+                        <p class="product_item_price">￥368</p>
+                        <div class="but_btn">立即购买</div>
+                    </div>
+                </div>
+                <div class="product_item">
+                    <a href="">
+                        <div class="product_item_pic">
+                            <img class="huan3" src="./img/flowerbirthday/flowerbirthday3.jpg" alt="">
+                        </div>
+                    </a>
+                    <div class="product_item_info">
+                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
+                        <p class="product_item_price">￥368</p>
+                        <div class="but_btn">立即购买</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="product_list_type w">
+        <div class="product_list_type_1">
+            <div class="product_list_type_left">
+                <a href="" class="two_flower">
+                    <div class="product_list_type_bg"></div>
+                    <div class="product_list_type_tu">
+                        <img class="huan4" src="./img/flower7/花1.jpg" alt="">
+                    </div>
+                    <div class="product_item_info ">
+                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
+                        <p class="product-item-desc">11支卡罗拉玫瑰，代表我一生一世一心一意,热烈且深情爱着你</p>
+                        <p class="product_item_price">￥368</p>
+                        <div class="but_btn">立即购买</div>
+                    </div>
+                </a>
+            </div>
+            <div class="product_list_type_right">
+                <div class="product_item">
+                    <a href="">
+                        <div class="product_item_pic">
+                            <img class="huan5" src="./img/flower7/花2.jpg"  alt="">
+                        </div>
+                    </a>
+                    <div class="product_item_info">
+                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
+                        <p class="product_item_price">￥368</p>
+                        <div class="but_btn">立即购买</div>
+                    </div>
+                </div>
+                <div class="product_item">
+                    <a href="">
+                        <div class="product_item_pic">
+                            <img class="huan6"src="./img/flower7/花3.jpg"  alt="">
+                        </div>
+                    </a>
+                    <div class="product_item_info">
+                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
+                        <p class="product_item_price">￥368</p>
+                        <div class="but_btn">立即购买</div>
+                    </div>
+                </div>
+                <div class="product_item">
+                    <a href="">
+                        <div class="product_item_pic">
+                            <img class="huan7" src="./img/flower7/花4.jpg"  alt="">
+                        </div>
+                    </a>
+                    <div class="product_item_info">
+                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
+                        <p class="product_item_price">￥368</p>
+                        <div class="but_btn">立即购买</div>
+                    </div>
+                </div>
+                <div class="product_item">
+                    <a href="">
+                        <div class="product_item_pic">
+                            <img  class="huan8" src="./img/flower7/花5.jpg"  alt="">
+                        </div>
+                    </a>
+                    <div class="product_item_info">
+                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
+                        <p class="product_item_price">￥368</p>
+                        <div class="but_btn">立即购买</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="product_list_type w top">
+        <div class="product_list_type_1">
+            <div class="product_list_type_left">
+                <a href="" class="two_flower">
+                    <div class="product_list_type_bg"></div>
+                    <div class="product_list_type_tu">
+                        <img class="huan9" src="./img/flower/花2.jpg" alt="">
+                    </div>
+                    <div class="product_item_info ">
+                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
+                        <p class="product-item-desc">11支卡罗拉玫瑰，代表我一生一世一心一意,热烈且深情爱着你</p>
+                        <p class="product_item_price">￥368</p>
+                        <div class="but_btn">立即购买</div>
+                    </div>
+                </a>
+            </div>
+            <div class="product_list_type_right">
+                <div class="product_item">
+                    <a href="">
+                        <div class="product_item_pic">
+                            <img class="huan10"  src="./img/flower/花3.jpg" alt="">
+                        </div>
+                    </a>
+                    <div class="product_item_info">
+                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
+                        <p class="product_item_price">￥368</p>
+                        <div class="but_btn">立即购买</div>
+                    </div>
+                </div>
+                <div class="product_item">
+                    <a href="">
+                        <div class="product_item_pic">
+                            <img class="huan11" src="./img/flower/花4.jpg" alt="">
+                        </div>
+                    </a>
+                    <div class="product_item_info">
+                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
+                        <p class="product_item_price">￥368</p>
+                        <div class="but_btn">立即购买</div>
+                    </div>
+                </div>
+                <div class="product_item">
+                    <a href="">
+                        <div class="product_item_pic">
+                            <img class="huan12" src="./img/flower/花5.jpg" alt="">
+                        </div>
+                    </a>
+                    <div class="product_item_info">
+                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
+                        <p class="product_item_price">￥368</p>
+                        <div class="but_btn">立即购买</div>
+                    </div>
+                </div>
+                <div class="product_item">
+                    <a href="">
+                        <div class="product_item_pic">
+                            <img class="huan13" src="./img/flower/花6.jpg" alt="">
+                        </div>
+                    </a>
+                    <div class="product_item_info">
+                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
+                        <p class="product_item_price">￥368</p>
+                        <div class="but_btn">立即购买</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="product_list_type w top">
+        <div class="product_list_type_1">
+            <div class="product_list_type_left">
+                <a href="" class="two_flower">
+                    <div class="product_list_type_bg"></div>
+                    <div class="product_list_type_tu">
+                        <img class="huan14" src="./img/flower5/flower9.jpg" alt="">
+
+                    </div>
+                    <div class="product_item_info ">
+                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
+                        <p class="product-item-desc">11支卡罗拉玫瑰，代表我一生一世一心一意,热烈且深情爱着你</p>
+                        <p class="product_item_price">￥368</p>
+                        <div class="but_btn">立即购买</div>
+                    </div>
+                </a>
+            </div>
+            <div class="product_list_type_right">
+                <div class="product_item">
+                    <a href="">
+                        <div class="product_item_pic">
+                            <img class="huan15" src="./img/flower5/flower8.jpg" alt="">
+
+                        </div>
+                    </a>
+                    <div class="product_item_info">
+                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
+                        <p class="product_item_price">￥368</p>
+                        <div class="but_btn">立即购买</div>
+                    </div>
+                </div>
+                <div class="product_item">
+                    <a href="">
+                        <div class="product_item_pic">
+                            <img class="huan16" src="./img/flower5/flower7.jpg" alt="">
+
+                        </div>
+                    </a>
+                    <div class="product_item_info">
+                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
+                        <p class="product_item_price">￥368</p>
+                        <div class="but_btn">立即购买</div>
+                    </div>
+                </div>
+                <div class="product_item">
+                    <a href="">
+                        <div class="product_item_pic">
+                            <img class="huan17" src="./img/flower5/flower6.jpg" alt="">
+
+                        </div>
+                    </a>
+                    <div class="product_item_info">
+                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
+                        <p class="product_item_price">￥368</p>
+                        <div class="but_btn">立即购买</div>
+                    </div>
+                </div>
+                <div class="product_item">
+                    <a href="">
+                        <div class="product_item_pic">
+                            <img class="huan18" src="./img/flower5/flower2.jpg" alt="">
+                        </div>
+                    </a>
+                    <div class="product_item_info">
+                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
+                        <p class="product_item_price">￥368</p>
+                        <div class="but_btn">立即购买</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+<div>
+ <!-- 专属 -->
+ <div class="xingzuo_miaoshu">
+    <p>狮子收花反应</p>
+    <img src="./img/flowerbirthday/xiaohua_shizi.jpg" alt="">
+    <div class="text_mimi">
+        <p class="mimi_title">狮子的小秘密</p>
+        <p class="mimi_det">
+         狮子座有着宏伟的理想，总想靠自己的努力成为人上人，向往高高在上的优越感，
+         也期待被仰慕被崇拜的感觉，有点儿自信有点儿自大。狮子男的大男人气息很重，
+         爱面子，狮子女热情阳光，对朋友讲义气。
+        </p>
+    </div>
+</div>
+<!-- 查看更多 -->
+<div class="jinniu">
+ <a href="/home/huazan">查看更多</a>
+</div>
+<!-- 查看更多 -->
+</div>
+     <!-- 导航栏 -->
+     <div class="nav">
+        <ul class="nav_list">
+            <li class="li1"><a href="javascript:">热销款</a></li>
+            <li class="li2"><a href="javascript:">必备款</a></li>
+            <li class="li3"><a href="javascript:">专属款</a></li>
+            <li class="li4"><a href="javascript:">专属款</a></li>
+            <li class="li5"><a href="javascript:">返回</a></li>
+        </ul>
+        </div>
+    <!-- 导航栏 -->
+    {{/block}}
+
+    {{block 'scripts'}}
+<script src="./js/flowerbirthday.js"></script>
+{{/block}}

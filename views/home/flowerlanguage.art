@@ -1,0 +1,498 @@
+{{extend './common/layout.art'}}
+{{block 'links'}}
+    <link rel="stylesheet" href="./css/flower.css">
+    <!-- 引入jQuery -->
+    <link rel="stylesheet" href="./css/flower-language.css">
+    {{/block}}
+    {{block 'scripts'}}
+    <script src="./js/flower-language.js"></script>
+    {{/block}}
+
+    {{block 'content'}}
+{{include './common/header.art'}}
+<!-- 内容开始 -->
+    <div class="w new_artice">
+        <a href="" class="bar_title"><i></i> 最新文章</a>
+        <a href="" class="more">查看全部</a>
+    </div>
+    <div class="w mr_frbox">
+        <span class="jianto_yido1"></span>
+        <div class="mr_frul">
+        <ul>
+            <li><a href=""><img src="./img/flower7/轮播1.jpg" alt=""></a></li>
+            <li><a href=""><img src="./img/flower7/轮播2.jpg" alt=""></a></li>
+            <li><a href=""><img src="./img/flower7/轮播3.jpg" alt=""></a></li>
+            <li><a href=""><img src="./img/flower7/轮播4.jpg" alt=""></a></li>
+            <li><a href=""><img src="./img/flower7/轮播1.jpg" alt=""></a></li>
+            <li><a href=""><img src="./img/flower7/轮播2.jpg" alt=""></a></li>
+            <li><a href=""><img src="./img/flower7/轮播3.jpg" alt=""></a></li>
+            <li><a href=""><img src="./img/flower7/轮播4.jpg" alt=""></a></li>
+            <li><a href=""><img src="./img/flower7/轮播1.jpg" alt=""></a></li>
+            <li><a href=""><img src="./img/flower7/轮播2.jpg" alt=""></a></li>
+            <li><a href=""><img src="./img/flower7/轮播3.jpg" alt=""></a></li>
+            <li><a href=""><img src="./img/flower7/轮播4.jpg" alt=""></a></li>
+            <li><a href=""><img src="./img/flower7/轮播1.jpg" alt=""></a></li>
+            <li><a href=""><img src="./img/flower7/轮播2.jpg" alt=""></a></li>
+            <li><a href=""><img src="./img/flower7/轮播3.jpg" alt=""></a></li>
+            <li><a href=""><img src="./img/flower7/轮播4.jpg" alt=""></a></li>
+        </ul>
+    </div>
+    <span class="jianto_yido2"></span>
+    </div>
+    <div class="w hiddle">
+        <div class="huayu_box_2">
+             <!-- zi -->
+             <div class="box_bar">
+    <span class="title">生日鲜花</span>
+    <a href=""class = "more">查看更多</a>
+            </div>
+            <!-- tu -->
+            <div class="box_body">
+            <ul>
+<li>
+    <div class="img">
+        <img src="./img/flower7/花1.jpg" alt="">
+    </div>
+    <div class="txt">
+        <h4>妹妹过生日送花好吗？她会喜欢什么花？</h4>
+        <p class="body">妹妹过生日送花好吗？她会喜欢什么花？妹妹过生日当然可以送花订花。但是花束的选择还是要看妹妹单身还是已婚、单身送的花可以自由、有创意些，年轻人也不会太计较况且妹妹作为女生，一般都会喜欢收到花的。如若妹妹结了婚、送的花还是以亲情祝福的花束为妙，</p>
+        <p class="date">2020-06-24</p>
+    </div>
+</li>
+<li>
+    <div class="img">
+        <img src="./img/flower7/花2.jpg" alt="">
+    </div>
+    <div class="txt">
+        <h4>致母亲——妈妈过生日送什么礼物好？不如送一束鲜花</h4>
+        <p class="body">妈妈做生日应当都会惦记着应当送妈妈什么才可以表述出自身的留意含意呢？实际上送东西得话比不上送一束花给妈妈、祝福母亲健健康康。致母亲——妈妈过生日送什么礼物好？不如送一束鲜花，一起来和Rosewin鲜花厦门花店小编为你推荐妈妈过生日送什么礼物好。</p>
+        <p class="date">2020-06-24</p>
+    </div>
+</li>
+<li>
+    <div class="img">
+        <img src="./img/flower7/花3.jpg" alt="">
+    </div>
+    <div class="txt">
+        <h4>礼物盘点：老婆最爱的生日礼物推荐，送老婆爱意更浓！</h4>
+        <p class="body">太太生日送什么，许多男人也许在考虑送花给太太，但是在太太生日送什么好呢？ 妻子过生日的时候送给妻子一束花既浪漫又美丽，是让妻子感动的方法。礼物盘点：老婆最爱的生日礼物推荐、送老婆爱意更浓！一起来和Rosewin鲜花上海花店小编看看吧，为你推荐老婆最爱的</p>
+        <p class="date">2020-06-24</p>
+    </div>
+</li>
+            </ul>
+            </div>
+        </div>
+        <div class="huayu_box_2 f">
+            <!-- zi -->
+            <div class="box_bar">
+   <span class="title">道歉鲜花</span>
+   <a href=""class = "more">查看更多</a>
+           </div>
+           <!-- tu -->
+           <div class="box_body">
+           <ul>
+<li>
+   <div class="img">
+       <img src="./img/flower7/花4.jpg" alt="">
+   </div>
+   <div class="txt">
+       <h4>惹女朋友生气送什么花哄她开心</h4>
+       <p class="body">鲜花不仅可以用于祝福，都是调整情感的武器。分歧不久发病，急着碰面解說反倒将会让事儿变得越来越槽糕，如果可以用一束鲜花的方式表述歉疚，另一方看见鲜花心情很大，趁便自身也理智地考虑一下，怨恨也许就消除没了。</p>
+       <p class="date">2020-06-24</p>
+   </div>
+</li>
+<li>
+   <div class="img">
+       <img src="./img/flower7/花5.jpg" alt="">
+   </div>
+   <div class="txt">
+       <h4>向爱人道歉送花送几朵花</h4>
+       <p class="body">做错事的男生送一束诱惑的鲜花为自己的爱人，日子中我们都会因为一些片面性也许客观性的难题而让我们的爱人气愤</p>
+       <p class="date">2020-06-24</p>
+   </div>
+</li>
+<li>
+   <div class="img">
+       <img src="./img/flower7/花6.jpg" alt="">
+   </div>
+   <div class="txt">
+       <h4>跟女朋友道歉送什么花比较好</h4>
+       <p class="body">两团体在一同还是夙夜早晚相处，没有磕磕碰碰那是不能够的，没有相互气愤过这话你要敢说我就敢不信。惹女朋友气愤了，那就不只需检查更要抱愧了。因为她又看不到你的心，看不到你的悔意，这就要你表现出来。</p>
+       <p class="date">2020-06-24</p>
+   </div>
+</li>
+           </ul>
+           </div>
+       </div>
+        <div class="huayu_box_2">
+             <!-- zi -->
+             <div class="box_bar">
+    <span class="title">情人节</span>
+    <a href=""class = "more">查看更多</a>
+            </div>
+            <!-- tu -->
+            <div class="box_body">
+            <ul>
+<li>
+    <div class="img">
+        <img src="./img/flower7/花7.jpg" alt="">
+    </div>
+    <div class="txt">
+        <h4>2020年七夕情人节表白必看——七夕情人节表白送什么花？七夕情人节表白送花必杀技！</h4>
+        <p class="body">七夕情人节表白送什么花？七夕情人节在不知不觉中走近了我们、很多男人都在为今年的七夕情人节带来礼物问题吧，七夕情人节的礼物据说花是必不可少的、2020年七夕情人节表白必看——七夕情人节表白送什么花？七夕情人节表白送花必杀技！一起来和Rosewin网上订花哪个</p>
+        <p class="date">2020-06-24</p>
+    </div>
+</li>
+<li>
+    <div class="img">
+        <img src="./img/flower7/花8.jpg" alt="">
+    </div>
+    <div class="txt">
+        <h4>[七夕情人节爆款]七夕情人节送女朋友什么花好女神推荐的暖心花束买买买</h4>
+        <p class="body">七夕情人节送女朋友什么花好？七夕情人节的时候我们应该给她送什么样的花，让她们感受到我们的爱情、想到七夕情人节的时候，我们应该送什么样的花呢？一起来和Rosewin999朵玫瑰花多少钱和七夕情人节送什么花比较好小编为你推荐七夕情人节送女朋友什么花好</p>
+        <p class="date">2020-06-24</p>
+    </div>
+</li>
+<li>
+    <div class="img">
+        <img src="./img/flower7/花9.jpg" alt="">
+    </div>
+    <div class="txt">
+        <h4>拯救单身狗——七夕情人节送异性朋友送什么花？</h4>
+        <p class="body">七夕情人节送异性朋友送什么花？我们知道玫瑰的颜色很多。 这些颜色的玫瑰有不同的含义，例如白色、红色、蓝色和黄色。 对于异性朋友来说，七夕情人节的异性朋友会送什么样的花呢？一起来和Rosewin网上订花哪个网站好小编为你推荐七夕情人节送异性朋友送什么花</p>
+        <p class="date">2020-06-24</p>
+    </div>
+</li>
+            </ul>
+            </div>
+        </div>
+        <div class="huayu_box_2 f">
+            <!-- zi -->
+            <div class="box_bar">
+   <span class="title">鲜花知识</span>
+   <a href=""class = "more">查看更多</a>
+           </div>
+           <!-- tu -->
+           <div class="box_body">
+           <ul>
+<li>
+   <div class="img">
+       <img src="./img/flower7/花10.jpg" alt="">
+   </div>
+   <div class="txt">
+       <h4>康乃馨送女友合适吗？康乃馨为什么是母亲花？</h4>
+       <p class="body">康乃馨又称康乃馨是一种多年生草本花卉。康乃馨具有很高的观赏价值、在园林装饰和室内装饰方面都有很好的效果、深受许多花卉朋友的喜爱。我们都知道康乃馨可以表达对母亲的爱、所以康乃馨可以送给女性朋友，康乃馨送女友合适吗？康乃馨为什么是母亲花？一起来</p>
+       <p class="date">2020-06-24</p>
+   </div>
+</li>
+<li>
+   <div class="img">
+       <img src="./img/flower7/花11.jpg" alt="">
+   </div>
+   <div class="txt">
+       <h4>哪些花更香你可知道？数一数有哪些芳香的花！</h4>
+       <p class="body">哪些花更香你可知道？人们喜欢在家里种花，不仅因为花可以使家里更加活泼美丽，更重要的是花的天然香味是清新的、让人只要嗅觉就会产生好心情。带香味的花有很多、你知道哪些花更香吗？Rosewin鲜花店带你数一数有哪些芳香的花！</p>
+       <p class="date">2020-06-24</p>
+   </div>
+</li>
+<li>
+   <div class="img">
+       <img src="./img/flower7/花12.jpg" alt="">
+   </div>
+   <div class="txt">
+       <h4>去医院看望长辈适合送什么花？看望病人送花有什么讲究？</h4>
+       <p class="body">去医院看望长辈适合送什么花？看望病人送花有什么讲究？长辈住院了作为晚辈我们于情于理都应该去探望，那么探望的时候总不能空手去吧。这个时候我们就需要选择一些礼物，可以是营养品、可以是鲜花。今天Rosewin长沙花店就带大家了解去医院看望长辈适合送什么花、</p>
+       <p class="date">2020-06-24</p>
+   </div>
+</li>
+           </ul>
+           </div>
+       </div>
+        <div class="huayu_box_2">
+             <!-- zi -->
+             <div class="box_bar">
+    <span class="title">商务鲜花</span>
+    <a href=""class = "more">查看更多</a>
+            </div>
+            <!-- tu -->
+            <div class="box_body">
+            <ul>
+<li>
+    <div class="img">
+        <img src="./img/flower7/花13.jpg" alt="">
+    </div>
+    <div class="txt">
+        <h4>最靠谱的送礼指南——给领导送礼送什么？这些礼物轻松应对</h4>
+        <p class="body">给领导送礼送什么？大家在工作中遇到困难的时候、需要领导出手来解决自己的问题，但领导们并不是无缘无故地帮助你、而是向领导表达自己的诚意，送给领导一点礼物加深领导和工作中的关系，最靠谱的送礼指南——给领导送礼送什么？这些礼物轻松应对。一起来和Ros</p>
+        <p class="date">2020-06-24</p>
+    </div>
+</li>
+<li>
+    <div class="img">
+        <img src="./img/flower7/花14.jpg" alt="">
+    </div>
+    <div class="txt">
+        <h4>领导搬迁新办公室送什么给领导呢</h4>
+        <p class="body">初入职场是人们社会发展关键的场所，而朋友都是人们日常生活经常的人际交往亲身经历，朋友生辰经常会邀约好些的好闺蜜即朋友一同参加生日宴，而做为别邀约的朋友就要求送花也许礼物以祝福祝你生日快乐，女同事生日鲜花哪些比较合适？别走开一起和Rosewin 邵阳县鲜</p>
+        <p class="date">2020-06-24</p>
+    </div>
+</li>
+<li>
+    <div class="img">
+        <img src="./img/flower7/花15.jpg" alt="">
+    </div>
+    <div class="txt">
+        <h4>领导搬迁新办公室送什么给领导呢</h4>
+        <p class="body">在现如今社会发展，每到喜迁新居的时段，我们都是为搬新家的总体目标觉得十分高兴，并会送上我们的礼品为他恭贺，因为证实他们又往前垮了一大步。那办公室搬家送礼送什么好呢!送礼物可是一门十分有见识的工作中，我们可以根据不一样的情况来决定送一些哪些不一</p>
+        <p class="date">2020-06-24</p>
+    </div>
+</li>
+            </ul>
+            </div>
+        </div>
+        <div class="huayu_box_2 f">
+            <!-- zi -->
+            <div class="box_bar">
+   <span class="title">爱情鲜花</span>
+   <a href=""class = "more">查看更多</a>
+           </div>
+           <!-- tu -->
+           <div class="box_body">
+           <ul>
+<li>
+   <div class="img">
+       <img src="./img/flower7/花16.jpg" alt="">
+   </div>
+   <div class="txt">
+       <h4>恋人相识一周年的礼物送什么？恋爱纪念日热门礼物排行榜</h4>
+       <p class="body">恋人相识一周年的礼物送什么？一年有365天、亲身经历一年四季四个季节，针对谈恋爱的人而言一年時间的情感斟酌、得以释放迷人的芬芳。恋爱一周年、别忘记送一份礼品给另一方，恋人相识一周年送什么好？恋爱纪念日热门礼物排行榜总有她心动的，一起来和Rosewin鲜花</p>
+       <p class="date">2020-06-24</p>
+   </div>
+</li>
+<li>
+   <div class="img">
+       <img src="./img/flower7/花17.jpg" alt="">
+   </div>
+   <div class="txt">
+       <h4>[情侣必看]送什么礼物给男朋友？让他心动只需一招</h4>
+       <p class="body">送什么礼物给男朋友？很多女孩子不知道送男朋友什么礼物，也不知道男孩子喜欢什么、做什么。 他们不知道选礼物时该怎么办。 事实上男孩子很容易挑选礼物，[情侣必看]送什么礼物给男朋友？让他心动只需一招，一起来和Rosewin鲜花广州花店小编为你推荐送什么礼物给男</p>
+       <p class="date">2020-06-24</p>
+   </div>
+</li>
+<li>
+   <div class="img">
+       <img src="./img/flower7/花18.jpg" alt="">
+   </div>
+   <div class="txt">
+       <h4>白玫瑰求婚怎么样？2020年，最新的求婚鲜花提案</h4>
+       <p class="body">对于情侣来说每一天都是情人节，浪漫求婚的吉日、倘若有意愿的男性如今就可以提前准备起来了。自然浪漫求婚的情况下，钻戒是不可或缺的，可是花束也是浪漫求婚必需游戏道具。在很多人的印像中浪漫求婚全是用的红色玫瑰，意味着的是火爆的爱、那么就许多人问浪</p>
+       <p class="date">2020-06-24</p>
+   </div>
+</li>
+           </ul>
+           </div>
+       </div>
+        <div class="huayu_box_2">
+             <!-- zi -->
+             <div class="box_bar">
+    <span class="title">问候长辈</span>
+    <a href=""class = "more">查看更多</a>
+            </div>
+            <!-- tu -->
+            <div class="box_body">
+            <ul>
+<li>
+    <div class="img">
+        <img src="./img/flower7/花19.jpg" alt="">
+    </div>
+    <div class="txt">
+        <h4>给长辈送鲜花必须注意什么？老人喜爱哪养花？</h4>
+        <p class="body">给长辈送鲜花必须注意什么？老人喜爱哪养花？去探望老人、很多人会有礼品也是有许多人喜爱买上一束花、表述祝愿之意。给长辈送鲜花有很多注重、老人避讳多、老规矩也大，作为晚辈要明白重视老人，摸透了习惯性再送花市更为适合。给长辈送鲜花必须注意什么？老</p>
+        <p class="date">2020-06-24</p>
+    </div>
+</li>
+<li>
+    <div class="img">
+        <img src="./img/flower7/花20.png" alt="">
+    </div>
+    <div class="txt">
+        <h4>给爷爷送花有什么选择？Rosewin推荐给老人送花！</h4>
+        <p class="body">给爷爷送花有什么选择？爷爷今年70岁生日的时候，如果要给老人送花的话一般会怎么选？有哪些代表吉利的花适合送给老人？给爷爷送花有什么选择？Rosewin鲜花店推荐给老人送花！</p>
+        <p class="date">2020-06-24</p>
+    </div>
+</li>
+<li>
+    <div class="img">
+        <img src="./img/flower7/花21.jpg" alt="">
+    </div>
+    <div class="txt">
+        <h4>送老人什么礼物？这几种寓意好的花了解一下！
+
+
+        </h4>
+        <p class="body">妹妹过生日送花好吗？她会喜欢什么花？妹妹过生日当然可以送花订花。但是花束的选择还是要看妹妹单身还是已婚、单身送的花可以自由、有创意些，年轻人也不会太计较况且妹妹作为女生，一般都会喜欢收到花的。如若妹妹结了婚、送的花还是以亲情祝福的花束为妙，</p>
+        <p class="date">2020-06-24</p>
+    </div>
+</li>
+            </ul>
+            </div>
+        </div>
+        <div class="huayu_box_2 f">
+            <!-- zi -->
+            <div class="box_bar">
+   <span class="title">开业花篮</span>
+   <a href=""class = "more">查看更多</a>
+           </div>
+           <!-- tu -->
+           <div class="box_body">
+           <ul>
+<li>
+   <div class="img">
+       <img src="./img/flower7/花22.jpg" alt="">
+   </div>
+   <div class="txt">
+       <h4>开业庆典花篮一般都选择送几个呢</h4>
+       <p class="body">开业图的就是个喜庆、热闹，简直一切的新店开业都邑在店前摆上几个开业庆典花篮，一来是喜庆热闹、图个好兆头;二来制作气氛，招引顾客前来体验。一般开业送花篮可以送4个吗?Rosewin 马鞍山市鲜花店小编马上就给大家来讲解一下这个问题</p>
+       <p class="date">2020-06-24</p>
+   </div>
+</li>
+<li>
+   <div class="img">
+       <img src="./img/flower7/花23.jpg" alt="">
+   </div>
+   <div class="txt">
+       <h4>公司开业送什么花寓意比较好</h4>
+       <p class="body">伴随着时期的发展大家的生活水准持续的提升，生活的装点的也不可或缺。例如盆友公司开业庆典、盆友家中搬家这些。如今都时兴送绿色植物、盆栽植物、盆栽花卉等做为恭喜祝福。绿色植物是翠绿色欣赏家养植物的通称，以其耐呈阴性强可做为室内观叶植物在室内种植</p>
+       <p class="date">2020-06-24</p>
+   </div>
+</li>
+<li>
+   <div class="img">
+       <img src="./img/flower7/花24.jpg" alt="">
+   </div>
+   <div class="txt">
+       <h4>公司开业送什么花寓意比较好</h4>
+       <p class="body">不管企业或店面开业，开业可不仅仅是一项例行公事的典礼，也是一份厚实工作的刚开始。因而在企业开业的那时候场景，好运气一个都不能少。</p>
+       <p class="date">2020-06-24</p>
+   </div>
+</li>
+           </ul>
+           </div>
+       </div>
+       <div class="huayu_box_2">
+        <!-- zi -->
+        <div class="box_bar">
+<span class="title">节日送花</span>
+<a href=""class = "more">查看更多</a>
+       </div>
+       <!-- tu -->
+       <div class="box_body">
+       <ul>
+<li>
+<div class="img">
+   <img src="./img/flower7/花25.jpg" alt="">
+</div>
+<div class="txt">
+   <h4>端午节适合送花吗?端午节除了粽子还可以送这些花！</h4>
+   <p class="body">父亲节送哪些花更好？父亲的爱总是捉摸不透、 孩子们长大后才感受到父亲的爱的伟大。 平时认真地笑着、总是严厉地教你的父亲，也许心里有无限的温柔。父亲节即将来临或许给你许多 话想对爸爸说或许你一直想让爸爸了解自身的心意、却不知道怎样张口。那么就在父</p>
+   <p class="date">2020-06-24</p>
+</div>
+</li>
+<li>
+<div class="img">
+   <img src="./img/flower7/花26.jpg" alt="">
+</div>
+<div class="txt">
+   <h4>2020年母亲节送妈妈什么礼物好？</h4>
+   <p class="body">2020年母亲节送妈妈什么礼物好?再过几天就是母亲节了，虽然在外忙于工作，可是总想在这一天为妈妈准备一份节日礼物、给她一个惊喜。很多朋友觉得去年送的礼物今年再送，就没有新意了的确是这样。那么2020年母亲节该送妈妈什么礼物好呢?</p>
+   <p class="date">2020-06-24</p>
+</div>
+</li>
+<li>
+<div class="img">
+   <img src="./img/flower7/花27.jpg" alt="">
+</div>
+<div class="txt">
+   <h4>端午节适合送花吗?端午节除了粽子还可以送这些花！</h4>
+   <p class="body">端午节适合送花吗?快到端午节了作为我国的传统节日、端午节有着悠久的历史，有粽子、咸鸭蛋和雄黄酒等更丰富的节日菜肴。传统节日一般 会接到来源于亲朋好友的礼品，但大多数還是以棕子主导，虽是传统式但若每年都这般，在所难免令人感觉厌倦到最终吃剩的棕子反</p>
+   <p class="date">2020-06-24</p>
+</div>
+</li>
+       </ul>
+       </div>
+   </div>
+   <div class="huayu_box_2 f">
+       <!-- zi -->
+       <div class="box_bar">
+<span class="title">祝福语</span>
+<a href=""class = "more">查看更多</a>
+      </div>
+      <!-- tu -->
+      <div class="box_body">
+      <ul>
+<li>
+<div class="img">
+  <img src="./img/flower7/花28.jpg" alt="">
+</div>
+<div class="txt">
+  <h4>毕业花束祝福语——毕业花束高颜值来袭，附赠暖心祝福语！</h4>
+  <p class="body">又来到一年一度的毕业季节，毕业季节不仅是踏入美好明天的情况下、也是再见了说别离的情况下，毕业季节有着各种各样味道，虽苦甜、也许你也有许多 话来不解說出入口就需要说一声再见，也许你也有很多人还没有来的及深层次触碰和掌握也将要各奔东西，毕业季何不</p>
+  <p class="date">2020-06-24</p>
+</div>
+</li>
+<li>
+<div class="img">
+  <img src="./img/flower7/花29.jpg" alt="">
+</div>
+<div class="txt">
+  <h4>怎样祝盆友新婚快乐？朋友婚礼的祝福语优选！</h4>
+  <p class="body">怎样祝盆友新婚快乐？朋友不是先来的人、也不是最老的人而是来后再也不去的人。 朋友的这份友谊真的很难来、在包红包的时候加上祝福的话语会更有纪念意义、看起来更有心情哦~怎么样才能让朋友的新婚快乐呢？ 朋友婚礼的贺词你知道怎么写吗？不知道就和上海花店</p>
+  <p class="date">2020-06-24</p>
+</div>
+</li>
+<li>
+<div class="img">
+  <img src="./img/flower7/花30.jpg" alt="">
+</div>
+<div class="txt">
+  <h4>朋友结婚祝福语大全——2020年结婚怎能没有这些祝福语</h4>
+  <p class="body">朋友下个月结婚，我想送礼物！ 当然是幸福地跑去的。 所有情侣都怀着从白发到老的美好愿望结婚了。 你可以选择意味着美丽花朵的东西。 朋友可以结婚送花吗？ 朋友结婚后要送什么样的花呢？朋友结婚祝福语大全——2020年结婚怎能没有这些祝福语，一起来和Rosewin鲜花</p>
+  <p class="date">2020-06-24</p>
+</div>
+</li>
+      </ul>
+      </div>
+  </div>
+    </div>
+    <div class="w huaspeak_all">
+        <div class="huaspeak">
+            <div class="tit"> 
+                花的心声
+            </div>
+            <div class="title_b">
+                <a href="">七夕情人节送男朋友什么花？七夕情人节女友力满满少不了这些花！</a>
+                <a href="">李治伟从来不需要对象，有什么用呢</a>
+                <a href="">对象就想吸血鬼，花就像酒杯，都要钱害</a>
+                <a href="">七夕情人节送男朋友什么花？七夕情人节女友力满满少不了这些花！</a>
+               <a href="">对象就想吸血鬼，花就像酒杯，都要钱害</a>
+
+            </div>
+        </div>
+        <div class="news_b">
+            <div class="tit"> 
+                志伟心声
+            </div>
+            <div class="title_b">
+                <a href="">对象就是一个废物，你带一个废物能干什么呢</a>
+                <a href="">李治伟从来不需要对象，有什么用呢</a>
+                <a href="">对象就想吸血鬼，花就像酒杯，都要钱害</a>
+                <a href="">我就是一个帅气无敌的帅哥，我不需要对象</a>
+               <a href="">对象就想吸血鬼，花就像酒杯，都要钱害</a>
+
+            </div>
+        </div>
+    </div>
+<!-- 内容结束 -->
+{{include './common/footer.art'}}
+{{/block}}
+ 

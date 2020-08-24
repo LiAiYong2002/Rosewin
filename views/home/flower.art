@@ -1,0 +1,68 @@
+{{extend './common/layout.art'}}
+{{block 'links'}}
+    <link rel="stylesheet" href="./css/flower.css">
+    {{/block}}
+    {{block 'scripts'}}
+    <!-- 引入鲜花js -->
+    <script src="./js/flower.js"></script>
+    {{/block}}
+    {{block 'content'}}
+    {{include './common/header.art'}}
+    <div class="biaoti big">
+        <div class="paixu">
+            <span>排序：</span>
+            <a href="/home/flower?shopType={{shopType}}&date=1" class="title_color {{date=count?'current':''}}">新品</a>
+            <a href="/home/flower?shopType={{shopType}}&click=1" class="title_color {{click=clicks?'current':''}}">人气</a>
+            <a href="/home/flower?shopType={{shopType}}&price={{prices}}" class="pai_price">价格
+            <%if(clname>=2){%>
+                 <em class="{{priceClass&& priceClass>=1?'pai_current_next':'pai_current_previou'}}"></em>
+            <%}else{%>
+                <em></em>
+            <%}%>   
+        </a>
+        </div>
+        <div class="yeshu">
+            {{if flowers.page>1}}
+            <a href="/home/flower?page={{flowers.page-1}}&shopType={{shopType}}&date={{count}}&click={{clicks}}&price={{p_num}}" class=" previou_jianto">上一页</a>
+            {{/if}}
+            <ul style="float: left;">
+                {{each flowers.display}}
+                <li><a href="/home/flower?page={{$value}}&shopType={{shopType}}&date={{count}}&click={{clicks}}&price={{p_num}}" class="{{flowers.page==$value?'active':''}}">{{$value}}</a></li>
+                {{/each}}
+            </ul>
+            {{if flowers.page<flowers.pages}}
+            <a href="/home/flower?page={{flowers.page-0+1}}&shopType={{shopType}}&date={{count}}&click={{clicks}}&price={{p_num}}" class="next_jianto">下一页</a>
+            {{/if}}
+        </div>
+        
+        <!-- <div class="jieguo"><span>24</span>个结果</div> -->
+    </div>
+<div class="tu_ji big">
+<ul class="tu_list">
+    {{each flowers.records}}
+    <li>
+        <a href="/home/goodsRedrose?flowerid={{$value.flowerId}}" class="pro_imglink">
+            <img src="./{{$value.shopImgPath}}" alt="">
+        </a>
+        <a href=""class="pro_name">{{$value.flowerName}}</a>
+        <div class="pro_price">
+            <div class="saleprice"><span>￥{{$value.shopPrice}}</span></div>
+            <p class="desc"> 下载Rosewin鲜花APP，此款立省<span>{{$value.appPrice}}</span>元</p>
+        </div>
+    </li>
+    {{/each}}
+</ul>
+</div>
+<div class="bianqian_ho big">
+   <!-- <div class="yeshu">
+        <a href="" class=" previou_jianto">上一页</a>
+        <ul style="float: left;">
+            <li>1</li>
+            <li>2</li>
+        </ul>
+        <a href="" class="next_jianto">下一页</a>
+    </div> -->
+</div>
+{{include './common/footer.art'}}
+{{/block}}
+ 

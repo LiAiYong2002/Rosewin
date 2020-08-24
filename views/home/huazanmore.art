@@ -1,0 +1,146 @@
+{{extend './common/layout.art'}}
+{{block 'links'}}
+    <!-- 引入自定义css样式 -->
+    <link rel="stylesheet" href="./css/huzzan-more.css">
+    {{/block}}
+   
+    {{block 'content'}}
+      <div class="container-master">
+        <a class="goback" href="/home/huazan"></a>
+        <div class="container-tile">
+          <h1>满天星</h1>
+          <div class="content">
+            <div class="floaty tile">
+              <h3 class="title">不舍与思恋</h3>
+              <div class="lines"> </div>
+              <ul>
+                <li>人世间，最深重的思念和不舍，是将你藏在我心底。</li>
+                <li>带着对你的爱，走完细水长流的人生。</li>
+                <li>不联系不再见，却永不能忘却和放下这份思念。</li>
+                <li>那一瞬间，很想，很想，很想你</li>
+                <li>梦采芙蓉隔一江，几时蝴蝶双？</li>
+                <li>爱过不后悔，过往不遗憾。</li>
+                <li>从没有后悔遇到你，爱上你。</li>
+              </ul>
+            </div>
+            <div class="floaty tile">
+              <h3 class="title">纯洁浪漫</h3>
+              <div class="lines"> </div>
+              <ul>
+                <li>从没有后悔遇到你，爱上你</li>
+                <li>纯洁浪漫(Pure romance)</li>
+                <li>有了你，黑暗不再是黑暗( With you, darkness is no longer darkness)</li>
+                <li>遇见你之前我不知道热情( I didn't know the passion before I met you)</li>
+                <li>让一颗心住进另一颗心，温润着未来岁月里</li>
+                <li>世界上最短的咒语,是你的名字</li>
+              </ul>
+            </div>
+            <div class="floaty tile">
+              <h3 class="title">真心喜欢你</h3>
+              <div class="lines"> </div>
+              <ul>
+                <li>其实，我一直都在你身后，就差你一个回头。</li>
+                <li>玩笑里常常藏着我的真心话，只是你不知道而已。</li>
+                <li>生命中有你，才是最平凡的奇迹。</li>
+                <li>若爱，时间和距离，都不会是阻碍</li>
+                <li>听说，注定在一起的人，不管绕多大一圈依然会回到彼此的身边。!</li>
+                <li>想你至深，念你至醇吾爱</li>
+                <li>爱她，就不要给她乱想的机会</li>
+              </ul>
+            </div>
+            <div class="floaty tile">
+              <h3 class="title">慢慢·满满</h3>
+              <div class="lines"> </div>
+              <ul>
+                <li>慢慢老去</li>
+                <li>我能想到最浪漫的事，就是和你慢慢变老</li>
+                <li>我有慢慢的爱交予你</li>
+                <li>满满的爱慢慢的给你</li>
+                <li>飞快的时光给予你满满的爱</li>
+              </ul>
+            </div>
+            <div class="floaty tile">
+              <h3 class="title">专属·钟情</h3>
+              <div class="lines"> </div>
+              <ul>
+                <li>愿你身畔有一人，始终小心护住你的孩子气</li>
+                <li>深深地爱着你，像深巷传来的酒香，闻之即醉</li>
+                <li>因为钟情，所以等待</li>
+                <li>闭上眼睛脑海里全是你，睁开眼睛希望眼前能有你的陪伴</li>
+                <li>你是我的窦房节，遇到你的时候，是心动的开始</li>
+              </ul>
+            </div>
+            <div class="floaty tile">
+              <h3 class="title">心愿</h3>
+              <div class="lines"> </div>
+              <ul>
+                <li>与你一起记下漫天繁星，绘制四季星图</li>
+                <li>时光会老，绿叶会枯，唯有这份伴随你我的爱恋，永远不会改变</li>
+                <li>你依旧是我的心愿</li>
+                </ul>
+            </div>
+            <div class="floaty tile">
+              <h3 class="title">幸福</h3>
+              <div class="lines"> </div>
+              <ul>
+                <li>爱的宣言，铭记于心</li>
+                <li>一直陪在你身边</li>
+                <li>你笑了，就是幸福</li>
+                <li>我看完了世界的花,就你最美</li>
+                <li>最幸福的时候是你在我身边</li>
+              </ul>
+            </div>
+            <div class="floaty tile">
+              <h3 class="title">一心·一意</h3>
+              <div class="lines"> </div>
+              <ul>
+                <li>清纯的爱和敦煌善良</li>
+                <li>相知是一种宿命</li>
+                <li>心灵的交汇让我们有诉不尽的里面情怀</li>
+                <li>相守是一种承诺</li>
+                <li>有你，我将对其他人好无兴趣</li>
+              </ul>
+            </div>
+            <div class="floaty tile">
+              <h3 class="title">一见如故</h3>
+              <div class="lines"> </div>
+              <ul>
+                <li>乘着月色与水光的迷离，悄悄地划进你的心海</li>
+                <li>沧海桑田永不变的仍是那颗心</li>
+                <li>那淡淡的清香，飘进我的心里</li>
+                <li>见你的第一眼，就已经深陷其中</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container-lyrics">
+          <div class="content">
+            <div class="header">
+              <a class="back"></a>
+              <h4 class="lyrics-title"></h4></div>
+            <div class="lyrics-wrapper"></div>
+          </div>
+        </div>
+      </div>
+      {{/block}}
+
+  {{block 'scripts'}}
+ <!-- 引入自定义JQuery样式 -->
+ <script src="./js/huazan-more.js"></script>
+<script>
+   var tile=document.querySelectorAll(".tile");
+   var html=document.documentElement;
+
+
+   for (let i = 0; i < tile.length; i++) {
+     tile[i].addEventListener("click",function(){
+      var b_img=['./img/huazan_more/B2.jpg','./img/huazan_more/b3.jpg',
+      './img/huazan_more/b4.jpg','./img/huazan_more/b5.jpg',
+      './img/huazan_more/b6.jpg','./img/huazan_more/b7.jpg',
+      './img/huazan_more/b8.jpg','./img/huazan_more/b9.jpg',
+      './img/huazan_more/b10.jpg']
+      html.style.background='linear-gradient(rgba(208,228,227,.7), rgba(219,229,223, .5)),url('+b_img[i]+') no-repeat center/cover';
+    })
+   }
+</script>
+{{/block}}

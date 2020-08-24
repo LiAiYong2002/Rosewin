@@ -1,0 +1,260 @@
+{{extend './common/layout.art'}}
+{{block 'links'}}
+   <link rel="stylesheet" href="./css/love_flower.css">
+    <link rel="stylesheet" href="./css/birthday_flower.css">
+    {{/block}}
+    {{block 'content'}}
+    <!-- 主要显示 -->
+    <div id="new_topic">
+        <!-- banner -->
+        <img src="./img/birthday_flower/shizi20_banner.jpg" alt="" class="banner">
+        <!-- banner -->
+        <div class="w con_520">
+            <div class="content">
+                <!-- 许愿 -->
+                <div class="jxlist">
+                    <div class="tit">
+                        <img src="./img/birthday_flower/shizi20_title1.jpg" alt="">
+                    </div>
+                    <ul class="spe">
+                        <li>
+                            <a href="#" class="big"><img src="./img/birthday_flower/xy1.jpg" alt=""></a>
+                            <img src="./img/love_flower/rexiao.png" alt="" class="hot_img">
+                            <div class="cont">
+                                <a href="#">
+                                    <div class="lt">
+                                        <p class="bt">笑口常开</p>
+                                        <p class="price">活动价:￥399 <span>￥518</span></p>
+                                        <p class="sale">已售1496件</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt=""></a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="big"><img src="./img/birthday_flower/xy2.jpg" alt=""></a>
+                            <img src="./img/love_flower/rexiao.png" alt="" class="hot_img">
+                            <div class="cont">
+                                <a href="#">
+                                    <div class="lt">
+                                        <p class="bt">心中的太阳</p>
+                                        <p class="price">活动价:￥399<span>￥518</span></p>
+                                        <p class="sale">已售12998件</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt=""></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 许愿 -->
+                <!-- 必备 -->
+                <div class="jxlist">
+                    <div class="tit">
+                        <img src="./img/birthday_flower/shizi20_title2.jpg" alt="">
+                    </div>
+                    <ul class="enlarge">
+                        <li>
+                            <a href="#"><img src="./img/birthday_flower/da1.jpg" alt="" style="width: 360px;height: 360px;"></a>
+                            <div class="cont">
+                                <a href="#">
+                                    <div class="lt">
+                                        <p class="bt" style="font-size: 18px;">多梦年华</p>
+                                        <p class="price" style="color: #000;padding-top: 0px;">￥299<span>￥388</span></p>
+                                        <p class="sale" style="font-size: 14px;">已售1459件</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/birthday_flower/da2.jpg" alt="" style="width: 360px;height: 360px;"></a>
+                            <div class="cont">
+                                <a href="#">
+                                    <div class="lt">
+                                        <p class="bt" style="font-size: 18px;">幸福平安</p>
+                                        <p class="price" style="color: #000;padding-top: 0px;">￥299<span>￥388</span></p>
+                                        <p class="sale" style="font-size: 14px;">已售1496件</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/birthday_flower/da3.jpg" alt="" style="width: 360px;height: 360px;"></a>
+                            <div class="cont">
+                                <a href="#">
+                                    <div class="lt">
+                                        <p class="bt" style="font-size: 18px;">简单的幸福</p>
+                                        <p class="price" style="color: #000;padding-top: 0px;">￥399<span>￥518</span></p>
+                                        <p class="sale" style="font-size: 14px;">已售6821件</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/birthday_flower/da4.jpg" alt="" style="width: 360px;height: 360px;"></a>
+                            <div class="cont">
+                                <a href="#">
+                                    <div class="lt">
+                                        <p class="bt" style="font-size: 18px;">今生最大的幸福</p>
+                                        <p class="price" style="color: #000;padding-top: 0px;">￥499<span>￥648</span></p>
+                                        <p class="sale" style="font-size: 14px;">已售12699件</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/birthday_flower/da5.jpg" alt="" style="width: 360px;height: 360px;"></a>
+                            <div class="cont">
+                                <a href="#">
+                                    <div class="lt">
+                                        <p class="bt" style="font-size: 18px;">知心祝福</p>
+                                        <p class="price" style="color: #000;padding-top: 0px;">￥399<span>￥518</span></p>
+                                        <p class="sale" style="font-size: 14px;">已售1479件</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/birthday_flower/da6.jpg" alt="" style="width: 360px;height: 360px;"></a>
+                            <div class="cont">
+                                <a href="#">
+                                    <div class="lt">
+                                        <p class="bt" style="font-size: 18px;">花开富贵</p>
+                                        <p class="price" style="color: #000;padding-top: 0px;">￥499<span>￥648</span></p>
+                                        <p class="sale" style="font-size: 14px;">已售1478件</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                   <!-- 必备 -->
+                    <!-- 专属 -->
+                <div class="jxlist">
+                    <div class="tit">
+                        <img src="./img/birthday_flower/shizi20_title3.jpg" alt="">
+                    </div>
+                    <ul class="enlarge">
+                        <li>
+                            <a href="#"><img src="./img/birthday_flower/zh1.jpg" alt="" style="width: 360px;height: 360px;"></a>
+                            <div class="cont">
+                                <a href="#">
+                                    <div class="lt">
+                                        <p class="bt" style="font-size: 18px;">千言万语</p>
+                                        <p class="price" style="color: #000;padding-top: 0px;">￥239<span>￥310</span></p>
+                                        <p class="sale" style="font-size: 14px;">已售2458件</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/birthday_flower/zh2.jpg" alt="" style="width: 360px;height: 360px;"></a>
+                            <div class="cont">
+                                <a href="#">
+                                    <div class="lt">
+                                        <p class="bt" style="font-size: 18px;">三生三世</p>
+                                        <p class="price" style="color: #000;padding-top: 0px;">￥299<span>￥388</span></p>
+                                        <p class="sale" style="font-size: 14px;">幸福即将到来</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/birthday_flower/zh3.jpg" alt="" style="width: 360px;height: 360px;"></a>
+                            <div class="cont">
+                                <a href="#">
+                                    <div class="lt">
+                                        <p class="bt" style="font-size: 18px;">一帆风顺</p>
+                                        <p class="price" style="color: #000;padding-top: 0px;">￥299<span>￥388</span></p>
+                                        <p class="sale" style="font-size: 14px;">已售2579件</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/birthday_flower/zh4.jpg" alt="" style="width: 360px;height: 360px;"></a>
+                            <div class="cont">
+                                <a href="#">
+                                    <div class="lt">
+                                        <p class="bt" style="font-size: 18px;">温暖常伴</p>
+                                        <p class="price" style="color: #000;padding-top: 0px;">￥399<span>￥518</span></p>
+                                        <p class="sale" style="font-size: 14px;">已售1496件</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/birthday_flower/zh5.jpg" alt="" style="width: 360px;height: 360px;"></a>
+                            <div class="cont">
+                                <a href="#">
+                                    <div class="lt">
+                                        <p class="bt" style="font-size: 18px;">幸福满溢</p>
+                                        <p class="price" style="color: #000;padding-top: 0px;">￥499<span>￥648</span></p>
+                                        <p class="sale" style="font-size: 14px;">已售9568件</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/birthday_flower/zh6.jpg" alt="" style="width: 360px;height: 360px;"></a>
+                            <div class="cont">
+                                <a href="#">
+                                    <div class="lt">
+                                        <p class="bt" style="font-size: 18px;">一生一世</p>
+                                        <p class="price" style="color: #000;padding-top: 0px;">￥499<span>￥648</span></p>
+                                        <p class="sale" style="font-size: 14px;">已售1896件</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                   <!-- 专属 -->
+                   <div class="xingzuo_miaoshu">
+                       <p>狮子收花反应</p>
+                       <img src="./img/birthday_flower/xiaohua_shizi.jpg" alt="">
+                       <div class="text_mimi">
+                           <p class="mimi_title">狮子的小秘密</p>
+                           <p class="mimi_det">
+                            狮子座有着宏伟的理想，总想靠自己的努力成为人上人，向往高高在上的优越感，
+                            也期待被仰慕被崇拜的感觉，有点儿自信有点儿自大。狮子男的大男人气息很重，
+                            爱面子，狮子女热情阳光，对朋友讲义气。
+                           </p>
+                       </div>
+                   </div>
+                <!-- 查看更多 -->
+                <div class="jinniu">
+                    <a href="/home/huazan">查看更多</a>
+                </div>
+                <!-- 查看更多 -->
+            </div>
+            <!-- 导航栏 -->
+            <div class="nav" style="display: none;">
+            <ul class="nav_list">
+                <li class="li1"><a href="#">热销款</a></li>
+                <li class="li2"><a href="#">必备款</a></li>
+                <li class="li3"><a href="#">专属款</a></li>
+                <li class="li4"><a href="#">返回</a></li>
+            </ul>
+            </div>
+        <!-- 导航栏 -->
+        </div>
+    </div>
+    <!-- 主要显示 -->
+    {{include './common/footer.art'}}
+    {{/block}}
+    {{block 'scripts'}}
+<script src="./js/love_flower.js"></script>
+{{/block}}

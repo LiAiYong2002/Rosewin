@@ -1,0 +1,286 @@
+.baike_nav{height: 75px;margin-top: 20px;background-color: #242422;}
+.baike_nav .snav{padding-top: 20px;}
+.snav li{float: left;width: 21%;height: 40px;border-left: 1px solid #c3a56e;box-sizing: border-box;}
+.snav li:first-child{margin-left: 0px;border-left: none;width: 16%;}
+.snav li a{ display: block;
+    width: 130px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 16px;
+    background-color: #c3a56e;
+    margin: 0px auto;
+    color: #242422;
+    border-radius: 4px;
+    transition: all 0.1s;}
+.snav li a:first-child a{margin-left: 0px;}
+.snav li a:hover{color: white;transform: scale(1.05);}
+.baike_con .hot_search{height: 40px; line-height: 40px;padding: 0px 5px;padding-top: 25px;}
+.hot_search div{float: left;color: #242422;font-size: 16px;max-width: 120px;}
+.hot_search ul{float: left;width: 1070px;}
+.hot_search ul li{display: inline-block;padding: 0px 15px;color: #242422;font-size: 14px;border-left: 1px solid #c3a56e;text-align: center;line-height: 18px;}
+.hot_search li a{color: #242422;}
+.baike_article{padding-top: 25px;}
+.baike_article .titleBox{border-bottom: solid 1px #c3a56e;height: 50px;}
+.baike_article .titleBox .titleLeft{font-size: 21px;color: #242422;font-weight: bold;float: left;border-bottom: solid 3px #c3a56e;line-height: 48px;}
+.baike_article .titleBox .more_button{float: right;font-size: 16px;color: #c3a56e;margin-top: 14px;height: 26px;line-height: 28px;width: 50px;text-align: center;border-radius: 2px;}
+.more_button{float: right;font-size: 16px;color: #c3a56e;border: 1px solid #c3a56e;margin: auto 0;margin-top: 14px;height: 26px;line-height: 26px;width: 50px;text-align: center;border-radius: 2px;}
+.baike_article ul li{padding: 25px 0;border-bottom: 1px dashed #ebebeb; width: 47%;float: left;overflow: hidden;}
+.baike_article li .img{width: 145px; float: left;height: 145px; overflow: hidden;}
+.baike_article li .img img{width: 145px;height: 145px;transition: all 0.2s;}
+.baike_article li .img img:hover{transform: scale(1.05);}
+.baike_article ul{overflow: hidden;}
+.baike_article li .txt{width: 405px; float: right;}
+.baike_article li .txt .title{height: 40px; font-size: 18px; margin-bottom: 20px;}
+.baike_article li .txt .body{height: 50px;line-height: 25px;overflow: hidden;color: #555;}
+.baike_article li .txt .date{margin-top: 10px; color: #999;}
+.baike_article li .txt .date a{float: right;color: #c3a56e;}
+.baike_article .yido li:nth-child(2){margin-left: 6%;}
+.baike_article .yido li:nth-child(4){margin-left: 6%;}
+.baike_article .yido li:nth-child(6){margin-left: 6%;}
+.baike_article .yido li:nth-child(8){margin-left: 6%;}
+.baike_article .yido li:nth-child(10){margin-left: 6%;}
+
+.friend{height: 280px;padding: 24px 0px 0px 0px;position: relative;}
+.friend ul li{display: inline; float: left; width: 270px;overflow: hidden;position: relative;padding: 0px 15px;}
+.friend ul li img{width: 100%;}
+.yinchang{display: none;}
+/* 鲜花页面 */
+.bk_category{padding-bottom: 40px; overflow: hidden;}
+.bk_category .title{padding-top: 20px;overflow: hidden;}
+.bk_category .title .titleLeft{    float: left;
+    font-size: 21px;
+    color: #242422;
+    border-right: solid 3px #c3a56e;
+    line-height: 22px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    height: 22px;
+    padding-right: 15px;}
+    .bk_category .title .line{
+        float: right;
+    height: 1px;
+    background: #c3a56e;
+    width: 1034px;
+    margin-top: 10px;
+    }
+    .bk_category ul{
+        /* overflow: hidden; */
+        padding-top: 20px;
+    }
+    .bk_category ul li{
+        width: 190px;margin-right: 12px;margin-bottom: 15px;
+    }
+    .bk_category ul li a{display: block;width: 190px;height: 190px;position: relative;overflow: hidden;}
+    .bk_category ul li a img{width: 190px;height: 190px;}
+    .bk_category ul li h3{text-align: center;line-height: 30px;color: #242422;font-size: 14px;}
+    .bk_category ul li div{position: absolute; background: url(../img/flower8/背景图标.png) repeat; bottom: -105px; padding: 5px 2%;width: 96%;height: 70px;text-align: justify;transition: all 0.2s;}
+    .bk_category ul li div p{color: #fff;}
+.bk_category ul li:hover div{bottom: 0px;}
+
+
+    /* 绿植 */
+    .bk_list{overflow: hidden; }
+.bk_list ul li{float: left;width: 190px;margin-right: 12px;margin-bottom: 15px;}
+.bk_list ul li{
+    width: 190px;margin-right: 12px;margin-bottom: 15px;
+}
+.bk_list ul li a{display: block;width: 190px;height: 190px;position: relative;overflow: hidden;}
+.bk_list ul li a img{width: 190px;height: 190px;}
+.bk_list ul li h3{text-align: center;line-height: 30px;color: #242422;font-size: 14px;}
+
+
+.bk_list ul li div{position: absolute;background: url(../img/flower8/背景图标.png) repeat;bottom:-105px;padding:5px 2%;width: 96%;height:70px;text-align: justify;transition:all 0.2s;}
+.bk_list ul li div p{color: #fff;}
+.bk_list ul li:hover div{bottom: 0px;}
+
+
+.bk_list .title{padding-top: 20px;overflow: hidden;}
+.bk_list .title .titleLeft{    float: left;
+    font-size: 21px;
+    color: #242422;
+    border-right: solid 3px #c3a56e;
+    line-height: 22px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    height: 22px;
+    padding-right: 15px;}
+    .bk_list .title .line{
+        float: right;
+    height: 1px;
+    background: #c3a56e;
+    width: 1034px;
+    margin-top: 10px;
+    }
+    .bk_list ul li:nth-child(6) {
+        margin-right: 0px;
+    }
+    .bk_list ul li:nth-child(12) {
+        margin-right: 0px;
+    }
+    .bk_list ul li:nth-child(18) {
+        margin-right: 0px;
+    }
+
+/* 绿植 */
+.border{border: 1px solid #ededed;}
+.article_con{ padding: 45px 0px 100px;overflow: hidden;}
+.article_con .article_header{font-size: 13px; padding-bottom: 20px;height: 30px;line-height: 30px;padding-top: 20px;margin-bottom: 20px;}
+/* 标签 */
+/* zuo */
+.news_left{
+    width: 830px;float: left;
+}
+.news_left li{
+    overflow: hidden;
+    padding: 40px 0;border-bottom: 1px solid #ededed;
+}
+.news_left li img{width: 160px;height: 160px;overflow: hidden;float: left;}
+.news_left li .txt{width: 590px;padding-left: 20px;float: left;}
+.news_left li .txt .title{height: 35px;font-size: 18px;}
+.news_left li .txt .body{
+    height: 75px;line-height: 25px;overflow: hidden;color: #555;
+}
+.news_left li .txt .date{margin-top: 22px; margin-right: 10px;text-align: right;color: #999;}
+.news_left li .txt .date a{float: left;}
+
+/* you */
+.article_right{width: 330px;float: right;}
+.article_right .huayu_rbox{background-color: #fafafa;}
+.huayu_rbox .rbox_bar{height: 30px;padding: 20px 0;position: relative;}
+.huayu_rbox .rbox_bar .title{height: 30px;line-height: 30px;padding-left: 15px;display: inline-block;font-size: 20px;color: #333;border-left: 5px solid #c4a66a;}
+.rbox_body{padding: 0 20px 20px 20px;}
+.clearfix_border li{line-height: 40px;height: 40px;overflow: hidden;font-size: 14px;border-bottom: 1px dashed #aba9a9;}
+.clearfix_border li a{display: block;overflow: hidden;text-align: left;transition: all 0.2s;white-space: nowrap;text-overflow: ellipsis;}
+.clearfix_border li a:hover{transform:translate3d(8px,0,0);}
+.hei20{height: 20px;}
+.huayu_hot_label{overflow: hidden;}
+.huayu_hot_label .clearfix_2 li{margin: 8px 5px;float: left;} 
+.huayu_hot_label .clearfix_2 li a{ padding: 6px 8px;border: 1px solid #d2d2d2;border-radius: 5px; font-size: 14px;text-align: center;display: inline-block;color: #333;} 
+/* 养花知识 */
+.zhishi{
+    overflow: hidden;
+}
+.mainBox{
+    padding-top: 25px;
+}
+.mainLeft{float: left; width: 880px;}
+.yanghuaBox{width: 880px; margin: 0 auto;background-color: #fff;height: 405px;margin-bottom: 20px;}
+.yanghuaBox .titleBox{border-bottom:  1px solid #eee ;height: 50px; margin: 0 20px;}
+.yanghuaBox .titleBox .titLeft{
+    font-size: 21px;
+    float: left;
+    color: #242422;
+    border-bottom: solid 3px #c3a56e;
+    line-height: 48px;
+    font-weight: bold;
+}
+.more_button {
+    float: right;
+    font-size: 16px;
+    color: #c3a56e;
+    border: 1px solid #c3a56e;
+    margin: auto 0;
+    margin-top: 14px;
+    height: 26px;
+    line-height: 26px;
+    width: 50px;
+    text-align: center;
+    border-radius: 2px;
+}
+.yanghuaBox .yhzs_img {
+    float: left;
+    margin-left: 20px;
+    width: 440px;
+    margin-top: 20px;
+}
+.yanghuaBox .yhzs_img .img_box1 {
+    margin-bottom: 20px;
+    position: relative;
+}
+.yanghuaBox .yhzs_img li {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 200px;
+    height: 150px;
+    overflow: hidden;}
+    .yanghuaBox .yhzs_img li img {
+        max-width: 100%;
+    }
+    .yanghuaBox .yhzs_img li .img_title {
+        padding-left: 4px;
+        padding-right: 4px;
+        height: 24px;
+        text-align: center;
+        line-height: 22px;
+        color: #fff;
+        background-color: #000;
+        position: absolute;
+        bottom: 4px;
+        left: 4px;
+        font-size: 14px;
+        overflow: hidden;}
+        .yanghuaBox ul.yhzs_text {
+            padding: 0;
+            margin-left: 20px;
+            margin-top: 16px;
+            float: left;
+            width: 380px;
+        }
+
+        .yanghuaBox ul.yhzs_text li {
+            font-size: 16px;
+            line-height: 31px;
+            border-bottom: solid 1px #f0f0f0;
+            height: 51px;
+            line-height: 51px;
+        }
+        .mainRight .Ritem {
+            width: 270px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            border-bottom: solid 1px #f1f1f1;
+        }
+        .Ritem .wztitle {
+            font-size: 18px;
+            color: #666;
+            height: 38px;
+        }
+        .side_class2 {
+            padding-bottom: 20px;
+        }
+        .side_class2 li {
+            float: left;
+            width: 125px;
+            margin: 10px 5px 0px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .side_class2 li img {
+            width: 120px;
+            height: 120px;
+            display: block;
+        }
+        .side_class2 li p {
+            height: 26px;
+            white-space: nowrap;
+            padding: 5px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .mainRight {
+            width: 300px;
+            float: right;
+            background-color: #fff;
+        }
+
+
+
+        .mr_frbox{height: 290px;padding: 24px 0 0 0;position: relative;overflow: hidden;}
+.mr_frul{overflow: hidden;position: relative;width: 20000px;}
+.mr_frul ul{overflow: hidden;position: relative;} 
+.mr_frul ul li{float: left;width: 270px;padding: 0px 15px;overflow: hidden;position: relative;}
+.mr_frul ul li a img{width: 100%;max-height: 270px;}

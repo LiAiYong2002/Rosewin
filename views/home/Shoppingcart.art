@@ -1,0 +1,212 @@
+{{extend './common/layout.art'}}
+{{block 'links'}}
+    <link rel="stylesheet" href="./css/Shopping_cart.css">
+    <link rel="stylesheet" href="./css/Shopping_cart2.css">
+    <link rel="stylesheet" href="./css/nprogress.css">
+    {{/block}}
+   
+
+    {{block 'content'}}
+{{include './common/header.art'}}
+    <!-- 主体 -->
+    <div id="container">
+        <div class="w">
+            <!-- 购物车 -->
+            <div class="cart_warp">
+                <div class="cart_empty">
+                    <div class="cart_message">
+                        <div class="txt">您的购物车中没有商品！</div>
+                        <div class="info">
+                            <a href="/home/flower">马上去逛逛</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 购物车 -->
+            <div id="content" class="w">
+                <div class="cart_product">
+                    <div class="cart_pro_tit">
+                        <ul>
+                            <li class="cpt01">
+                                <label>
+                                    <input type="checkbox" name="" id="" class="Select_all checkall">
+                                    全选
+                                </label>
+                            </li>
+                            <li class="cpt02">商品信息</li>
+                            <li class="cpt03">单价</li>
+                            <li class="cpt04">数量</li>
+                            <li class="cpt05">小计</li>
+                        </ul>
+                    </div>
+                     <!-- 商品信息  -->
+                    <div class="cartbox">
+                        <table>
+                            <tbody>
+                                {{each resultCart}}
+                                    <tr class="ng_scope">
+                                        <td class="relative">
+                                            <input type="checkbox" name="" id="" class="j-checkbox">
+                                            <div class="cp_img"><img src="./{{$value.cartImgPath}}" alt=""></div>
+                                            <div class="cp_info"><a href="javascript:"> {{$value.cartName}}</a></div>
+                                        </td>
+                                        <td  class="ng_binding p-price">￥{{$value.onePrice}}</td>
+                                        <td class="p-num">
+                                            <div class="cart_num_m">
+                                                <a href="javascript:" class="decrement">-</a>
+                                                <input value="{{$value.cartCount}}" class="itxt">
+                                                <a href="javascript:" class="increment">+</a>
+                                            </div>
+                                        </td>
+                                        <td class="p-sum">￥{{$value.subtotal}}</td>
+                                        <td  class="p-action"><a href="javascript:" data-id="{{$value.cartId}}" class="removeCart">删除</a></td>
+                                    </tr>
+                                {{/each}}
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- 商品信息  -->
+                    <!-- 删除 -->
+                    <div class="cart_bar">
+                        <!-- 删除上 -->
+                        <div class="cart_bar_t">
+                            <div class="cart_bar_m">
+                                <label>
+                                    <input type="checkbox" class="Select_all checkall">
+									<span>全选</span>
+                                </label>
+                                <a href="javascript:"  class="remove-batch">删除选中的商品</a>
+                            </div>
+                            <div class="cbm_price">
+                                已选商品 
+                                <span class="check_goods amount-sum">0</span>
+                                件总价(  不含运费)：
+                                <span class="check_goods price-sum">￥799.00</span>
+                            </div>
+                        </div>
+                         <!-- 删除上 -->
+                        <!-- 删除下 -->
+                        <div class="cart_bar_b">
+                            <a href="javascript:">继续购物</a>
+                            <button>立即结算</button>
+                        </div>
+                          <!-- 删除下 -->
+                    </div>
+                    <!-- 删除 -->
+                    <!-- 猜你喜欢 -->
+                    <!-- <div class="cart_recommend">
+                        <div class="cart_recommend_title">猜你喜欢</div>
+                        <div class="cart_behavior"></div>
+                    </div> -->
+                      <!-- 猜你喜欢 -->
+                </div>
+                
+            </div> 
+            <!-- 推荐 -->
+            <div class="c_history">
+                <div class="ftit ftit_delr"><h3>猜你喜欢</h3></div>
+                <div class="gl_list">
+                    <ul>
+                        <li class="opacity_img">
+                            <a href="javascript:" class="p_img"><img src="./img/Shopping_cart/love1.jpg" alt=""></a>
+                            <p class="p_price">￥699</p>
+                            <p class="p_name">美好的明天-粉玫瑰绣球韩式混搭</p>
+                            <p class="p_num">已售11847件</p>
+                        </li>
+                        <li class="opacity_img">
+                            <a href="javascript:" class="p_img"><img src="./img/Shopping_cart/love2.jpg" alt=""></a>
+                            <p class="p_price">￥778</p>
+                            <p class="p_name">四面瑞气</p>
+                            <p class="p_num">已售1459件</p>
+                        </li>
+                        <li class="opacity_img">
+                            <a href="javascript:" class="p_img"><img src="./img/Shopping_cart/love3.jpg" alt=""></a>
+                            <p class="p_price">￥799</p>
+                            <p class="p_name">告白气球-33朵红玫瑰网红抱抱桶</p>
+                            <p class="p_num">已售4189件</p>
+                        </li>
+                        <li class="opacity_img">
+                            <a href="javascript:" class="p_img"><img src="./img/Shopping_cart/love4.jpg" alt=""></a>
+                            <p class="p_price">￥199</p>
+                            <p class="p_name">焦糖奶油蛋糕</p>
+                            <p class="p_num">已售3126件</p>
+                        </li>
+                        <li class="opacity_img">
+                            <a href="javascript:" class="p_img"><img src="./img/Shopping_cart/love5.jpg" alt=""></a>
+                            <p class="p_price">￥999</p>
+                            <p class="p_name">小太阳-ins超大洋甘菊花束</p>
+                            <p class="p_num">已售11674件</p>
+                        </li>
+                        <li class="opacity_img">
+                            <a href="javascript:" class="p_img"><img src="./img/Shopping_cart/love6.jpg" alt=""></a>
+                            <p class="p_price">￥499</p>
+                            <p class="p_name">漫天繁星-冷淡风棉花花束</p>
+                            <p class="p_num">已售12583件</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+             <!-- 推荐 -->
+        </div>
+        
+        
+    </div>
+    <!-- <div class="layui_layer">
+        <div class="layui_layer_title">系统提示</div>
+        <div class="layui_layer_content">
+            <em class="icon_tip"></em>
+            您确定要把商品移除购物车吗？
+        </div>
+        <span class="layui_layer_setwin">
+            <a href="javascript:" class="layui_layer_close1">X</a>
+        </span>
+        <div class="layui_layer_btn">
+            <a href="javascript:" class="layui_layer_btn0">确定</a>
+            <a href="javascript:" class="layui_layer_btn1">取消</a>
+        </div>
+    </div>
+    <div class="layui_layer_shade"></div> -->
+     <!-- 主体结束 -->
+     {{include './common/footer.art'}}
+     {{/block}}
+
+ {{block 'scripts'}}
+<script src="./js/Shopping_cart.js"></script>
+<script src="./js/nprogress.js"></script>
+
+<script>
+  let cid=$(".removeCart").attr("data-id");
+    let $doc=$(document)
+
+    $doc.on("ajaxStart",function(){
+            NProgress.start()
+        
+    })
+
+    $doc.on("ajaxComplete",function(){
+        NProgress.done()
+        setTimeout(() => {
+        window.location="./Shoppingcart"
+        },300);
+       
+    })
+
+    $(".removeCart").on("click",function(){
+        $.ajax({
+            type:'get',
+            url:'http://localhost/home/delete?cid='+cid
+        })
+    })
+
+    $(".remove-batch").on("click",function(){
+        var flag = $(".j-checkbox").prop("checked");
+        if (flag) {
+            $.ajax({
+            type:'get',
+            url:'http://localhost/home/deleteAll'
+          })
+        }
+       
+    })
+</script>
+{{/block}}

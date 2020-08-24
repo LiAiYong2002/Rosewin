@@ -1,0 +1,724 @@
+{{extend './common/layout.art'}}
+{{block 'links'}}
+    <!-- 引入首页css样式 -->
+    <link rel="stylesheet" href="./css/huazan.css">
+    {{/block}}
+    {{block 'scripts'}}
+     <!-- 动画函数封装 -->
+     <script src="./js/animate.js"></script>
+    <!-- 引入首页js -->
+    <script src="./js/huazan.js"></script>
+   <!-- 引入首页自定义Jquery -->
+   <script src="./js/huazan-jq.js"></script>
+   {{/block}}
+{{block 'content'}}
+{{include './common/header.art'}}
+    <!-- 电梯导航模块开始 -->
+    <div class="rosewin_nav">
+        <ul>
+            <li class="nav_current"><a href="javascript:">
+                    <div>
+                        <span>热卖单品</span>
+                    </div>
+                </a></li>
+            <li><a href="javascript:">
+                    <div>
+                        <span>抖音网红</span>
+                    </div>
+                </a></li>
+            <li><a href="javascript:">
+                    <div>
+                        <span>特惠鲜花</span>
+                    </div>
+                </a></li>
+            <li><a href="javascript:">
+                    <div>
+                        <span>永生花</span>
+                    </div>
+                </a></li>
+            <li><a href="javascript:">
+                    <div>
+                        <span>开业花篮</span>
+                    </div>
+                </a></li>
+            <li class="goback"><a href="javascript:">
+                    <div>
+                        <div><span class="iconfont iconicon-test"></span></div>
+                        <span>顶部</span>
+                    </div>
+                </a></li>
+        </ul>
+    </div>
+    <!-- 电梯导航模块结束 -->
+
+    <!-- 内容模块开始 -->
+    <div class="content_box w_fluid">
+        <div class="w">
+            <!-- banner模块 -->
+            <div class="out_banner">
+                <div class="banner">
+                    <ul>
+                        <li>
+                            <a href="/home/flowerbirthday">
+                                <img src="./img/huazan_img/banner1.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/home/loveflower">
+                                <img src="./img/huazan_img/banner2.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/home/birthdayflower">
+                                <img src="./img/huazan_img/banner3.jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 点状图 -->
+                <ol class="pager">
+                    
+                </ol>
+                <!-- 按钮 -->
+                <div class="btn_ban">
+                    <a href="javascript:" class="row_fl"></a>
+                    <a href="javascript:" class="row_fr"></a>
+                </div>
+            </div>
+            <!-- 高档鲜花了解模块 -->
+            <div class="hz_index">
+                <!-- 左边部分 -->
+                <div class="hz_index_left fl">
+                    <a href="goods_Redrose.html">
+                        <img src="./img/huazan_img/index_floor1.png" alt="">
+                    </a>
+                </div>
+                <!-- 右边部分 -->
+                <div class="hz_index_right fr">
+                    <!-- 右边图片部分 -->
+                    <div class="right_img">
+                        <a href="#">
+                            <img src="./img/huazan_img/index_floor1_right1.jpg" alt="">
+                        </a>
+                    </div>
+                    <!-- 右边文字部分 -->
+                    <div class="right_txt">
+                        <a href="#">
+                            <p>她总说不要送她礼物...<br>但你心里自有打算。</p>
+                            <h3>立即购买&gt;&gt;</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 热卖单品推荐模块 -->
+            <div class="hz_hot_goods go_item">
+                <!-- 标题模块 -->
+                <h3 class="tit">热卖单品推荐</h3>
+                <!-- 商品模块 -->
+                <ul class="hot_list">
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/hot1.jpg" alt="">
+                            <div>
+                                <h3>永不变心-11朵红玫瑰</h3>
+                                <h2>￥199</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">20</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/hot2.jpg" alt="">
+                            <div>
+                                <h3>爱的宣言-19朵红玫瑰</h3>
+                                <h2>￥399</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">40</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/hot3.jpg" alt="">
+                            <div>
+                                <h3>初心不负-11朵红玫瑰</h3>
+                                <h2>￥399</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">40</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/hot4.jpg" alt="">
+                            <div>
+                                <h3>我如此爱你-33朵红玫瑰</h3>
+                                <h2>￥599</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">60</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/hot5.jpg" alt="">
+                            <div>
+                                <h3>心花怒放-11朵红玫瑰</h3>
+                                <h2>￥299</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">30</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/hot6.jpg" alt="">
+                            <div>
+                                <h3>似水年华-33朵混色玫瑰</h3>
+                                <h2>￥599</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">60</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/hot7.jpg" alt="">
+                            <div>
+                                <h3>心动的理由-19朵精品红玫瑰</h3>
+                                <h2>￥599</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">60</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/hot8.jpg" alt="">
+                            <div>
+                                <h3>微笑的眼睛-33支粉色康乃馨</h3>
+                                <h2>￥499</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">50</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 抖音网红款推荐模块 -->
+            <div class="hz_hot_goods go_item">
+                <!-- 标题模块 -->
+                <h3 class="tit">抖音网红款推荐</h3>
+                <!-- 商品模块 -->
+                <ul class="hot_list">
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/dou1.jpg" alt="">
+                            <div>
+                                <h3>甜心守护-抖音网红气球翅膀抱抱桶</h3>
+                                <h2>￥799</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">80</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/dou2.jpg" alt="">
+                            <div>
+                                <h3>爱意浓-33朵红玫瑰网红抱抱桶</h3>
+                                <h2>￥699</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">70</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/dou3.jpg" alt="">
+                            <div>
+                                <h3>告白气球-33朵红玫瑰网红抱抱桶</h3>
+                                <h2>￥799</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">80</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/dou4.jpg" alt="">
+                            <div>
+                                <h3>爱的抱抱-33朵粉玫瑰网红抱抱桶</h3>
+                                <h2>￥699</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">70</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/dou5.jpg" alt="">
+                            <div>
+                                <h3>给你我的心-52朵红玫瑰网红抱抱桶</h3>
+                                <h2>￥899</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">90</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/dou6.jpg" alt="">
+                            <div>
+                                <h3>爱的纪念-抖音网红气球翅膀抱抱桶</h3>
+                                <h2>￥699</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">70</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/dou7.jpg" alt="">
+                            <div>
+                                <h3>真情绽放-33朵紫玫瑰抱抱桶</h3>
+                                <h2>￥699</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">70</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/dou8.jpg" alt="">
+                            <div>
+                                <h3>为爱而生-12朵向日葵抱抱桶</h3>
+                                <h2>￥699</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">70</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 特惠鲜花推荐模块 -->
+            <div class="hz_hot_goods go_item">
+                <!-- 标题模块 -->
+                <h3 class="tit">特惠鲜花推荐</h3>
+                <!-- 商品模块 -->
+                <ul class="hot_list">
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/te1.jpg" alt="">
+                            <div>
+                                <h3>执手问年华-11朵红玫瑰</h3>
+                                <h2>￥239</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">24</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/te2.jpg" alt="">
+                            <div>
+                                <h3>粉色的回忆-12朵粉玫瑰</h3>
+                                <h2>￥219</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">22</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/te3.jpg" alt="">
+                            <div>
+                                <h3>素锦年时-11朵粉玫瑰花束</h3>
+                                <h2>￥229</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">23</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/te4.jpg" alt="">
+                            <div>
+                                <h3>芬芳脱俗-12朵白玫瑰</h3>
+                                <h2>￥299</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">30</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/te5.jpg" alt="">
+                            <div>
+                                <h3>幸福快乐-粉色康乃馨+向日葵混搭</h3>
+                                <h2>￥299</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">30</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/te6.jpg" alt="">
+                            <div>
+                                <h3>温馨祝福-5支蓝绣球花束</h3>
+                                <h2>￥699</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">70</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/te7.jpg" alt="">
+                            <div>
+                                <h3>一往深情-19朵红玫瑰</h3>
+                                <h2>￥599</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">60</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/t8.jpg" alt="">
+                            <div>
+                                <h3>祝福挚爱-33朵混色玫瑰</h3>
+                                <h2>￥599</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">60</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 永生花推荐模块 -->
+            <div class="hz_hot_goods go_item">
+                <!-- 标题模块 -->
+                <h3 class="tit">永生花推荐</h3>
+                <!-- 商品模块 -->
+                <ul class="hot_list">
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/yong1.jpg" alt="">
+                            <div>
+                                <h3>一池柔情</h3>
+                                <h2>￥499</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">50</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/yong2.jpg" alt="">
+                            <div>
+                                <h3>一眼万年</h3>
+                                <h2>￥299</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">30</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/yong3.jpg" alt="">
+                            <div>
+                                <h3>真情不变</h3>
+                                <h2>￥499</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">50</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/yong4.jpg" alt="">
+                            <div>
+                                <h3>白羊座守护花-巨型永生花礼盒</h3>
+                                <h2>￥399</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">40</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/YONG5.jpg" alt="">
+                            <div>
+                                <h3>如胶似漆</h3>
+                                <h2>￥699</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">70</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/yong6.jpg" alt="">
+                            <div>
+                                <h3>举案齐眉</h3>
+                                <h2>￥699</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">70</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/yong7.jpg" alt="">
+                            <div>
+                                <h3>长相厮守</h3>
+                                <h2>￥699</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">70</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/yong8.jpg" alt="">
+                            <div>
+                                <h3>柔情蜜意</h3>
+                                <h2>￥699</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">70</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 开业花篮模块 -->
+            <div class="hz_hot_goods go_item">
+                <!-- 标题模块 -->
+                <h3 class="tit">开业花篮</h3>
+                <!-- 商品模块 -->
+                <ul class="hot_list">
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/kai1.jpg" alt="">
+                            <div>
+                                <h3>万事如意-网红气球开业花篮</h3>
+                                <h2>￥299</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">30</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/kai2.jpg" alt="">
+                            <div>
+                                <h3>繁华兴旺-玫瑰+百合开业花篮</h3>
+                                <h2>￥299</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">30</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/kai3.jpg" alt="">
+                            <div>
+                                <h3>兴旺发达-网红气球开业花篮</h3>
+                                <h2>￥399</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">40</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/kai4.jpg" alt="">
+                            <div>
+                                <h3>开业志禧-高端罗马柱开业花篮</h3>
+                                <h2>￥688</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">69</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/kai5.jpg" alt="">
+                            <div>
+                                <h3>红红火火-红玫瑰开业花篮</h3>
+                                <h2>￥888</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">89</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/kai6.jpg" alt="">
+                            <div>
+                                <h3>开张大吉-高端艺术开业花篮</h3>
+                                <h2>￥1299</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">130</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/kai7.jpg" alt="">
+                            <div>
+                                <h3>敬贺开张-红玫瑰+绣球款开业花篮</h3>
+                                <h2>￥999</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">100</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:">
+                            <img src="./img/huazan_img/kai8.jpg" alt="">
+                            <div>
+                                <h3>客似云来-网红气球开业花篮</h3>
+                                <h2>￥399</h2>
+                                <p>下载Rosewin鲜花APP，此款立省<span class="save_money">40</span>元</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 鲜花了解模块 -->
+            <div class="double_img">
+                <div class="lt fl">
+                    <a href="#" class="lt_img">
+                        <img src="./img/huazan_img/index_floor3.jpg" alt="鲜花">
+                    </a>
+                    <div class="tit">
+                        <a href="#">
+                            <p>时尚活力抱抱桶</p>
+                            <h3>前往了解&gt;&gt;</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="rt fr">
+                    <a href="#">
+                        <img src="./img/huazan_img/index_floor4.jpg" alt="高档鲜花">
+                    </a>
+                </div>
+            </div>
+            <!-- 新品推荐模块 -->
+            <div class="top_re">
+                <!-- 标题 -->
+                <div class="theme relative" style="margin-top: 30px;">
+                    <div class="mid_line absolute"></div>
+                    <p class="theme_n relative">
+                        <span style="color: #666;">新品推荐</span><br><span
+                            style="font-size: 14px;color: #999;">NewRecommend</span></p>
+                </div>
+                <!-- 商品 -->
+                <div class="m_hot_pro">
+                    <div id="scroll_pro" class="scroll_pro">
+                        <ul id="hotrec_pro">
+                            <li>
+                                <a href="javascript:">
+                                    <div>
+                                        <img class="productImg" src="./img/huazan_img/new1.jpg"
+                                            alt="你的眼神-9朵香槟玫瑰+5支白色洋桔梗混搭" width="200" height="200">
+                                    </div>
+                                    <p>你的眼神-9朵香槟玫瑰+5支白色洋桔梗混搭</p>
+                                </a>
+                                <div class="c_gray"><a href="javascript:">加入购物车</a></div>
+                            </li>
+                            <li>
+                                <a href="javascript:">
+                                    <div>
+                                        <img class="productImg" src="./img/huazan_img/new2.jpg" alt="宝贝对不起-39朵白玫瑰"
+                                            width="200" height="200">
+                                    </div>
+                                    <p>宝贝对不起-39朵白玫瑰</p>
+                                </a>
+                                <div class="c_gray"><a href="javascript:">加入购物车</a></div>
+                            </li>
+                            <li>
+                                <a href="javascript:">
+                                    <div>
+                                        <img class="productImg" src="./img/huazan_img/new3.jpg" alt="心上人-13朵混色玫瑰韩式混搭"
+                                            width="200" height="200">
+                                    </div>
+                                    <p>心上人-13朵混色玫瑰韩式混搭</p>
+                                </a>
+                                <div class="c_gray"><a href="javascript:">加入购物车</a></div>
+                            </li>
+                            <li>
+                                <a href="javascript:">
+                                    <div>
+                                        <img class="productImg" src="./img/huazan_img/new4.jpg" alt="倩影翩翩-12朵甜心玫瑰"
+                                            width="200" height="200">
+                                    </div>
+                                    <p>倩影翩翩-12朵甜心玫瑰</p>
+                                </a>
+                                <div class="c_gray"><a href="javascript:">加入购物车</a></div>
+                            </li>
+                            <li>
+                                <a href="javascript:">
+                                    <div>
+                                        <img class="productImg" src="./img/huazan_img/new5.jpg" alt="玫瑰小黑裙-99朵红玫瑰"
+                                            width="200" height="200">
+                                    </div>
+                                    <p>玫瑰小黑裙-99朵红玫瑰</p>
+                                </a>
+                                <div class="c_gray"><a href="javascript:">加入购物车</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 送花知识 -->
+            <div class="new_article w1200 index_article">
+                <div class="theme relative">
+                    <div class="mid_line absolute"></div>
+                    <p class="theme_n relative">
+                    <span style="color: #666;">送花知识</span><br><span style="font-size: 14px;color: #999;">FlowersKnowledge</span></p>
+                </div>
+                <div class="mr_frbox w">
+                    <span class="span_s prev"></span>
+                    <div class="mr_frUl">
+                        <div class="tempWrap" style="overflow:hidden; position:relative;">
+                            <ul id="mr_fu">
+                                <li style="float: left; width: 240px;"><a href="/home/flowerdetai" title="七夕节是不是你还差一句情话对Ta说？">
+                                        <img src="./img/huazan_img/s1.png"alt="七夕节是不是你还差一句情话对Ta说？">
+                                        <p>七夕节是不是你还差一句情话对Ta说？</p>
+                                    </a>
+                                </li>
+                                <li style="float: left; width: 240px;"><a href="#"title="康乃馨送女友合适吗？康乃馨为什么是母亲花？">
+                                        <img src="./img/huazan_img/s2.png"alt="康乃馨送女友合适吗？康乃馨为什么是母亲花？">
+                                        <p>康乃馨送女友合适吗？康乃馨为什么是母亲花？</p>
+                                    </a>
+                                </li>
+                                <li style="float: left; width: 240px;"><a href="#" title="七夕情人节送什么花好呢？爱你的心用七夕情人节鲜花来表达">
+                                        <img src="./img/huazan_img/s3.png" alt="七夕情人节送什么花好呢？爱你的心用七夕情人节鲜花来表达">
+                                        <p>七夕情人节送什么花好呢？爱你的心用七夕情人节鲜花来表达</p>
+                                    </a>
+                                </li>
+                                <li style="float: left; width: 240px;"><a href="#" title="七夕情人节闺蜜之间送什么花好？七夕情人节祝福花束少不了，不送闺蜜都不行！">
+                                        <img src="./img/huazan_img/s4.png"alt="七夕情人节闺蜜之间送什么花好？七夕情人节祝福花束少不了，不送闺蜜都不行！">
+                                        <p>七夕情人节闺蜜之间送什么花好？七夕情人节祝福花束少不了，不送闺蜜都不行！</p>
+                                    </a>
+                                </li>
+                                <li style="float: left; width: 240px;"><a href="#" title="2020年七夕情人节表白必看——七夕情人节表白送什么花？七夕情人节表白送花必杀技！">
+                                        <img src="./img/huazan_img/s5.png" alt="2020年七夕情人节表白必看——七夕情人节表白送什么花？七夕情人节表白送花必杀技！">
+                                        <p>2020年七夕情人节表白必看——七夕情人节表白送什么花？七夕情人节表白送花必杀技！</p>
+                                    </a>
+                                </li>
+                                <li style="float: left; width: 240px;"><a href="#" title="[七夕情人节爆款]七夕情人节送女朋友什么花好女神推荐的暖心花束买买买">
+                                        <img src="./img/huazan_img/s6.png" alt="[七夕情人节爆款]七夕情人节送女朋友什么花好女神推荐的暖心花束买买买">
+                                        <p>[七夕情人节爆款]七夕情人节送女朋友什么花好女神推荐的暖心花束买买买</p>
+                                    </a>
+                                </li>
+                                <li style="float: left; width: 240px;"><a href="#" title="拯救单身狗——七夕情人节送异性朋友送什么花？">
+                                        <img src="./img/huazan_img/s7.jpg" alt="拯救单身狗——七夕情人节送异性朋友送什么花？">
+                                        <p>拯救单身狗——七夕情人节送异性朋友送什么花？</p>
+                                    </a>
+                                </li>
+                                <li style="float: left; width: 240px;"><a href=""  title="七夕情人节送女朋友多少花？——七夕情人节甜蜜花束">
+                                        <img src="./img/huazan_img/s8.png"  alt="七夕情人节送女朋友多少花？——七夕情人节甜蜜花束">
+                                        <p>七夕情人节送女朋友多少花？——七夕情人节甜蜜花束</p>
+                                    </a>
+                                </li>
+                                <li style="float: left; width: 240px;"><a href="#"title="七夕情人节甜蜜花束——七夕情人节送女朋友多少花？七夕情人节就要宠爱女朋友">
+                                        <img src="./img/huazan_img/s9.png"alt="七夕情人节甜蜜花束——七夕情人节送女朋友多少花？七夕情人节就要宠爱女朋友">
+                                        <p>七夕情人节甜蜜花束——七夕情人节送女朋友多少花？七夕情人节就要宠爱女朋友</p>
+                                    </a>
+                                </li>
+                                <li style="float: left; width: 240px;"><a href="#"title="七夕情人节一束玫瑰花多少钱？实惠的七夕情人节玫瑰尽在Rosewin">
+                                        <img src="./img/huazan_img/s10.png" alt="七夕情人节一束玫瑰花多少钱？实惠的七夕情人节玫瑰尽在Rosewin">
+                                        <p>七夕情人节一束玫瑰花多少钱？实惠的七夕情人节玫瑰尽在Rosewin</p>
+                                    </a>
+                                </li>
+                                <li style="float: left; width: 240px;"><a href="#" title="8.25七夕情人节送什么花？七夕情人节送花全新推荐，七夕情人节送花必看">
+                                        <img src="./img/huazan_img/s11.png" alt="8.25七夕情人节送什么花？七夕情人节送花全新推荐，七夕情人节送花必看">
+                                        <p>8.25七夕情人节送什么花？七夕情人节送花全新推荐，七夕情人节送花必看</p>
+                                    </a>
+                                </li>
+                                <li style="float: left; width: 240px;"><a href="#" title="[七夕情人节创意礼物攻略]七夕情人节送老婆什么礼物最好？七夕情人节这些礼物很心动">
+                                        <img src="./img/huazan_img/s12.png" alt="[七夕情人节创意礼物攻略]七夕情人节送老婆什么礼物最好？七夕情人节这些礼物很心动">
+                                        <p>[七夕情人节创意礼物攻略]七夕情人节送老婆什么礼物最好？七夕情人节这些礼物很心动</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span class="span_s next"></span>
+                </div>
+                <a href="/home/huazanmore" class="more_wz">更多介绍</a>
+            </div>
+        </div>
+    </div>
+    <!-- 内容模块结束 -->
+    {{include './common/footer.art'}}
+{{/block}}
+
+

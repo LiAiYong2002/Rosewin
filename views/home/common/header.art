@@ -1,0 +1,352 @@
+ <!-- 头部模块开始 -->
+    <!-- 顶部导航模块 -->
+    <div id="header" class="w_fluid">
+        <div class="out_head_nav w_fluid">
+            <div class="w" style="position: relative;">
+                <!-- 顶部导航内容 -->
+            <div class="header_nav w">
+                <!-- 顶部导航左边模块 -->
+                <div class="header_nav_left fl">
+                    <div class="nav_telephone">
+                        <i class="hico1"></i>
+                        <span class="telephone">4000-192-520</span>
+                    </div>
+                    <div class="nav_app fl">
+                        <a href="javascript:">
+                            <i class="hico2"></i>
+                            <span class="download">下载Rosewin鲜花APP</span>
+                        </a>
+                    </div>
+                    <div class="nav_wechat fl">
+                        <a href="javascript:">
+                            <i class="hico_wx"></i>
+                            <span class="wechat_text">关注Rosewin鲜花微信公众号</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 顶部导航右边模块 -->
+                <div class="header_nav_right fr">
+                    <div class="headerUser fl">
+                        <span><a href="/home/login">
+                            {{if user}}
+                            {{user.username}}
+                            {{else}}
+                            登录
+                            {{/if}}
+                            
+                        </a></span>
+                        <span><a href="/home/register" title="注册">注册</a></span>
+                    </div>
+                    <!-- 分割s线 -->
+                    <i class="Segmentation"></i>
+                    <div class="headerCart fl">
+                        <div class="shopCart" data-ectype="dorpdown" id="ECS_CARTINFO" data-carteveval="0">
+                            <div class="shopCart-con">
+                                <a href="/home/Shoppingcart">
+                                    <span class="iconfont iconicon-test3"></span>
+                                    <span>我的购物车</span>
+                                    <em class="count cart_num">0</em></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 下载二维码模块 -->
+            <div class="out_headerApp_code">
+                <div class="headerApp_code">
+                    <span class="delta"></span>
+                    <a href="javascript:" title="下载Rosewin鲜花APP"><img
+                            src="./img/common_img/down_app.png"><span>扫码下载</span></a>
+                </div>
+            </div>
+            <!-- 关注二维码模块 -->
+            <div class="out_headerApp_zhu">
+                <div class="headerApp_zhu">
+                    <span class="delta"></span>
+                    <a href="javascript:" title="关注Rosewin鲜花微信公众号"><img
+                            src="./img/common_img/tool_public.jpg"><span>扫码关注</span></a>
+                </div>
+            </div>
+            <!-- 购物车显示模块 -->
+            <div class="dorpdown-layer" ectype="dorpdownLayer">
+                <!-- 没有商品显示开始 -->
+                <div class="prompt">
+                    <div class="nogoods"><b></b><span>购物车中还没有商品，赶紧选购吧！</span></div>
+                </div>
+                <!-- 没有商品显示结束 -->
+                <!-- 有商品显示的购物车开始 -->
+                <div class="settleup-content" style="display: none;">
+                    <div class="mc">
+                        <ul>
+                            {{each resultCart}}
+                            <li>
+                                <div class="p-img"><a href="javascript:"></a><img src="{{$value.cartImgPath}}"
+                                        width="50" height="50"></a></div>
+                                <div class="p-name"><a href="javascript:" title="爱之物语-14朵红玫瑰">{{$value.cartName}}</a>
+                                    <p></p>
+                                </div>
+                                <div class="p-number">
+                                    <!-- <span class="num" min_number="1">1</span> -->
+                                    <input type="text" class="num" value="{{$value.cartCount}}">
+                                    <div class="count">
+                                        <a href="javascript:;" class="count-add"><span class="iconfont iconicon-test"></span></a>
+                                        <a href="javascript:;" class="count-remove"><span class="iconfont iconicon-test6"></span></a></div>
+                                </div>
+                                <div class="p-oper">
+                                    <div class="price">¥{{$value.onePrice}}</div>
+                                    <a href="javascript:" data-id="{{$value.cartId}}" class="remove">删除</a>
+                                </div>
+                            </li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                    <div class="mb">
+                        <div class="p-total">共<span class="count_shop">1</span>件商品&nbsp;&nbsp;共计：￥<span class="tato_p"></span></div>
+                        <a href="/home/Shoppingcart" class="btn-cart">去购物车</a>
+                    </div>
+                </div>
+                <!-- 有商品显示的购物车结束 -->
+            </div>
+            </div>
+        </div>
+        <!-- 顶部导航js -->
+        <script>
+            $(function () {
+                $(".nav_app").hover(function () {
+                    $(".out_headerApp_code").stop().slideDown('slow');
+                }, function () {
+                    $(".out_headerApp_code").stop().slideUp('slow');
+                })
+
+                $(".nav_wechat").hover(function () {
+                    $(".out_headerApp_zhu").stop().slideDown('slow');
+                }, function () {
+                    $(".out_headerApp_zhu").stop().slideUp('slow');
+                })
+
+                $(".shopCart").mouseenter(function () {
+                    $(".dorpdown-layer").stop().slideDown('slow');
+                })
+                $(".dorpdown-layer").mouseleave(function () {
+                    $(".dorpdown-layer").stop().slideUp('slow');
+                })
+
+
+            })
+        </script>
+    </div>
+    <!-- 头部搜索模块 -->
+    <div class="w_fluid" style="background-color: #fff;">
+        <div class="header_middle w">
+            <!-- logo -->
+            <div class="header_logo fl">
+                <a href="/home/huazan"><img src="./img/common_img/huazan_logo.png" alt="鲜花"></a>
+            </div>
+    
+            <!-- 地区 -->
+            <div class="city-select ">
+                <div class="city-current"><em></em><span>全国</span><span class="iconfont iconicon-test6"></span></div>
+                <div class="city-list">
+                    <i class="iUp">
+                        <em></em>
+                    </i>
+                    <div class="hot-city">
+                        <h2>热门城市</h2>
+                        <p>
+                            <a href="javascript:">北京</a>
+                            <a href="javascript:">上海</a>
+                            <a href="javascript:">广州</a>
+                            <a href="javascript:">深圳</a>
+                            <a href="javascript:">天津</a>
+                            <a href="javascript:">重庆</a>
+                            <a href="javascript:">成都</a>
+                            <a href="javascript:">西安</a>
+                            <a href="javascript:">武汉</a>
+                            <a href="javascript:">长沙</a>
+                            <a href="javascript:">南京</a>
+                            <a href="javascript:">厦门</a>
+                        </p>
+                    </div>
+                    <div class="hd">
+                        <h2>全部城市</h2>
+                        <div id="anchors-list" class="anchors-list">
+                            <a name="A" href="#A">A</a>
+                            <a name="B" href="#B">B</a>
+                            <a name="C" href="#C">C</a>
+                            <a name="F" href="#F">F</a>
+                            <a name="G" href="#G">G</a>
+                            <a name="H" href="#H">H</a>
+                            <a name="J" href="#J">J</a>
+                            <a name="L" href="#L">L</a>
+                            <a name="N" href="#N">N</a>
+                            <a name="Q" href="#Q">Q</a>
+                            <a name="S" href="#S">S</a>
+                            <a name="T" href="#T">T</a>
+                            <a name="X" href="#X">X</a>
+                            <a name="Y" href="#Y">Y</a>
+                            <a name="Z" href="#Z">Z</a></div>
+                    </div>
+                    <div class="roll-list">
+                        <div class="province-all">
+                            <ul>
+                                <li>
+                                    <span id="A">A</span>
+                                    <div class="province">
+                                        <p class="" data-id="81714">安徽省</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span id="B">B</span>
+                                    <div class="province">
+                                        <p class="" data-id="74873">北京市</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span id="C">C</span>
+                                    <div class="province">
+                                        <p class="" data-id="754685">重庆市</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span id="F">F</span>
+                                    <div class="province">
+                                        <p class="" data-id="2">福建省</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span id="G">G</span>
+                                    <div class="province">
+                                        <p class="" data-id="107712">广东省</p>
+                                        <p class="" data-id="135425">广西壮族自治区</p>
+                                        <p class="" data-id="152964">贵州省</p>
+                                        <p class="" data-id="55845">甘肃省</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span id="H">H</span>
+                                    <div class="province">
+                                        <p class="" data-id="182754">河北省</p>
+                                        <p class="" data-id="291426">黑龙江省</p>
+                                        <p class="" data-id="237641">河南省</p>
+                                        <p class="" data-id="307715">湖北省</p>
+                                        <p class="" data-id="339656">湖南省</p>
+                                        <p class="" data-id="175820">海南省</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span id="J">J</span>
+                                    <div class="province">
+                                        <p class="" data-id="391143">吉林省</p>
+                                        <p class="" data-id="403889">江苏省</p>
+                                        <p class="" data-id="428836">江西省</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span id="L">L</span>
+                                    <div class="province">
+                                        <p class="" data-id="451186">辽宁省</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span id="N">N</span>
+                                    <div class="province">
+                                        <p class="" data-id="468973">内蒙古自治区</p>
+                                        <p class="" data-id="484915">宁夏回族自治区</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span id="Q">Q</span>
+                                    <div class="province">
+                                        <p class="" data-id="488119">青海省</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span id="S">S</span>
+                                    <div class="province">
+                                        <p class="" data-id="582414">山西省</p>
+                                        <p class="" data-id="645121">上海市</p>
+                                        <p class="" data-id="493130">山东省</p>
+                                        <p class="" data-id="650698">四川省</p>
+                                        <p class="" data-id="613964">陕西省</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span id="T">T</span>
+                                    <div class="province">
+                                        <p class="" data-id="711069">天津市</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span id="X">X</span>
+                                    <div class="province">
+                                        <p class="" data-id="716798">西藏自治区</p>
+                                        <p class="" data-id="723476">新疆维吾尔自治区</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span id="Y">Y</span>
+                                    <div class="province">
+                                        <p class="" data-id="739032">云南省</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span id="Z">Z</span>
+                                    <div class="province">
+                                        <p class="" data-id="18047">浙江省</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- 搜索框 -->
+            <div class="header_search">
+                <div class="header_search_int fl"><input type="text" value="" placeholder="请输入关键字"></div>
+                <button class="header_search_btn fl"><em></em></button>
+            </div>
+    
+            <!-- 苹果或安卓系统下载模块 -->
+            <div class="header_down fr">
+                <img src="./img/common_img/down_s.png" alt="高档鲜花">
+                <a href="javascript:" class="iphone"></a>
+                <a href="javascript:" class="android"></a>
+            </div>
+        </div>
+    </div>
+    <!-- 鲜花导航分类模块 -->
+    <div class="out_nav">
+        <div class="tl_nav">
+            <div class="navlist">
+                <div class="tl_nav_list clearfix">
+                    <ul class="tl_nav_list_wp">
+                        <li class="spec2">
+                            <div class="one"><a href="javascript:">首页</a></div>
+                            <div class="two"><a href="/home/huazan">首页</a></div>
+                            <i>/</i>
+                        </li>
+                        
+                        {{each titles}}
+                        <li class="">
+                            <div class="one"><a href="javascript:">{{$value.shopType}}</a></div>
+                            <div class="two"><a href="/home/flower?shopType={{$value.shopType}}">{{$value.shopType}}</a></div>
+                            <i>/</i>
+                        </li>
+                        {{/each}}
+
+                        <li>
+                            <div class="one"><a href="javascript:">花语大全</a></div>
+                            <div class="two"><a href="/home/flowerlanguage">花语大全</a></div><i>/</i>
+                        </li>
+                        <li>
+                            <div class="one"><a href="javascript:">鲜花百科</a></div>
+                            <div class="two"><a href="/home/flowerall">鲜花百科</a></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 头部模块结束 -->

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosewin鲜花-爱的诺言,进口轻奢甄选鲜花礼物给最爱的Ta！</title>
+    <!-- 引入通用修改样式 -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- 引入头部底部css样式 -->
+    <link rel="stylesheet" href="./css/common.css">
+    <!-- 引入网页图标 -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <!-- 引入字体图标 -->
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <!-- 引入jQuery -->
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <!-- 引入头部购物车js -->
+    <script src="./js/huazan-cart.js"></script>
+    <!-- 引入ajax -->
+    <script src="./js/ajax.js"></script>
+    <!-- 引入登录表单数组转换对象js -->
+    <script src="./js/common.js"></script>
+    {{block 'links'}} {{/block}}
+</head>
+<body>
+    {{block 'content'}} {{/block}}
+
+    {{block 'scripts'}} {{/block}}
+</body>
+</html>

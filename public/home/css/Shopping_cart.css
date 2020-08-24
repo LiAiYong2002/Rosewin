@@ -1,0 +1,35 @@
+#container{}
+/* 购物车 */
+#container .cart_warp{margin-top: 30px;display: none;}
+#container .cart_warp .cart_empty{height: 174px;padding: 63px 0;background-color: #fff;}
+.cart_warp .cart_empty .cart_message{padding-left: 490px;height: 174px;background: url(../img/Shopping_cart/icon_emty_cart.png) 177px 0 no-repeat;}
+.cart_message .txt{font-size: 24px;font-weight: bold;color: #8c8c8c;padding-top: 35px;}
+.cart_message .info{overflow: hidden;margin-top: 25px;}
+.cart_message .info a{width: 138px;height: 38px;line-height: 38px;padding: 0;margin: 0;text-align: center;display: block;float: left;color: #fff;font-size: 14px;background-color: #333}
+
+/* 购物车 */
+#container .c_history{margin: 65px auto 0;width: 1200px;overflow: hidden;position: relative;z-index: 3;padding-bottom: 80px;}
+#container .c_history .ftit_delr{background: url(../img/Shopping_cart/点1.png) repeat-x 0 18px;}
+/* background: url(../img/Shopping_cart/点2.png) repeat-x 0 18px; */
+#container .c_history .ftit{overflow: hidden;padding: 0 0 20px;height: 35px;text-align: center;font-size: 21px;line-height: 33px;}
+#container .c_history .ftit h3{display: inline;padding: 0 50px;background-color: #fff;font-weight: 400;font-size: 21px;color: #555;}
+#container .c_history .gl_list{}
+#container .c_history .gl_list a{display: block; overflow: hidden;background-color: #fff;}
+#container .c_history .gl_list a img{opacity: 0.9;}
+#container .c_history .gl_list a img::after{content: "";display: block;width: 190px;height: 190px;}
+#container .c_history .gl_list a img:hover{opacity: 1;}
+#container .c_history .gl_list .opacity_img{float: left;width: 190px;height: auto;position: relative;z-index: 2;margin-right: 10px;}
+.gl_list .opacity_img .p_img{width: 190px;height: 190px;}
+.gl_list .opacity_img .p_img img{width: 100%;height: 100%;}
+.opacity_img .p_price{font-size: 20px;margin-top: 6px;color: #8c8c8c;}
+.opacity_img .p_name{width: 100%;height: 20px;line-height: 20px;overflow: hidden;margin-top: 5px;font-size: 12px;}
+.opacity_img .p_num{margin-top: 7px;color: #8c8c8c;}
+.layui_layer_shade{color: black; display: none; z-index: 11126;background-color: rgba(0,0,0,.3);position: fixed; top: 0;left: 0;right: 0;bottom: 0; width: 100%;height: 100%;}
+.layui_layer{font-weight: normal; color: black; display: none; width: 293px; height: 179px; position: absolute;z-index: 999999999;top: 50%;left: 50%;box-shadow: 1px 1px 50px rgba(0,0,0,.3);background-color: #fff;transform: translate(-50%,-50%);}
+.layui_layer .layui_layer_title{padding: 0 80px 0 20px;height: 42px;line-height: 42px;border-bottom: 1px solid #eee;font-size: 14px;color: #333;overflow: hidden;background-color: #F8F8F8;}
+.layui_layer .layui_layer_content{line-height: 48px; position: relative;padding: 20px; word-break: break-all;overflow: hidden;font-size: 14px;overflow-x: hidden;overflow-y: auto;}
+.layui_layer .layui_layer_content .icon_tip{display: block;float: left;width: 48px;height: 48px;background: url(../img/Shopping_cart/icon48.png)no-repeat;margin-right: 9px;background-position: -145px 2px;}
+.layui_layer .layui_layer_setwin{position: absolute;right: 15px;top: 15px;line-height: initial;}
+.layui_layer .layui_layer_btn{text-align: right;padding: 0 10px 12px;pointer-events: auto;user-select: none;-webkit-user-select: none;background: #fff;}
+.layui_layer .layui_layer_btn a{display: inline-block; height: 28px;line-height: 28px;margin: 6px 6px 0;padding: 0 15px;border: 1px solid #dedede;background-color: #f1f1f1;color: #333;border-radius: 2px;font-weight: 400;cursor: pointer;text-decoration: none;}
+.layui_layer .layui_layer_btn .layui_layer_btn0{border-color: #333;background-color: #333;color: #fff;}

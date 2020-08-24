@@ -1,0 +1,506 @@
+/* 首页样式 */
+.content_box {
+    border-top: 1px solid #D2D2D2;
+}
+
+/* banner模块 */
+.out_banner {
+    position: relative;
+    height: 520px;
+    margin-top: 25px;
+    overflow: hidden;
+}
+
+.banner {
+    position: relative;
+}
+.banner ul{
+    position: absolute;
+width: 400%;
+}
+.banner ul li{
+    float: left;
+}
+.out_banner .btn_ban a {
+    position: absolute;
+    display: block;
+    top: 217px;
+    width: 27px;
+    height: 66px;
+    background: url(../img/huazan_img/jt7.png)no-repeat;
+}
+
+.btn_ban a.row_fl {
+    left: 10px;
+    background-position: 0px -201px;
+}
+
+.btn_ban a.row_fr {
+    right: 10px;
+    background-position: 0px -134px;
+}
+
+.btn_ban a.row_fl:hover {
+    background-position: 0px 0;
+}
+
+.btn_ban a.row_fr:hover {
+    background-position: 0px -67px;
+}
+
+.out_banner ol {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    margin-top: 17px;
+}
+
+.out_banner ol li {
+    float: left;
+    width: 20px;
+    height: 4px;
+    background-color: #cccccc;
+    margin: 0 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.out_banner ol li.ol_current {
+    background-color: #111111;
+}
+
+/* 高档玫瑰模块 */
+.hz_index {
+    margin-top: 75px;
+    overflow: hidden;
+}
+
+.hz_index .hz_index_left {
+    width: 715px;
+    height: 700px;
+    overflow: hidden;
+}
+
+.hz_index .hz_index_right {
+    width: 460px;
+    height: 650px;
+    margin-top: 25px;
+}
+
+.hz_index_right .right_img {
+    margin-left: 30px;
+    overflow: hidden;
+}
+
+.hz_index_right .right_txt {
+    margin-top: 30px;
+}
+
+.hz_index_right .right_txt p {
+    padding-left: 130px;
+    line-height: 42px;
+    padding-bottom: 25px;
+    font-size: 22px;
+    font-family: 'Sterling SSm A', 'Sterling SSm B', 'NSimSun', 'STSong', serif;
+}
+
+.hz_index_right .right_txt h3 {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: bold;
+    border-bottom: 1px solid #666;
+    width: 190px;
+    margin: 0px auto;
+    font-family: 'Sterling SSm A', 'Sterling SSm B', 'NSimSun', 'STSong', serif;
+}
+
+.hz_index img {
+    transition: all 0.5s linear;
+}
+
+.hz_index .hz_index_left:hover img {
+    transform: scale(1.1);
+}
+
+.hz_index .hz_index_right .right_img:hover img {
+    transform: scale(1.1);
+}
+
+/* 商品模块 */
+.hz_hot_goods {
+   padding-top: 60px;
+overflow: hidden;
+   padding-bottom: 20px;
+}
+
+.hz_hot_goods .tit {
+    font-size: 40px;
+    font-weight: normal;
+    font-family: 'Sterling SSm A', 'Sterling SSm B', 'NSimSun', 'STSong', serif;
+    text-align: center;
+}
+
+.hot_list {
+    margin-top: 20px;
+}
+
+.hz_hot_goods .hot_list li {
+    float: left;
+    width: 240px;
+    padding: 20px;
+    margin: 0 10px;
+    /* background-color: orange; */
+    overflow: hidden;
+    transition: all 0.5s;
+    transform-style: preserve-3d;
+}
+
+.hz_hot_goods .hot_list li img {
+    width: 240px;
+    height: 240px;
+    overflow: hidden;
+    transition: all 0.2s ease 0s;
+}
+
+.hz_hot_goods .hot_list li div {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.hz_hot_goods .hot_list li div h3 {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    line-height: 30px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.hz_hot_goods .hot_list li div h2 {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.hz_hot_goods .hot_list li div p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-top: 5px;
+    color: rgb(178, 144, 76);
+    height: 20px;
+    overflow: hidden;
+}
+
+.hz_hot_goods .hot_list li img {
+    transition: all 0.4s;
+}
+
+.hz_hot_goods .hot_list li img:hover {
+    transform: translateX(-5px);
+}
+
+.hz_hot_goods .hot_list li:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+}
+
+/* 鲜花了解模块 */
+.double_img {
+    height: 720px;
+    padding-top: 80px;
+}
+
+.double_img div.lt {
+    width: 500px;
+    height: 670px;
+    margin-top: 50px;
+}
+
+.double_img .lt_img {
+    display: block;
+    overflow: hidden;
+}
+
+.double_img .tit {
+    padding-top: 15px;
+    color: #000;
+}
+
+.double_img .tit p {
+    padding-left: 157px;
+    line-height: 42px;
+    padding-bottom: 15px;
+    font-size: 22px;
+    font-family: 'Sterling SSm A', 'Sterling SSm B', 'NSimSun', 'STSong', serif;
+}
+
+.double_img .tit h3 {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: bold;
+    border-bottom: 1px solid #666;
+    width: 190px;
+    margin: 0px auto;
+    font-family: 'Sterling SSm A', 'Sterling SSm B', 'NSimSun', 'STSong', serif;
+}
+
+.double_img div.rt {
+    width: 600px;
+    height: 720px;
+    overflow: hidden;
+}
+
+.double_img img {
+    transition: all 0.5s linear;
+}
+
+.double_img .lt_img:hover img {
+    transform: scale(1.1);
+}
+
+.double_img .rt:hover img {
+    transform: scale(1.1);
+}
+
+/* 电梯导航模块 */
+.rosewin_nav {
+    display:  none;
+    position: fixed;
+    top: 10%;
+    right: 12%;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+.rosewin_nav ul {
+    overflow: hidden;
+}
+
+.rosewin_nav a {
+    position: relative;
+    display: block;
+    width: 38px;
+    height: 38px;
+    font-size: 15px;
+    line-height: 19px;
+    padding: 10px;
+    text-align: center;
+    transition: color .2s ease;
+    transition: background .2s ease;
+    background-color: #fff;
+}
+
+.rosewin_nav li:nth-child(1) a::after,
+.rosewin_nav li:nth-child(2) a::after,
+.rosewin_nav li:nth-child(3) a::after,
+.rosewin_nav li:nth-child(4) a::after,
+.rosewin_nav li:nth-child(5) a::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    left: 50%;
+    bottom: 0;
+    margin-left: -20px;
+    background: linear-gradient(270deg, white, #eeeeee, #eeeeee, white);
+}
+
+.rosewin_nav li a:hover {
+    background-color: #B20812;
+    color: #fff;
+}
+
+.nav_current a {
+    background-color: #B20812;
+    color: #fff;
+}
+
+/* 新品推荐模块 */
+.top_re {
+    padding-top: 50px;
+}
+
+.theme {
+    height: 54px;
+    margin: 23px 0 10px 0;
+}
+
+.mid_line {
+    border-bottom: 1px solid #e8e8e8;
+    top: 24px;
+    *top: 5px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.theme_n {
+    width: 260px;
+    background: #fff;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    font-family: 微软雅黑;
+    color: #333;
+    z-index: 2;
+}
+
+.m_hot_pro {
+    width: 1200px;
+    height: 290px;
+    margin: 0 auto;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.scroll_pro {
+    margin: 0 auto;
+}
+
+.m_hot_pro li {
+    width: 200px;
+    height: 290px;
+    margin: 5px 20px 0 20px;
+    text-align: center;
+    float: left;
+}
+
+.m_hot_pro li a p {
+    width: 200px;
+    height: 30px;
+    padding-top: 15px;
+    word-break: normal\0;
+    word-wrap: normal\0;
+    overflow: hidden;
+    color: #555;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.m_hot_pro li p {
+    padding-top: 2px;
+    color: #999;
+}
+
+.c_gray {
+    color: #ccc;
+}
+
+.m_hot_pro li .c_gray a {
+    display: block;
+    width: 100px;
+    margin: auto;
+    border: 1px solid #ccc;
+    height: 24px;
+    line-height: 24px;
+    transition: all 0.2s;
+}
+
+.m_hot_pro li .c_gray a:hover {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+.m_hot_pro li a:nth-child(1) div {
+    display: block;
+    overflow: hidden;
+}
+
+.m_hot_pro li a img {
+    transition: all 0.5s linear;
+}
+
+.m_hot_pro li a:nth-child(1):hover img {
+    transform: scale(1.1);
+}
+
+/* 送花知识 */
+.mr_frUl li {
+    overflow: hidden;
+    position: relative;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+.tempWrap{
+    width: 2880px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.mr_frUl ul li p {
+    text-align: center;
+    line-height: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mr_frUl ul li img {
+    width: 210px;
+    height: 210px;
+}
+.mr_frUl{
+    width: 1200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.mr_frbox{
+    padding: 24px 0px 0px;
+    position: relative;
+    overflow: hidden;
+}
+.span_s{
+    width: 27px;
+    height: 66px;
+    position: absolute;
+    cursor: pointer;
+    background: url(../img/huazan_img/jt7.png) no-repeat;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    top: 33%;
+    z-index: 999;
+}
+.new_article .next {
+    right: 16px;
+    background-position: 0 -134px;
+}
+.new_article .prev {
+    left: 15px;
+    background-position: 0px -201px;
+}
+.new_article .prev:hover {
+    background-position: 0px 0px;
+}
+.new_article .next:hover {
+    background-position: 0 -67px;
+}
+
+.index_article .more_wz {
+    display: block;
+    width: 100px;
+    margin: 30px auto 50px auto;
+    border: 1px solid #ccc;
+    height: 24px;
+    line-height: 24px;
+    transition: all 0.2s;
+    text-align: center;
+    color: #666;
+}
+.index_article .more_wz:hover {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+.mr_frbox:hover .span_s{
+    opacity: 1;
+}

@@ -1,0 +1,1118 @@
+
+    {{extend './common/layout.art'}}
+    {{block 'links'}}
+    <link rel="stylesheet" href="./css/flower-all.css">
+    <link rel="stylesheet" href="./css/flower.css">
+    {{/block}}
+
+    {{block 'content'}}
+{{include './common/header.art'}}
+    <!-- 内容开始 -->
+    <!-- 标题 -->
+    <div class="w_fluid baike_nav ">
+        <div class="w">
+            <ul class="snav">
+                <li class="danji2"><a href="javascript:" >百科首页</a></li>
+                <li class="danji2"> <a href="javascript:" >鲜花百科</a></li>
+                <li class="danji2"><a href="javascript:" >绿植百科</a></li>
+                <li class="danji2"><a href="javascript:" >绿植养护</a></li>
+                <li class="danji2"><a href="javascript:">养花知识</a></li>
+            </ul>
+        </div>
+    </div>
+<!-- 标题结束 -->
+<div>
+<!-- 身体开始 -->
+<!-- 百科页面 -->
+
+<div class="w_fluid  dianji">
+    <div class="w baike_con">
+        <div class="hot_search">
+            <div>鲜花百科热搜: &nbsp;</div>
+            <ul>
+                <li>
+                    <a href="javascript:">白色满天星百科资料</a>
+                </li>
+                <li>
+                    <a href="javascript:">白色满天星百科资料</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    
+
+    <div class="baike_article w">
+        <div class="titleBox">
+            <a href=""> <div class="titleLeft">每日养花分享</div> </a>
+            <a href="" class="more_button">更多</a>
+        </div>
+        <ul class="yido">
+            <li>
+                <div class="img"><a href=""><img src="./img/flower8/flower1.jpg" alt=""></a></div>
+                <div class="txt">
+                    <h4 class="title"><a href="">收到的花蔫了，别担心，这一招让你的鲜花精神抖擞</a></h4>
+                    <p class="body">
+                        通常我们在过节或者是特定的场合都会收到被人送的鲜花，特别是情侣收到对方的鲜花舍不得扔掉，但是拿回家会发现鲜花已经开始变焉了、最后只好丢掉。其实花容易焉、只是你不会养护而已，如果养护得当多数花朵都能保鲜一周以上，少数寿命短的也可以延长保鲜期。
+                    </p>
+                    <p class="date">
+                        2020-05-22
+                        <a href="">详情 &gt;</a>
+                    </p>
+                </div>
+            
+            </li>
+            <li>
+                <div class="img"><a href=""><img src="./img/flower8/flower2.jpg" alt=""></a></div>
+                <div class="txt">
+                    <h4 class="title"><a href="">多肉叶片凋谢必须拔出吗？多肉叶片凋谢之后要怎么处理？</a></h4>
+                    <p class="body">
+                        多肉叶片凋谢必须拔出吗？多肉叶片凋谢之后要怎么处理？家中的多肉如果有叶子凋谢了、你能强迫思维暴发把它拔出吗？在多肉植物生长发育的全过程中出現叶子凋谢的当场并不新奇、关键的是如何处理。那出現凋谢的叶子、需不需要拔出呢？和Rosewin鲜花天津花店一起来
+                    </p>
+                    <p class="date">
+                        2020-06-03
+                        <a href="">详情 &gt;</a>
+                    </p>
+                </div>
+            
+            </li>
+            <li>
+                <div class="img"><a href=""><img src="./img/flower8/flower3.jpeg" alt=""></a></div>
+                <div class="txt">
+                    <h4 class="title"><a href="">[养花小技巧]茉莉花怎么养？茉莉花正确养殖方法学起来</a></h4>
+                    <p class="body">
+                        茉莉花怎么养？茉莉花纯净新鲜、开花给人一种新鲜的自然感觉非常有吸引力，很多人会在家里养大一壶茉莉花，但是想养大茉莉花，不仅要注意它的生长环境、给它适当的环境，还要注意根等等。[养花小技巧]茉莉花怎么养？茉莉花正确养殖方法学起来。一起来和Rosewin鲜
+                    </p>
+                    <p class="date">
+                        2020-06-01
+                        <a href="">详情 &gt;</a>
+                    </p>
+                </div>
+            
+            </li>
+            <li>
+                <div class="img"><a href=""><img src="./img/flower8/flower4.jpg" alt=""></a></div>
+                <div class="txt">
+                    <h4 class="title"><a href="">你知道糖果雪山和荔枝玫瑰的区别吗？别再傻了</a></h4>
+                    <p class="body">
+                        针对绝大多数的钢铁直男而言、玫瑰花仅有鲜红色，但实际上玫瑰花也有许多颜色，例如粉红色、淡黄色、乳白色等，而在这种色调中每一种色调都是有不一样的种类例如粉红色，他有不一样的种类和不一样的样子。糖果雪山和荔枝玫瑰都归属于粉系玫瑰、但是他们的区别
+                    </p>
+                    <p class="date">
+                        2020-05-22
+                        <a href="">详情 &gt;</a>
+                    </p>
+                </div>
+            
+            </li>
+        </ul>
+    </div>
+    
+    <div class="w mr_frbox ">
+        <span class="jianto_yido1"></span>
+        <div class="mr_frul">
+        <ul>
+            <li><a href=""> <img src="./img/flower8/轮播1.jpg" alt=""></a></li>
+            <li><a href=""> <img src="./img/flower8/轮播2.jpg" alt=""></a></li>
+            <li><a href=""> <img src="./img/flower8/轮播3.jpg" alt=""></a></li>
+            <li><a href=""> <img src="./img/flower8/轮播4.jpg" alt=""></a></li>
+            <li><a href=""> <img src="./img/flower8/轮播1.jpg" alt=""></a></li>
+            <li><a href=""><img src="./img/flower7/轮播2.jpg" alt=""></a></li>
+            <li><a href=""><img src="./img/flower7/轮播3.jpg" alt=""></a></li>
+            <li><a href=""><img src="./img/flower7/轮播4.jpg" alt=""></a></li>
+            <li><a href=""><img src="./img/flower7/轮播1.jpg" alt=""></a></li>
+            <li><a href=""><img src="./img/flower7/轮播2.jpg" alt=""></a></li>
+            <li><a href=""><img src="./img/flower7/轮播3.jpg" alt=""></a></li>
+            <li><a href=""><img src="./img/flower7/轮播4.jpg" alt=""></a></li>
+            <li><a href=""><img src="./img/flower7/轮播1.jpg" alt=""></a></li>
+            <li><a href=""><img src="./img/flower7/轮播2.jpg" alt=""></a></li>
+            <li><a href=""><img src="./img/flower7/轮播3.jpg" alt=""></a></li>
+            <li><a href=""><img src="./img/flower7/轮播4.jpg" alt=""></a></li>
+        </ul>
+    </div>
+    <span class="jianto_yido2"></span>
+    </div>
+
+
+    <!-- <div class="baike_article w">
+        <span></span>
+        <div class="titleBox">
+            <a href=""> <div class="titleLeft">热门花卉养护知识</div> </a>
+            <a href="" class="more_button">更多</a>
+        </div>
+        <div class="w friend">
+        <ul>
+            <li>
+                <img src="./img/flower8/轮播1.jpg" alt="">
+            </li>
+            <li>
+                <img src="./img/flower8/轮播2.jpg" alt="">
+            </li>
+            <li>
+                <img src="./img/flower8/轮播3.jpg" alt="">
+            </li>
+            <li>
+                <img src="./img/flower8/轮播4.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+    </div> -->
+    
+    
+    <div class="baike_article w">
+        <div class="titleBox">
+            <a href=""> <div class="titleLeft">鲜花百科</div> </a>
+            <a href="" class="more_button">更多</a>
+        </div>
+        <ul class="yido">
+            <li>
+                <div class="img"><a href=""><img src="./img/flower8/flower5.jpg" alt=""></a></div>
+                <div class="txt">
+                    <h4 class="title"><a href="">白色满天星百科资料</a></h4>
+                    <p class="body">
+                        是多年草本球根类植物，鳞茎卵形，有膜质外皮，皮膜颜色与花色成正相关，未开花时形如大蒜，原产地中海沿岸及小亚细亚一带，是研究发现的会开花的植物中最香的一个品种。喜阳光充足和比较湿润的生长环境
+                    </p>
+                    <p class="date">
+                        2019-05-05 09:27:49
+                        <a href="">详情 &gt;</a>
+                    </p>
+                </div>
+            
+            </li>
+            <li>
+                <div class="img"><a href=""><img src="./img/flower8/flower6.jpg" alt=""></a></div>
+                <div class="txt">
+                    <h4 class="title"><a href="">红玫瑰百科资料</a></h4>
+                    <p class="body">
+                        玫瑰在植物分类学上是指蔷薇科蔷薇属灌木（Rosa rugosa），极具观赏价值。玫瑰在日常生活中是蔷薇属一系列花大艳丽的栽培品种的统称，这些栽培品种在植物分类学上应称做月季或蔷薇。
+                    </p>
+                    <p class="date">
+                        2019-05-05 09:27:49
+                        <a href="">详情 &gt;</a>
+                    </p>
+                </div>
+            
+            </li>
+        </ul>
+    </div>
+    <div class="baike_article w">
+        <div class="titleBox">
+            <a href=""> <div class="titleLeft">绿植百科</div> </a>
+            <a href="" class="more_button">更多</a>
+        </div>
+        <ul class="yido">
+            <li>
+                <div class="img"><a href=""><img src="./img/flower8/flower7.jpg" alt=""></a></div>
+                <div class="txt">
+                    <h4 class="title"><a href="">补血草百科资料</a></h4>
+                    <p class="body">
+                        通常我们在过节或者是特定的场合都会收到被人送的鲜花，特别是情侣收到对方的鲜花舍不得扔掉，但是拿回家会发现鲜花已经开始变焉了、最后只好丢掉。其实花容易焉、只是你不会养护而已，如果养护得当多数花朵都能保鲜一周以上，少数寿命短的也可以延长保鲜期。
+                    </p>
+                    <p class="date">
+                        2020-05-22
+                        <a href="">详情 &gt;</a>
+                    </p>
+                </div>
+            
+            </li>
+            <li>
+                <div class="img"><a href=""><img src="./img/flower8/flower8.jpg" alt=""></a></div>
+                <div class="txt">
+                    <h4 class="title"><a href="">海仙花百科资料</a></h4>
+                    <p class="body">
+                        海仙花（学名：Weigela coraeensis Thunb.）是忍冬科，锦带花属落叶灌木，高可达1米；小枝粗壮，叶片阔椭圆形或椭圆形至倒卵形，先端突尖或尾尖，边缘具细钝锯齿，叶面绿色，背面淡绿色。
+                    </p>
+                    <p class="date">
+                        2019-04-17 17:43:49
+                        <a href="">详情 &gt;</a>
+                    </p>
+                </div>
+            
+            </li>
+            <li>
+                <div class="img"><a href=""><img src="./img/flower8/flower9.jpg" alt=""></a></div>
+                <div class="txt">
+                    <h4 class="title"><a href="">甘露子百科资料</a></h4>
+                    <p class="body">
+                        甘露子（学名：Stachys affinis），又名宝塔菜、螺丝菜、地环儿、地蚕、地铃儿、地牯牛、地钮、旱螺蛳、罗汉菜、益母膏、米累累、地母、地蕊、地蚕、螺丝钻、螺蛳菜等。在中日文资料中常误从本草纲目及植物名实图考作草石蚕，非是。为唇形科水苏属宿根植物。喜生于近水低湿地，原产地是中国。
+                    </p>
+                    <p class="date">
+                        2019-05-05 09:27:49
+                        <a href="">详情 &gt;</a>
+                    </p>
+                </div>
+            
+            </li>
+            <li>
+                <div class="img"><a href=""><img src="./img/flower8/flower10.jpg" alt=""></a></div>
+                <div class="txt">
+                    <h4 class="title"><a href="">非洲菊百科资料</a></h4>
+                    <p class="body">
+                        非洲菊原产于非洲南部的德兰士瓦，喜温暖通风、阳光充足的环境。该种花花色丰富，分别有红色、白色、黄色、橙色、紫色等，大而色泽艳丽，可被用于切花、盆栽及庭院装饰。非洲菊，属于菊科的多年生的草本宿根花卉，四季常开，花型优美十分受人喜爱。
+                    </p>
+                    <p class="date">
+                        2019-06-24 16:51:56
+                        <a href="">详情 &gt;</a>
+                    </p>
+                </div>
+            
+            </li>
+            <li>
+                <div class="img"><a href=""><img src="./img/flower8/flower11.jpg" alt=""></a></div>
+                <div class="txt">
+                    <h4 class="title"><a href="">龟背竹百科资料</a></h4>
+                    <p class="body">
+                        龟背竹（学名：Monstera deliciosa Liebm.）是天南星科龟背竹属植物，攀援灌木。茎绿色，粗壮，有苍白色的半月形叶迹，周延为环状，余光滑，长3-6米，粗6厘米。叶柄绿色，长常达1米，腹面扁平；叶片大，轮廓心状卵形，宽40-60厘米；中肋及侧脉表面绿色；I次侧脉8-10对，向上渐远离，II、III、IV级叶脉网状，不明显。花序柄长15-30厘米，粗1-3厘米。佛焰苞厚革质，宽卵形，舟状，近直立。浆果淡黄色，柱头周围有青紫色斑点，长1厘米，粗7.5毫米。花期8-9月，果于异年花期之后成熟。
+                    </p>
+                    <p class="date">
+                        2019-07-04 17:09:25
+                        <a href="">详情 &gt;</a>
+                    </p>
+                </div>
+            
+            </li>
+            <li>
+                <div class="img"><a href=""><img src="./img/flower8/flower12.jpg" alt=""></a></div>
+                <div class="txt">
+                    <h4 class="title"><a href="">蝴蝶兰百科资料</a></h4>
+                    <p class="body">
+                        蝴蝶兰(学名: Phalaenopsis aphrodite Rchb. F.)，兰科蝴蝶兰属植物。 全世界各地约有100种左右的蝴蝶兰品种。多生育生于潮湿的亚洲地区。自然分布于亚伦、缅甸、印度洋各岛、马来半岛、南洋群岛、菲律宾、中国。
+                        蝴蝶兰为兰科蝴蝶兰属，多年生长 常绿植物寄生草本花卉。因为其花瓣形近蝴蝶，具备蝴蝶一样的漂亮，故称蝴蝶兰。蝴蝶兰的品种齐全，花型和花型富有转变，花姿十分美观大方，备受大家的钟爱。因而，是全世界种植最普遍的洋兰。
+                    </p>
+                    <p class="date">
+                        2019-07-04 17:29:46
+                        <a href="">详情 &gt;</a>
+                    </p>
+                </div>
+            
+            </li>
+            <li>
+                <div class="img"><a href=""><img src="./img/flower8/flower13.jpg" alt=""></a></div>
+                <div class="txt">
+                    <h4 class="title"><a href="">桂花百科资料</a></h4>
+                    <p class="body">
+                        桂花（学名：Osmanthus fragrans），属于被子植物门、木犀科，常绿灌木或小乔木，叶子对生，多呈椭圆或长椭圆形，叶面光滑，革质，叶边缘有锯齿。秋季开花，花簇生于叶腋，花冠分裂至基乳有乳白、黄、橙红等色，极芳香；核果成熟后为紫黑色。原产中国西南喜马拉雅山东段，印度、尼泊尔、柬埔寨也有分布。
+                    </p>
+                    <p class="date">
+                        2019-10-14 17:12:42
+                        <a href="">详情 &gt;</a>
+                    </p>
+                </div>
+            
+            </li>
+            <li>
+                <div class="img"><a href=""><img src="./img/flower8/flower14.jpg" alt=""></a></div>
+                <div class="txt">
+                    <h4 class="title"><a href="">铜钱草百科资料</a></h4>
+                    <p class="body">
+                        铜钱草简介，名叫中华天胡荽（学名：Hydrocotyle chinensis(Dunn) Craib）。
+产中国湖南、四川、云南。生长在河沟边及阴湿的路旁草地；海拔1060-2900米。模式标本采自云南蒙自。全草入药，镇痛、清热、利湿，治腹痛、小便不利、湿疹等。
+有一种植物，它的叶圆形或肾型，就像古代的铜钱一样，因此叫做铜钱草，铜钱草(Hydrocotyle vulgaris)，有很多别名，如：积雪草、大叶金钱草、崩大碗、地线草、老公根、葵蓬菜、崩口碗、乞食碗、地棠草、大马蹄草、土细辛、钱凿口
+                    </p>
+                    <p class="date">
+                        2019-10-15 16:45:23
+                        <a href="">详情 &gt;</a>
+                    </p>
+                </div>
+            
+            </li>
+            <li>
+                <div class="img"><a href=""><img src="./img/flower8/flower15.jpg" alt=""></a></div>
+                <div class="txt">
+                    <h4 class="title"><a href="">丽格海棠百科资料</a></h4>
+                    <p class="body">
+                        鹅肠菜是繁缕（拉丁学名：Stellaria media (L.) Cyr.）的俗称，英文名为Chickweed，繁缕的草茎极为繁茂，中间有一缕主茎，所以叫繁缕。它的形状与鹅肠十分相似，又容易滋生，故又叫滋草。别名有繁蒌、滋草、狗蚤菜、鹅馄饨、圆酸菜、野墨菜、和尚菜、乌云草等。石竹科、繁缕属为常见田间杂草，一年生或二年生草本，高10-30厘米。
+                    </p>
+                    <p class="date">
+                        2019-10-25 16:51:34
+                        <a href="">详情 &gt;</a>
+                    </p>
+                </div>
+            
+            </li>
+            <li>
+                <div class="img"><a href=""><img src="./img/flower8/flower16.jpg" alt=""></a></div>
+                <div class="txt">
+                    <h4 class="title"><a href="">繁缕百科资料</a></h4>
+                    <p class="body">
+                        鹅肠菜是繁缕（拉丁学名：Stellaria media (L.) Cyr.）的俗称，英文名为Chickweed，繁缕的草茎极为繁茂，中间有一缕主茎，所以叫繁缕。它的形状与鹅肠十分相似，又容易滋生，故又叫滋草。别名有繁蒌、滋草、狗蚤菜、鹅馄饨、圆酸菜、野墨菜、和尚菜、乌云草等。石竹科、繁缕属为常见田间杂草，一年生或二年生草本，高10-30厘米。
+                    </p>
+                    <p class="date">
+                        2019-10-29 16:54:33
+                        <a href="">详情 &gt;</a>
+                    </p>
+                </div>
+            
+            </li>
+        </ul>
+    </div>
+    <div class="baike_article w">
+        <div class="titleBox">
+            <a href=""> <div class="titleLeft">绿植养护</div> </a>
+            <a href="" class="more_button">更多</a>
+        </div>
+        <ul class="yido">
+            <li>
+                <div class="img"><a href=""><img src="./img/flower8/flower17.jpg" alt=""></a></div>
+                <div class="txt">
+                    <h4 class="title"><a href="">残茶能够种花吗？茶梗种花要注意什么？</a></h4>
+                    <p class="body">
+                        残茶能够种花吗？茶梗种花要注意什么？常常听见有些人说把喝剩的荼叶渣滓倒进盆栽花盆中能够种花，实际效果特别好的，很多人看到这个将会猜疑，残茶能够种花吗？Rosewin网上订花告诉你残差是可以种花的。那么茶梗种花要注意什么？
+                    </p>
+                    <p class="date">
+                        2020-06-12
+                        <a href="">详情 &gt;</a>
+                    </p>
+                </div>
+            
+            </li>
+            <li>
+                <div class="img"><a href=""><img src="./img/flower8/flower18.jpg" alt=""></a></div>
+                <div class="txt">
+                    <h4 class="title"><a href="">办公室适合放置什么绿色植物？吊兰也许是你的最佳选择</a></h4>
+                    <p class="body">
+                        办公室适合放置什么绿色植物？越来越多的企业公司成立、办公室也成了人们待的时间最久的一个地方，办公室里各种电子设备都在不同程度的污染者室内环境，这时候就需要在办公室里放置一些绿色植物。办公室适合放置什么绿色植物?Rosewin南京花店觉得吊兰是你的最佳选
+                    </p>
+                    <p class="date">
+                        2020-06-08
+                        <a href="">详情 &gt;</a>
+                    </p>
+                </div>
+            
+            </li>
+            <li>
+                <div class="img"><a href=""><img src="./img/flower8/flower19.jpg" alt=""></a></div>
+                <div class="txt">
+                    <h4 class="title"><a href="">办公室盆栽怎样保养？办公室盆栽这么养才合适</a></h4>
+                    <p class="body">
+                        办公室盆栽怎样保养？公司办公室养点绿色植物不仅能净化空气并且在忙碌的工作之余还能减轻你的眼睛疲惫，舒缓你的工作压力。办公室盆栽怎样保养？办公室盆栽这么养才合适。
+                    </p>
+                    <p class="date">
+                        2020-05-22
+                        <a href="">详情 &gt;</a>
+                    </p>
+                </div>
+            
+            </li>
+            <li>
+                <div class="img"><a href=""><img src="./img/flower8/flower20.jpeg" alt=""></a></div>
+                <div class="txt">
+                    <h4 class="title"><a href="">八角树如何正确保叶？</a></h4>
+                    <p class="body">
+                        八角树如何正确保叶？八角树叶片寿命一般为1―3 年、幼树及壮旺树叶片寿命较长、老树及病残树叶片寿命较短。采取适当措施保叶、对树体生长和提高产量都有重要意义。
+                    </p>
+                    <p class="date">
+                        2020-04-16
+                        <a href="">详情 &gt;</a>
+                    </p>
+                </div>
+            
+            </li>
+            <li>
+                <div class="img"><a href=""><img src="./img/flower8/flower21.jpg" alt=""></a></div>
+                <div class="txt">
+                    <h4 class="title"><a href="">绿萝叶子发黄怎么办？绿萝叶子发黄是什么原因？</a></h4>
+                    <p class="body">
+                        绿萝叶子发黄怎么办?绿萝叶子发黄是什么原因?绿萝又名黄金葛、黄金藤等属常绿多年生草本植物，可绿萝叶子发黄怎么办?绿萝叶子发黄是什么原因?下面广州同城订花的鲜花小编来看看绿萝发黄掉叶子的原因分析和处理方法。
+                    </p>
+                    <p class="date">
+                        2020-04-10
+                        <a href="">详情 &gt;</a>
+                    </p>
+                </div>
+            
+            </li>
+            <li>
+                <div class="img"><a href=""><img src="./img/flower8/flower22.jpg" alt=""></a></div>
+                <div class="txt">
+                    <h4 class="title"><a href="">绿植养护|满天星的养殖方法有哪些</a></h4>
+                    <p class="body">
+                        绿植养护|满天星的养殖方法有哪些？满天星又称圆锥石头花、霞草、锥花丝石竹、满天星、宿根满天星、锥花霞草，属于石竹科、属于草本植物，根粗壮、茎单生，直立、分多枝。不但有药物价值、而且还有观赏价值，那么满天星的养殖方法有那些呢?下面我们就与上海鲜花
+                    </p>
+                    <p class="date">
+                        2020-04-10
+                        <a href="">详情 &gt;</a>
+                    </p>
+                </div>
+            
+            </li>
+            <li>
+                <div class="img"><a href=""><img src="./img/flower8/flower23.jpg" alt=""></a></div>
+                <div class="txt">
+                    <h4 class="title"><a href="">福禄考的繁殖方法以及福禄考的病虫害防治</a></h4>
+                    <p class="body">
+                        福禄考原产地西班牙，在我国全国各地庭苑有种植，喜阳，耐低温，喜柔和湿润气候，不抗炎热、酷热，喜排水管道优良、轻轻松松土壤层，不抗旱灾，忌涝，忌盐碱，在贫乏的河沙农田上即便数日无雨仍可存活生长发育，在华北地区一带可冷床过冬。
+                    </p>
+                    <p class="date">
+                        2019-11-27
+                        <a href="">详情 &gt;</a>
+                    </p>
+                </div>
+            
+            </li>
+            <li>
+                <div class="img"><a href=""><img src="./img/flower8/flower24.jpg" alt=""></a></div>
+                <div class="txt">
+                    <h4 class="title"><a href="">凤仙花的养殖方法和注意事项有那些呢</a></h4>
+                    <p class="body">
+                        凤仙花能够染手指甲，是许多小孩爱摘着玩涂指甲手机游戏的一种花，也叫指甲花，是一年生草本花卉，有多种多样颜色，有的同一株上乃至能够变异出数十种颜色的花朵，它是一种非常好栽种保养的花卉植物。
+                    </p>
+                    <p class="date">
+                        2019-11-27
+                        <a href="">详情 &gt;</a>
+                    </p>
+                </div>
+            
+            </li>
+        </ul>
+    </div>
+    <div class="baike_article w">
+        <div class="titleBox">
+            <a href=""> <div class="titleLeft">养花知识</div> </a>
+            <a href="" class="more_button">更多</a>
+        </div>
+        <ul class="yido">
+            <li>
+                <div class="img"><a href=""><img src="./img/flower8/flower25.jpg" alt=""></a></div>
+                <div class="txt">
+                    <h4 class="title"><a href="">怎么给多肉植物浇水？多肉植物浇水多少？</a></h4>
+                    <p class="body">
+                        怎么给多肉植物浇水？多肉植物浇水多少？多肉植物给人的印象一直都是耐旱的，它们的叶片很厚实、可以储存水分，所以养起来可以很久不浇水。但是太长时间不浇水的话、多肉植物也是会干枯衰败的。Rosewin在线花店总结了一套给多肉植物浇水的正确姿势希望可以帮到你
+                    </p>
+                    <p class="date">
+                        2020-06-24
+                        <a href="">详情 &gt;</a>
+                    </p>
+                </div>
+            
+            </li>
+            <li>
+                <div class="img"><a href=""><img src="./img/flower8/flower26.jpg" alt=""></a></div>
+                <div class="txt">
+                    <h4 class="title"><a href="">你知道糖果雪山和荔枝玫瑰的区别吗？别再傻了</a></h4>
+                    <p class="body">
+                        针对绝大多数的钢铁直男而言、玫瑰花仅有鲜红色，但实际上玫瑰花也有许多颜色，例如粉红色、淡黄色、乳白色等，而在这种色调中每一种色调都是有不一样的种类例如粉红色，他有不一样的种类和不一样的样子。糖果雪山和荔枝玫瑰都归属于粉系玫瑰、但是他们的区别
+                    </p>
+                    <p class="date">
+                        2020-06-15
+                        <a href="">详情 &gt;</a>
+                    </p>
+                </div>
+            
+            </li>
+            <li>
+                <div class="img"><a href=""><img src="./img/flower8/flower27.jpg" alt=""></a></div>
+                <div class="txt">
+                    <h4 class="title"><a href="">戴安娜和粉佳人玫瑰有什么区别？不同系列的粉色玫瑰也是有差别的</a></h4>
+                    <p class="body">
+                        戴安娜和粉佳人玫瑰有什么区别？针对钢铁直男而言，口红的色号只有一个鲜红色，实际上不仅唇膏、花束也一样，绝大多数全是鲜红色的，例如玫瑰花的戴安娜玫瑰和粉佳人玫瑰，在她们眼里全是淡粉色的是同一种种类，但实际上这二种是不一样的种类、色调也是稍有差
+                    </p>
+                    <p class="date">
+                        2020-06-15
+                        <a href="">详情 &gt;</a>
+                    </p>
+                </div>
+            
+            </li>
+            <li>
+                <div class="img"><a href=""><img src="./img/flower8/flower28.jpg" alt=""></a></div>
+                <div class="txt">
+                    <h4 class="title"><a href="">孕妇不能养什么花？孕妇能养什么植物？</a></h4>
+                    <p class="body">
+                        孕妇不能养什么花？孕妇能养什么植物？很多孕妇怀孕期间很无聊喜欢玩弄花草，看到家里充满活力、心情也很好。 孕妇喜欢培育花草、花草调节心情、净化空气，有些花草具有抵抗放射能的功能。那么孕妇不能养什么花？孕妇能养什么植物？Rosewin网上鲜花店给你揭露谜底
+                    </p>
+                    <p class="date">
+                        2020-06-12
+                        <a href="">详情 &gt;</a>
+                    </p>
+                </div>
+            
+            </li>
+            <li>
+                <div class="img"><a href=""><img src="./img/flower8/flower29.jpg" alt=""></a></div>
+                <div class="txt">
+                    <h4 class="title"><a href="">多肉叶片凋谢必须拔出吗？多肉叶片凋谢之后要怎么处理？</a></h4>
+                    <p class="body">
+                        多肉叶片凋谢必须拔出吗？多肉叶片凋谢之后要怎么处理？家中的多肉如果有叶子凋谢了、你能强迫思维暴发把它拔出吗？在多肉植物生长发育的全过程中出現叶子凋谢的当场并不新奇、关键的是如何处理。那出現凋谢的叶子、需不需要拔出呢？和Rosewin鲜花天津花店一起来
+                    </p>
+                    <p class="date">
+                        2020-06-03
+                        <a href="">详情 &gt;</a>
+                    </p>
+                </div>
+            
+            </li>
+            <li>
+                <div class="img"><a href=""><img src="./img/flower8/flower30.jpeg" alt=""></a></div>
+                <div class="txt">
+                    <h4 class="title"><a href="">[养花小技巧]茉莉花怎么养？茉莉花正确养殖方法学起来</a></h4>
+                    <p class="body">
+                        茉莉花怎么养？茉莉花纯净新鲜、开花给人一种新鲜的自然感觉非常有吸引力，很多人会在家里养大一壶茉莉花，但是想养大茉莉花，不仅要注意它的生长环境、给它适当的环境，还要注意根等等。[养花小技巧]茉莉花怎么养？茉莉花正确养殖方法学起来。一起来和Rosewin鲜
+                    </p>
+                    <p class="date">
+                        2020-06-01
+                        <a href="">详情 &gt;</a>
+                    </p>
+                </div>
+            
+            </li>
+            <li>
+                <div class="img"><a href=""><img src="./img/flower8/flower31.jpg" alt=""></a></div>
+                <div class="txt">
+                    <h4 class="title"><a href="">收到的花蔫了，别担心，这一招让你的鲜花精神抖擞</a></h4>
+                    <p class="body">
+                        通常我们在过节或者是特定的场合都会收到被人送的鲜花，特别是情侣收到对方的鲜花舍不得扔掉，但是拿回家会发现鲜花已经开始变焉了、最后只好丢掉。其实花容易焉、只是你不会养护而已，如果养护得当多数花朵都能保鲜一周以上，少数寿命短的也可以延长保鲜期。
+                    </p>
+                    <p class="date">
+                        2020-05-22
+                        <a href="">详情 &gt;</a>
+                    </p>
+                </div>
+            
+            </li>
+            <li>
+                <div class="img"><a href=""><img src="./img/flower8/flower32.jpg" alt=""></a></div>
+                <div class="txt">
+                    <h4 class="title"><a href="">矮牵牛的栽培要点是哪些</a></h4>
+                    <p class="body">
+                        矮牵牛的栽培要点是哪些？随着人们对矮牵牛的爱好水平愈来愈深、矮牵牛的种类也愈来愈多、不外不同种类的矮牵牛栽种方法都是一样的。现在矮牵牛不单可以露地栽培、还常被花友制形成垂吊型吊篮、十分特别。
+                    </p>
+                    <p class="date">
+                        2020-04-16
+                        <a href="">详情 &gt;</a>
+                    </p>
+                </div>
+            
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- 百科页面结束 -->
+<!-- 鲜花百科 -->
+<div class=" w_fluid yinchang dianji">
+    <div class="w baike_con">
+        <div class="hot_search">
+            <div>分类: &nbsp;</div>
+            <ul>
+                <li>
+                    <a href="javascript:">玫瑰花百科</a>
+                </li>
+                <li>
+                    <a href="javascript:">满天星百科</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bk_category w">
+        <div class="title">
+            <div class="titleLeft">
+                玫瑰花百科
+            </div>
+            <div class="line"></div>
+        </div>
+        <ul>
+            <li>
+                <a href=""><img src="./img/flower8/flower6.jpg" alt=""><div><p>玫瑰在植物分类学上是指蔷薇科蔷薇属灌木（Rosa rugosa），极具观赏价值。玫瑰在日常生活中是蔷薇属一系列花大艳丽的栽培品种的统称，这些栽培品种在植物分类学上应称做月季或蔷薇。</p></div></a>
+                <h3>红玫瑰百科资料</h3>
+            </li>
+        </ul>
+    </div>
+    <div class="bk_category w">
+        <div class="title">
+            <div class="titleLeft">
+                满天星鲜花百科
+            </div>
+            <div class="line"></div>
+        </div>
+        <ul>
+            <li>
+                <a href=""><img src="./img/flower8/flower5.jpg" alt=""><div><p>是多年草本球根类植物，鳞茎卵形，有膜质外皮，皮膜颜色与花色成正相关，未开花时形如大蒜，原产地中海沿岸及小亚细亚一带，是研究发现的会开花的植物中最香的一个品种。喜阳光充足和比较湿润的生长环境</p></div></a>
+                <h3>满天星鲜花百科</h3>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- 鲜花百科结束 -->
+<!-- 绿植百科 -->
+<div class="w bk_list yinchang  dianji">
+    <div class="title">
+        <div class="titleLeft">
+            绿植百科
+        </div>
+        <div class="line"></div>
+    </div>
+    <ul class="flowershow">
+        <li>
+            <a href=""><img src="./img/flower7/花1.jpg" alt=""><div><p>玫瑰在植物分类学上是指蔷薇科蔷薇属灌木（Rosa rugosa），极具观赏价值。玫瑰在日常生活中是蔷薇属一系列花大艳丽的栽培品种的统称，这些栽培品种在植物分类学上应称做月季或蔷薇。</p></div></a>
+            <h3>满天星鲜花百科</h3>
+        </li>
+        <li>
+            <a href=""><img src="./img/flower7/花2.jpg" alt=""><div><p>海仙花（学名：Weigela coraeensis Thunb.）是忍冬科，锦带花属落叶灌木，高可达1米；小枝粗壮，叶片阔椭圆形或椭圆形至倒卵形，先端突尖或尾尖，边缘具细钝锯齿，叶面绿色，背面淡绿色。</p></div></a>
+            <h3>海仙花百科资料</h3>
+        </li>
+        <li>
+            <a href=""><img src="./img/flower7/花3.jpg"  alt=""><div><p>甘露子（学名：Stachys affinis），又名宝塔菜、螺丝菜、地环儿、地蚕、地铃儿、地牯牛、地钮、旱螺蛳、罗汉菜、益母膏、米累累、地母、地蕊、地蚕、螺丝钻、螺蛳菜等。在中日文资料中常误从本草纲目及植物名实图考作草石蚕，非是。为唇形科水苏属宿根植物。喜生于近水低湿地，原产地是中国。</p></div></a>
+            <h3>甘露子百科资料</h3>
+        </li>
+        <li>
+            <a href=""><img src="./img/flower7/花4.jpg"  alt=""><div><p>非洲菊原产于非洲南部的德兰士瓦，喜温暖通风、阳光充足的环境。该种花花色丰富，分别有红色、白色、黄色、橙色、紫色等，大而色泽艳丽，可被用于切花、盆栽及庭院装饰。非洲菊，属于菊科的多年生的草本宿根花卉，四季常开，花型优美十分受人喜爱。</p></div></a>
+            <h3>非洲菊百科资料</h3>
+        </li>
+        <li>
+            <a href=""><img src="./img/flower7/花5.jpg"  alt=""><div><p>龟背竹（学名：Monstera deliciosa Liebm.）是天南星科龟背竹属植物，攀援灌木。茎绿色，粗壮，有苍白色的半月形叶迹，周延为环状，余光滑，长3-6米，粗6厘米。叶柄绿色，长常达1米，腹面扁平；叶片大，轮廓心状卵形，宽40-60厘米；中肋及侧脉表面绿色；I次侧脉8-10对，向上渐远离，II、III、IV级叶脉网状，不明显。花序柄长15-30厘米，粗1-3厘米。佛焰苞厚革质，宽卵形，舟状，近直立。浆果淡黄色，柱头周围有青紫色斑点，长1厘米，粗7.5毫米。花期8-9月，果于异年花期之后成熟。</p></div></a>
+            <h3>龟背竹百科资料</h3>
+        </li>
+        <li>
+            <a href=""><img src="./img/flower7/花6.jpg"  alt=""><div><p>      蝴蝶兰(学名: Phalaenopsis aphrodite Rchb. F.)，兰科蝴蝶兰属植物。 全世界各地约有100种左右的蝴蝶兰品种。多生育生于潮湿的亚洲地区。自然分布于亚伦、缅甸、印度洋各岛、马来半岛、南洋群岛、菲律宾、中国。
+                蝴蝶兰为兰科蝴蝶兰属，多年生长 常绿植物寄生草本花卉。因为其花瓣形近蝴蝶，具备蝴蝶一样的漂亮，故称蝴蝶兰。蝴蝶兰的品种齐全，花型和花型富有转变，花姿十分美观大方，备受大家的钟爱。因而，是全世界种植最普遍的洋兰。</p></div></a>
+            <h3>蝴蝶兰百科资料</h3>
+        </li>
+
+
+
+        <li>
+            <a href=""><img src="./img/flower7/花7.jpg" alt=""><div><p>桂花（学名：Osmanthus fragrans），属于被子植物门、木犀科，常绿灌木或小乔木，叶子对生，多呈椭圆或长椭圆形，叶面光滑，革质，叶边缘有锯齿。秋季开花，花簇生于叶腋，花冠分裂至基乳有乳白、黄、橙红等色，极芳香；核果成熟后为紫黑色。原产中国西南喜马拉雅山东段，印度、尼泊尔、柬埔寨也有分布。</p></div></a>
+            <h3>桂花百科资料</h3>
+        </li>
+        <li>
+            <a href=""><img src="./img/flower7/花8.jpg" alt=""><div><p>铜钱草简介，名叫中华天胡荽（学名：Hydrocotyle chinensis(Dunn) Craib）。
+                产中国湖南、四川、云南。生长在河沟边及阴湿的路旁草地；海拔1060-2900米。模式标本采自云南蒙自。全草入药，镇痛、清热、利湿，治腹痛、小便不利、湿疹等。
+                有一种植物，它的叶圆形或肾型，就像古代的铜钱一样，因此叫做铜钱草，铜钱草(Hydrocotyle vulgaris)，有很多别名，如：积雪草、大叶金钱草、崩大碗、地线草、老公根、葵蓬菜、崩口碗、乞食碗、地棠草、大马蹄草、土细辛、钱凿口</p></div></a>
+            <h3>铜钱草百科资料</h3>
+        </li>
+        <li>
+            <a href=""><img src="./img/flower7/花9.jpg"  alt=""><div><p>丽格海棠简介（拉丁学名：Begonia×elatior）为葫芦目、秋海棠属、秋海棠科属草本植物。丽格海棠为须根系，株形丰满，单叶互生，不对称心形，叶色多翠绿，少有红棕色。
+                花形多样，多为重瓣，花色丰富，有红、橙、黄、白等，花朵硕大、色彩艳丽，具有独特的姿、色、香；而且花期长，可从12月持续至翌春4月。盛花期为4至6月和9至12月。性喜温暖、湿润、半荫环境。分布于热带及亚热带地区。</p></div></a>
+            <h3>丽格海棠百科资料</h3>
+        </li>
+        <li>
+            <a href=""><img src="./img/flower7/花10.jpg" alt=""><div><p>鹅肠菜是繁缕（拉丁学名：Stellaria media (L.) Cyr.）的俗称，英文名为Chickweed，繁缕的草茎极为繁茂，中间有一缕主茎，所以叫繁缕。它的形状与鹅肠十分相似，又容易滋生，故又叫滋草。别名有繁蒌、滋草、狗蚤菜、鹅馄饨、圆酸菜、野墨菜、和尚菜、乌云草等。石竹科、繁缕属为常见田间杂草，一年生或二年生草本，高10-30厘米。</p></div></a>
+            <h3>繁缕百科资料</h3>
+        </li>
+        <li>
+            <a href=""><img src="./img/flower7/花11.jpg"  alt=""><div><p>马鞭草简介：（拉丁学名：Verbena officinalis L.），多年生直立草本植物，高可达120厘米，基部木质化，单叶对生，卵形至长卵形，两面被硬毛，下面脉上的毛尤密。</p></div></a>
+            <h3>马鞭草百科资料</h3>
+        </li>
+        <li>
+            <a href=""><img src="./img/flower7/花12.jpg"  alt=""><div><p>金粟兰以其花瓣像粟珠和鱼子，其头状花序似凤爪，故得名，为金粟兰科常绿植物蔓性小灌木丛。金粟兰花的香气幽雅、醇和、耐久度，颇似兰草，而香醇又胜过兰草，是著名的观赏花卉。</p></div></a>
+            <h3>金粟兰百科资料</h3>
+        </li>
+
+
+
+        <li>
+            <a href=""><img src="./img/flower7/花13.jpg" alt=""><div><p>白檀，语出唐张彦远《历代名画记·论装背褾轴》：“贞观、开元中，内府书籍一例用白檀身、红木首、紫罗褾织出带，认为官画之标。”。白檀别名Symplocospaniculata（Thunb.）Miq.，别名灰木、碎籽树、乌于、子木、栅柴等，为山矾科山矾属枯叶灌木丛或灌木植物，达到5米，枝条被毛。叶共生，椭圆型，长4-9.5公分，宽2-5.5公分，边沿细锐锯齿状。圆锥花序生枝顶，白色的花。仁果卵型，黑色。能作器材，也可以当药。</p></div></a>
+            <h3>白檀百科资料</h3>
+        </li>
+    </ul>
+</div>
+<!-- 绿植百科结束 -->
+<!-- 绿植养护 -->
+<div class="w_fluid border"></div>
+<div class="article_con w yinchang dianji ">
+    <div class="article_header">
+        <a href="">首页</a>
+        <code>></code>
+    <a href="">鲜花百科</a>
+    <code>></code>
+    <a href=""> 绿植养护</a>
+    </div>
+    <!-- 上部结束 -->
+    <!-- 左布 -->
+    <div class="news_left">
+        <ul>
+            <li>
+                <div class="img">
+                    <a href="#">
+                        <img src="./img/flower8/轮播3.jpg" alt="">
+                    </a>
+                </div>
+                <div class="txt">
+                    <h4 class="title">
+                        残茶能够种花吗？茶梗种花要注意什么？
+                    </h4>
+                    <p class="body"> 残茶能够种花吗？茶梗种花要注意什么？常常听见有些人说把喝剩的荼叶渣滓倒进盆栽花盆中能够种花，实际效果特别好的，很多人看到这个将会猜疑，残茶能够种花吗？Rosewin网上订花告诉你残差是可以种花的。那么茶梗种花要注意什么？ </p>
+                    <p class="date"> <a href="">标签：绿植养护</a>2020-06-13 </p>
+                </div>
+            </li>
+            <li>
+                <div class="img">
+                    <a href="#">
+                        <img src="./img/flower8/flower20.jpeg" alt="">
+                    </a>
+                </div>
+                <div class="txt">
+                    <h4 class="title">
+                        办公室适合放置什么绿色植物？吊兰也许是你的*佳选择
+                    </h4>
+                    <p class="body"> 办公室适合放置什么绿色植物？越来越多的企业公司成立、办公室也成了人们待的时间最久的一个地方，办公室里各种电子设备都在不同程度的污染者室内环境，这时候就需要在办公室里放置一些绿色植物。办公室适合放置什么绿色植物?Rosewin南京花店觉得吊兰是你的最佳选择 </p>
+                    <p class="date"> <a href="">标签：绿植养护</a>2020-06-13 </p>
+                </div>
+            </li>
+            <li>
+                <div class="img">
+                    <a href="#">
+                        <img src="./img/flower8/flower21.jpg" alt="">
+                    </a>
+                </div>
+                <div class="txt">
+                    <h4 class="title">
+                        办公室盆栽怎样保养？办公室盆栽这么养才合适
+                    </h4>
+                    <p class="body"> 办公室盆栽怎样保养？公司办公室养点绿色植物不仅能净化空气并且在忙碌的工作之余还能减轻你的眼睛疲惫，舒缓你的工作压力。办公室盆栽怎样保养？办公室盆栽这么养才合适。 </p>
+                    <p class="date"> <a href="">标签：绿植养护</a>2020-06-13 </p>
+                </div>
+            </li>
+            <li>
+                <div class="img">
+                    <a href="#">
+                        <img src="./img/flower8/flower22.jpg" alt="">
+                    </a>
+                </div>
+                <div class="txt">
+                    <h4 class="title">
+                        八角树如何正确保叶？
+                    </h4>
+                    <p class="body"> 八角树如何正确保叶？八角树叶片寿命一般为1―3 年、幼树及壮旺树叶片寿命较长、老树及病残树叶片寿命较短。采取适当措施保叶、对树体生长和提高产量都有重要意义。 </p>
+                    <p class="date"> <a href="">标签：绿植养护</a>2020-06-13 </p>
+                </div>
+            </li>
+            <li>
+                <div class="img">
+                    <a href="#">
+                        <img src="./img/flower8/flower23.jpg" alt="">
+                    </a>
+                </div>
+                <div class="txt">
+                    <h4 class="title">
+                        绿萝叶子发黄怎么办？绿萝叶子发黄是什么原因？
+                    </h4>
+                    <p class="body"> 绿萝叶子发黄怎么办?绿萝叶子发黄是什么原因?绿萝又名黄金葛、黄金藤等属常绿多年生草本植物，可绿萝叶子发黄怎么办?绿萝叶子发黄是什么原因?下面广州同城订花的鲜花小编来看看绿萝发黄掉叶子的原因分析和处理方法。 </p>
+                    <p class="date"> <a href="">标签：绿植养护</a>2020-06-13 </p>
+                </div>
+            </li>
+            <li>
+                <div class="img">
+                    <a href="#">
+                        <img src="./img/flower8/flower24.jpg"alt="">
+                    </a>
+                </div>
+                <div class="txt">
+                    <h4 class="title">
+                        绿植养护|满天星的养殖方法有哪些
+                    </h4>
+                    <p class="body"> 绿植养护|满天星的养殖方法有哪些？满天星又称圆锥石头花、霞草、锥花丝石竹、满天星、宿根满天星、锥花霞草，属于石竹科、属于草本植物，根粗壮、茎单生，直立、分多枝。不但有药物价值、而且还有观赏价值，那么满天星的养殖方法有那些呢?下面我们就与上海鲜花店的鲜花小编来了解一下吧。 </p>
+                    <p class="date"> <a href="">标签：绿植养护</a>2020-06-13 </p>
+                </div>
+            </li>
+            <li>
+                <div class="img">
+                    <a href="#">
+                        <img src="./img/flower8/flower25.jpg"alt="">
+                    </a>
+                </div>
+                <div class="txt">
+                    <h4 class="title">
+                        福禄考的繁殖方法以及福禄考的病虫害防治
+                    </h4>
+                    <p class="body"> 福禄考原产地西班牙，在我国全国各地庭苑有种植，喜阳，耐低温，喜柔和湿润气候，不抗炎热、酷热，喜排水管道优良、轻轻松松土壤层，不抗旱灾，忌涝，忌盐碱，在贫乏的河沙农田上即便数日无雨仍可存活生长发育，在华北地区一带可冷床过冬。 </p>
+                    <p class="date"> <a href="">标签：绿植养护</a>2020-06-13 </p>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+    <!-- 右部 -->
+    <div class="article_right">
+        <div class="hei20"></div>
+        <div class="huayu_rbox">
+            <div class="rbox_bar">
+                <span class="title">最新文章</span>
+            </div>
+            <div class="rbox_body">
+                <ul class="clearfix_border">
+                    <li><a href="#">2020年七夕情人节表白必看——七夕情人节表白送什么花？七夕情人节表白送花必杀技！</a></li>
+                    <li><a href="#">[七夕情人节爆款]七夕情人节送女朋友什么花好女神推荐的暖心花束买买买</a></li>
+                    <li><a href="#">拯救单身狗——七夕情人节送异性朋友送什么花？</a></li>
+                    <li><a href="#">七夕情人节送女朋友多少花？——七夕情人节甜蜜花束</a></li>
+                    <li><a href="#">七夕情人节甜蜜花束——七夕情人节送女朋友多少花？七夕情人节就要宠爱女朋友</a></li>
+                    <li><a href="#">七夕情人节一束玫瑰花多少钱？实惠的七夕情人节玫瑰尽在Rosewin</a></li>
+                    <li><a href="#">8.25七夕情人节送什么花？七夕情人节送花全新推荐，七夕情人节送花必看</a></li>
+                    <li><a href="#">[七夕情人节创意礼物攻略]七夕情人节送老婆什么礼物最好？七夕情人节这些礼物很心动</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="hei20"></div>
+        <div class="huayu_rbox">
+            <div class="rbox_bar">
+                <span class="title">热门标签</span>
+            </div>
+            <div class="rbox_body huayu_hot_label">
+                <ul class="clearfix_2"> 
+                    <li><a href="">白羊座</a></li>
+                    <li><a href="">狮子座</a></li>
+                    <li><a href="">处女座</a></li>
+                    <li><a href="">天枰座</a></li>
+                    <li><a href="">射手座</a></li>
+                    <li><a href="">水瓶座</a></li>
+                    <li><a href="">恋人</a></li>
+                    <li><a href="">父母</a></li>
+                    <li><a href="">老师</a></li>
+                    <li><a href="">领导</a></li>
+                    <li><a href="">女朋友</a></li>
+                    <li><a href="">栽培技术</a></li>
+                    <li><a href="">注意事项</a></li>
+                    <li><a href="">养殖方法</a></li>
+                    <li><a href="">害虫重防治</a></li>
+                    <li><a href="">更多</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="hei20"></div>
+        <div class="huayu_rbox">
+            <div class="rbox_bar">
+                <span class="title">Rosewin推荐</span>
+            </div>
+            <div class="rbox_body">
+                <ul class="clearfix_border">
+                    <li><a href="#">2020年七夕情人节表白必看——七夕情人节表白送什么花？七夕情人节表白送花必杀技！</a></li>
+                    <li><a href="#">[七夕情人节爆款]七夕情人节送女朋友什么花好女神推荐的暖心花束买买买</a></li>
+                    <li><a href="#">拯救单身狗——七夕情人节送异性朋友送什么花？</a></li>
+                    <li><a href="#">七夕情人节送女朋友多少花？——七夕情人节甜蜜花束</a></li>
+                    <li><a href="#">七夕情人节甜蜜花束——七夕情人节送女朋友多少花？七夕情人节就要宠爱女朋友</a></li>
+                    <li><a href="#">七夕情人节一束玫瑰花多少钱？实惠的七夕情人节玫瑰尽在Rosewin</a></li>
+                    <li><a href="#">8.25七夕情人节送什么花？七夕情人节送花全新推荐，七夕情人节送花必看</a></li>
+                    <li><a href="#">[七夕情人节创意礼物攻略]七夕情人节送老婆什么礼物最好？七夕情人节这些礼物很心动</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="hei20"></div>
+        <div class="huayu_rbox">
+            <div class="rbox_bar">
+                <span class="title">Rosewin热搜</span>
+            </div>
+            <div class="rbox_body">
+                <ul class="clearfix_border">
+                    <li><a href="#">2020年520情人节送什么礼物最合适</a></li>
+                    <li><a href="#">礼物盘点：老婆最爱的生日礼物推荐，送老婆爱意更浓！</a></li>
+                    <li><a href="#">七夕礼物——送女性朋友礼物如何选择？这些礼物必须榜上有名！</a></li>
+                    <li><a href="#">七夕情人节送花代表你的语言，七夕情人节送这些花女方接受度更高哦</a></li>
+                    <li><a href="#">2020年最新花招——七夕情人节送多少朵玫瑰花？七夕情人节送花盘点</a></li>
+                    <li><a href="#">[七夕情人节礼物大全]七夕情人节送男友什么花？男孩子都爱这些花</a></li>
+                    <li><a href="#">8.[甜蜜攻略]送女朋友多少朵玫瑰花好？七夕情人节拒绝直男癌，999朵玫瑰送给她</a></li>
+                    <li><a href="#">2020年七夕情人节表白必看——七夕情人节表白送什么花？七夕情人节表白送花必杀技！</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 绿植养护结束 -->
+<!-- 养花保护 -->
+
+<div class="w zhishi yinchang dianji">
+ <div class="mainBox">
+     <div class="mainLeft">
+        <div class="yanghuaBox">
+            <div class="titleBox">
+            <a href=""><div class="titLeft">花与健康</div></a>
+            <a href="" class="more_button">更多</a>
+        </div>
+        <div class="yhzs_img">
+            <ul class="img_box"> 
+                <li>
+                    <a href=""><img src="./img/flower8/荷花1.jpg" alt=""> <div class="img_title">导致水仙花黄叶的原因是什么呢</div></a>
+                </li>
+                <li>
+                    <a href=""><img src="./img/flower8/荷花2.jpg" alt=""> <div class="img_title">睡莲黄叶的原因是什么呢</div></a>
+                </li>
+                <li>
+                    <a href=""><img src="./img/flower8/荷花3.jpg" alt=""> <div class="img_title">导致蜀葵黄叶的原因是什么</div></a>
+                </li>
+                <li>
+                    <a href=""><img src="./img/flower8/荷花4.jpg" alt=""> <div class="img_title">石竹花黄叶的原因是什么呢</div></a>
+                </li>
+            </ul>
+        </div>
+        <ul class="yhzs_text">
+            <li><a href="">导致石蒜花黄叶的原因是什么 </a></li>
+            <li><a href="">导致仙人掌黄叶的原因是什么  </a></li>
+            <li><a href="">导致仙人球黄叶的原因是什么  </a></li>
+            <li><a href="">导致酒瓶兰黄叶的原因是什么  </a></li>
+            <li><a href="">导致菊花黄叶的原因是什么  </a></li>
+            <li><a href="">导致韭菜黄叶的原因是什么  </a></li>
+        </ul>
+        </div>
+
+
+
+        <div class="yanghuaBox">
+            <div class="titleBox">
+            <a href=""><div class="titLeft">家庭养花</div></a>
+            <a href="" class="more_button">更多</a>
+        </div>
+        <div class="yhzs_img">
+            <ul class="img_box"> 
+                <li>
+                    <a href=""><img src="./img/flower8/flower29.jpg" alt=""> <div class="img_title">孕妇不能养什么花？孕妇能养什么植物？</div></a>
+                </li>
+                <li>
+                    <a href=""><img src="./img/flower8/flower25.jpg" alt=""> <div class="img_title">家庭养花浇水知识以及注意事项</div></a>
+                </li>
+                <li>
+                    <a href=""><img src="./img/flower8/flower24.jpg" alt=""> <div class="img_title">白掌能放卧室吗？白掌有哪些价值</div></a>
+                </li>
+                <li>
+                    <a href=""><img src="./img/flower8/flower23.jpg" alt=""> <div class="img_title">家庭阳台养花知识大全</div></a>
+                </li>
+            </ul>
+        </div>
+        <ul class="yhzs_text">
+            <li><a href="">春季家庭养花的注意事项  </a></li>
+            <li><a href="">家里养殖彩叶草有毒吗？  </a></li>
+            <li><a href="">报春花可以放在家里吗？报春花有毒吗  </a></li>
+            <li><a href="">这几种适合摆放在卧室的吸毒植物，你值得拥有  </a></li>
+            <li><a href="">这几种适合在家庭养殖的花卉可以净化除菌  </a></li>
+            <li><a href="">室内养殖矮牵牛有哪些需要注意的呢  </a></li>
+        </ul>
+        </div>
+
+
+
+        <div class="yanghuaBox">
+            <div class="titleBox">
+            <a href=""><div class="titLeft">养花技巧</div></a>
+            <a href="" class="more_button">更多</a>
+        </div>
+        <div class="yhzs_img">
+            <ul class="img_box"> 
+                <li>
+                    <a href=""><img src="./img/flower8/flower22.jpg" alt=""> <div class="img_title">[养花小技巧]茉莉花怎么养？茉莉花正确养殖方法学起来</div></a>
+                </li>
+                <li>
+                    <a href=""><img src="./img/flower8/flower21.jpg" alt=""> <div class="img_title">收到的花蔫了，别担心，这一招让你的鲜花精神抖擞</div></a>
+                </li>
+                <li>
+                    <a href=""><img src="./img/flower8/flower5.jpg" alt=""> <div class="img_title">矮牵牛的栽培要点是哪些</div></a>
+                </li>
+                <li>
+                    <a href=""><img src="./img/flower8/flower19.jpg" alt=""> <div class="img_title">风信子烂根的原因及解决方法是什么？</div></a>
+                </li>
+            </ul>
+        </div>
+        <ul class="yhzs_text">
+            <li><a href="">风铃草盆栽养殖方法是什么？  </a></li>
+            <li><a href="">光棍树的插杆方法有哪些  </a></li>
+            <li><a href="">仙客来对光照的要求有哪些呢？  </a></li>
+            <li><a href="">让植物变绿小妙招有哪些呢  </a></li>
+            <li><a href="">家里的草木灰适合养什么花呢？  </a></li>
+            <li><a href="">仙客来换盆注意事项有哪些  </a></li>
+        </ul>
+        </div>
+     </div>
+     <div class="mainRight">
+        <div class="Ritem">
+            <div class="wztitle">推荐养花知识</div>
+            <ul class="side_class2">
+                <li>
+                    <a href="">
+                         <img src="./img/flower8/flower4.jpg" alt="">
+                        <p>怎么给多肉植物浇水？多肉植物浇水多少？</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                         <img src="./img/flower8/flower2.jpg" alt="">
+                        <p>你知道糖果雪山和荔枝玫瑰的区别吗？别再傻了</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                         <img src="./img/flower8/flower5.jpg" alt="">
+                        <p>戴安娜和粉佳人玫瑰有什么区别？不同系列的粉色玫瑰也是有差别的</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                         <img src="./img/flower8/flower6.jpg" alt="">
+                        <p>孕妇不能养什么花？孕妇能养什么植物？</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                         <img src="./img/flower8/flower7.jpg" alt="">
+                        <p>多肉叶片凋谢必须拔出吗？多肉叶片凋谢之后要怎么处理？</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                         <img src="./img/flower8/flower8.jpg" alt="">
+                        <p>[养花小技巧]茉莉花怎么养？茉莉花正确养殖方法学起来</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                         <img src="./img/flower8/flower9.jpg" alt="">
+                        <p>收到的花蔫了，别担心，这一招让你的鲜花精神抖擞</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                         <img src="./img/flower8/flower10.jpg" alt="">
+                        <p>矮牵牛的栽培要点是哪些</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                         <img src="./img/flower8/flower11.jpg" alt="">
+                        <p>风信子烂根的原因及解决方法是什么？</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                         <img src="./img/flower8/flower12.jpg" alt="">
+                        <p>风铃草盆栽养殖方法是什么？</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                         <img src="./img/flower8/flower13.jpg" alt="">
+                        <p>光棍树的插杆方法有哪些</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                         <img src="./img/flower8/flower14.jpg" alt="">
+                        <p>仙客来过冬温度是多少</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                         <img src="./img/flower8/flower15.jpg" alt="">
+                        <p>茉莉花怎么养？茉莉花正确养殖方法学起来</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                         <img src="./img/flower8/flower16.jpg" alt="">
+                        <p>风信子烂根的原因及解决方法是什么？</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+     </div>
+ </div>
+</div>
+
+<!-- 养花保护结束 -->
+<!-- 身体结束 -->
+    <!-- 内容结束 -->
+</div>
+{{include './common/footer.art'}}
+{{/block}}
+
+{{block 'scripts'}}
+<script src="./js/flower-language.js"></script>
+<script src="./js/flower-all.js"></script>
+{{/block}}

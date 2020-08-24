@@ -1,0 +1,211 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+div{
+    border: 0px;
+}
+.card_img{
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.center {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.main_left{
+    display: inline-block;
+    width: 20%;
+    height: 48px;
+    vertical-align: top;
+    background: #EDD5D8;
+}
+.center .item {
+    position: relative;
+    display: inline-block;
+    width: 15%;
+    height: 48px;
+    font-size: 22px;
+    line-height: 48px;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: top;
+}
+.main_right {
+    display: inline-block;
+    width: 20%;
+    height: 48px;
+    vertical-align: top;
+    background: #DECEE0;
+
+}
+.header_center{position: relative;height: 48px;width: 100%;font-size: 0;}
+
+.center_love{
+    background: #EDD5D8;
+    color: #A4555D;
+}
+.item .tborder {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border: 24px solid transparent;
+}
+.center_love .tborder {
+    border-right-color: #CFE1E6;
+    border-bottom-color: #CFE1E6;
+}
+.center_elder .tborder {
+    border-right-color: #CFD6E6;
+    border-bottom-color: #CFD6E6;
+}
+.center_mald .tborder {
+    border-right-color: #DECEE0;
+    border-bottom-color: #DECEE0;
+}
+.center_elder {
+    background: #CFE1E6;
+    color: #487687;
+}
+.center_mald {
+    background: #CFD6E6;
+    color: #485887;
+}
+.center_friend {
+    background: #DECEE0;
+    color: #724978;
+}
+
+.product_list_type_left{position: relative;display: inline-block; float: left; width: 620px;}
+.product_list_type{margin-top: 40px;height: 752px;}
+
+.product_list_type_bg{
+    width: 580px;
+    height: 592px;
+   background: #EDD5D8;
+}
+.product_list_type_tu{
+    position: absolute;
+    top: 40px;
+    left: 80px;
+    width: 540px;
+    height: 632px;
+    overflow: hidden;
+}
+.product_list_type_tu img {
+position: absolute;
+width: auto;
+height: 632px;
+left: 50%;
+margin-left: -290px;
+}
+.product_list_type_right{
+    font-size: 0px;
+display: inline-block;
+vertical-align: top;
+width: 580px;
+}
+.product_item{
+    display: inline-block;
+    width: 250px;
+    margin-bottom: 25px;
+    font-size: 0;
+    vertical-align: top;
+    margin-left: 40px;
+}
+.product_item_pic{    
+    width: 100%;
+    height: 272px;
+    overflow: hidden;
+}
+.product_item_pic img{    
+    width: 100%;
+}
+.product_item_info{
+    text-align: center;
+}
+.product_item_info .product_item_title {
+    padding-top: 22px;
+    min-height: 22px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;    margin-top: 6px;
+}
+.product_item_info .product_item_price {
+    height: 24px;
+    font-size: 18px;
+    line-height: 24px;
+}
+.product_item_info .but_btn  {
+    display: inline-block;
+    width: 132px;
+    height: 36px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 36px;
+    background: #EDD5D8;
+    color: #A4555D;
+    margin-top: 4px;
+}
+.first_flower .product_item_info{
+    position: absolute;
+    top: 408px;
+    right: -450px;
+    width: 580px;
+    height: 265px;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.two_flower .product_item_info{
+    position: absolute;
+    top: 628px;
+    right: 0;
+    width: 580px;
+    height: 265px;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.product_decorate{
+    position: absolute;
+    top: 804px;
+    right: 0;
+    width: 940px;
+}
+.top{margin-top: 150px;}
+.xingzuo_miaoshu{margin:0 auto; width: 1128px;height: 275px;background: url(../img/birthday_flower/xingzuo_mimi.png) no-repeat;background-size: 100%;margin-top: 150px;}
+.xingzuo_miaoshu img{width: 220px;margin-left: 120px;margin-top: 40px;float: left;}
+ .xingzuo_miaoshu>p{float: left;width: 20px;font-size: 24px;line-height: 25px;margin-left: 120px;margin-top: 57px;}
+.xingzuo_miaoshu .text_mimi{border-left: 1px solid rgb(188, 188, 188);float: left;width: 515px;padding-left: 40px;padding-top: 15px;height: 138px;margin-left: 36px;margin-top: 60px;color: rgb(73, 73, 73);}
+ .xingzuo_miaoshu .text_mimi .mimi_title{font-size: 24px;}
+ .xingzuo_miaoshu .text_mimi .mimi_det{font-size: 16px;line-height: 30px;}
+ .jinniu a{display: block;width: 200px;height: 50px;line-height: 50px;text-align: center;color: #fff;font-size: 26px;margin: 50px auto;font-family: '黑体';letter-spacing: 3px;background: #955b53;border-radius: 40px;box-shadow: 0 0 10px 0 rgba(0,0,0,0.5)}
+
+.product_list_type img{ transition: all 0.2s; }
+.product_list_type img:hover{transform: scale(1.05);}
+
+/* 导航栏 */
+.nav{list-style:none;position: fixed;width: 54px;left: 55%;margin-left: 520px;top: 20%;display:none;overflow: hidden;}
+
+ .nav .nav_list li{border-radius: 5px; position: relative; width: 48px;height: 48px;background: #C9252C;margin-top:3px;cursor: pointer;overflow: hidden;}
+ .nav .nav_list li a{content: attr(data-text);position: absolute;top: 0;left: 0;width: 100%;height: 100%;line-height: 48px;
+font-size: 12px;font-weight: 700;color: #fff!important;border-radius: 3px;background-color: #6B0008;text-decoration: none!important;text-align:
+center;-webkit-transform-origin: -50% 50%;transform-origin: -50% 50%;-webkit-transform: rotate3d(0,0,1,90deg);transform: rotate3d(0,0,1,90deg);
+-webkit-transition: -webkit-transform .3s ease-in;transition: transform .3s ease-in;opacity: 0\9;filter: alpha(opacity=0)\9;}
+ .nav .nav_list .li1{background: url(../img/flowerbirthday/flowerbirthday2.jpg) no-repeat;background-size: 100%;}
+ .nav .nav_list .li2{background: url(../img/flowerbirthday/flowerbirthday3.jpg) no-repeat;background-size: 100%;}
+ .nav .nav_list .li3{background: url(../img/flowerbirthday/flowerbirthday5.jpg) no-repeat;background-size: 100%;}
+ .nav .nav_list .li4{background: url(../img/flowerbirthday/flowerbirthday7.jpg) no-repeat;background-size: 100%;}
+ .nav .nav_list .li5{background: url(../img/flowerbirthday/flowerbirthday9.jpg) no-repeat;background-size: 100%;}
+
+ .nav .nav_list li:hover a{-webkit-transform: rotate3d(0,0,1,0deg);transform: rotate3d(0,0,1,0deg);-webkit-transition-timing-function: ease-out;transition-timing-function: ease-out;}
+/* 导航栏 */

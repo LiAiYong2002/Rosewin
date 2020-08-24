@@ -1,0 +1,304 @@
+{{extend './common/layout.art'}}
+{{block 'links'}}
+    <link rel="stylesheet" href="./css/goods_Redrose.css">
+    {{/block}}
+
+ 
+    {{block 'content'}}
+    {{include './common/header.art'}}
+    <!-- 主体 -->
+    <div id="content">
+        <!-- 主体内容 -->
+        <div class="product">
+            <!-- 主体头部 -->
+            <div class="pro_top">
+                <!-- 左边 -->
+                <div class="pro_l">
+                    <div class="pro_img_list">
+                        <div class="goods_scroll">
+                            <div class="prev_cur"></div>
+                            <div class="next_cur"></div>
+							<!-- 小图片 -->
+                            <div class="scroll_mask">
+                                <ul class="goods_list3">
+                                    {{each details.smallImgPath}}
+                                    <li>
+                                        <a href="javascript:"><img src="./{{$value}}" alt="" style="height: 50px;width: 50px;"></a>
+                                    </li>
+                                    {{/each}}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pro_img">
+                        <img src="./{{details.bannerImgPath}}" alt="" class="imgXiao">
+                        <div class="masks"></div>
+                        <div class="big_pre"><img src="./{{details.bannerImgPath}}" alt="" class="big_img"></div>
+                    </div>
+                    
+                </div>
+                <!-- 右边 -->
+                <div class="pro_r">
+                    <h1 title="{{details.flowerTitle}}"><span>{{details.flowerTitle}}</span></h1>
+                    <div class="position_rel">
+                        <i>花赞价</i>
+                        <span>
+                            ￥
+                            <em>{{details.flowerPrice}}</em>
+                        </span>
+                        <div class="selling_desc">
+                            <div class="details_ewm">
+                                <a href="#"><img src="./img/goods_Redrose/二维码.png" alt=""></a>
+                            </div>
+                            <span class="app">下载Rosewin鲜花APP，此款立省{{details.appPrice}}元</span>
+                        </div>
+                    </div>
+                    <div class="summary_basic_info">
+                        <div class="summary_item">
+                            <div class="si_tit">编号</div>
+                            <div class="si_warp">{{details.flowerNum}}</div>
+                        </div>
+                        <div class="summary_item">
+                            <div class="si_tit">材料</div>
+                            <div class="si_warp">{{details.material}}</div>
+                        </div>
+                        <div class="summary_item">
+                            <div class="si_tit">包装</div>
+                            <div class="si_warp">{{details.pack}}</div>
+                        </div>
+                        <%if(details.flowerLanguage){%>
+                        <div class="summary_item">
+                            <div class="si_tit">花语</div>
+                            <div class="si_warp">{{details.flowerLanguage}}</div>
+                        </div>
+                        <%}%>
+                        <div class="summary_item">
+                            <div class="si_tit">附赠</div>
+                            <div class="si_warp">免费附送精美贺卡，代写您的祝福。(您下单时可填写留言栏)</div>
+                        </div>
+                        <div class="summary_item">
+                            <div class="si_tit">配送</div>
+                            <div class="si_warp">全国 （可配送至全国1000多个城市，市区免配送费）</div>
+                        </div>
+                        <div class="summary_item">
+                            <div class="si_tit">说明</div>
+                            <div class="si_warp">由于各地的花艺师不同，鲜花包扎可能在形式和搭配上与图片不完全一致，但保证主花材的新鲜程度、数量、颜色与说明一致，谢谢您的理解。</div>
+                        </div>
+                    </div>
+                    <div class="summary_item">
+                        <div class="si_tit">数量</div>
+                        <div class="si_warp">
+                            <div class="amount_warp">
+                                <input  value="1" class="buy_num">
+                                <div class="a_btn">
+                                    <a href="javascript:" class="plus_btn"><span class="iconfont iconicon-test"></span></a>
+                                    <a href="javascript:" class="reduce_btn"><span class="iconfont iconicon-test6"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="pro_btn">
+                            <button class="btn_buy_now btn_append cartBtn" data-cartId="{{details.flowerId}}"data-id="{{user&&user._id}}">加入购物车</button>
+                            <a href="javascript:"><button class="btn_add_shopping btn-buynow">即刻购买</button></a>
+                            <div class="pro_collect"><a href="#"></a></div>
+                            <div class="pro_share"></div>
+                        </div>
+                </div>
+            </div>
+            <!-- 商品详情切换商品评论导航 -->
+            <div class="proTab_box">
+                <div class="proTab">
+                    <ul id="tab">
+                        <li class="current details_btn">商品详情</li>
+                        <li class="comment_btn">商品评论</li>
+                    </ul>
+                    <div class="proTab_btn">
+                        <button class="btn_buy_now btn_append">加入购物车</button>
+                       <button class="btn-buynow">即刻购买</button>
+                       
+                    </div>
+                </div>
+            </div>
+          <!-- 商品详情切换商品评论导航 -->
+            <!-- 商品详情 -->
+            <div class="pro_main details">
+                <div class="tabCon_m">
+                    <div class="pro_pubtit">
+                        <div class="tabTitle">
+                            <div class="tabTitle_m">BrandStory</div>
+                            <p>品牌故事</p>
+                        </div>
+                    </div>
+                    <div class="brand_story">
+                        <div class="proBrand_l">
+                            <p>Rosewin寓意花赞，鲜花礼赞爱情，专注于轻奢鲜花创意设计，10余年成就全国知名品牌。Rosewin精心打造的APP，订花更便捷：精准推荐设计师款，精心呈现每个细节，同时提供专业定制，致敬生活美学，将浪漫做到极致。</p>
+                        </div>
+                        <div class="proBrand_r">
+                            <p><img src="./img/goods_Redrose/goods_brand_ico.jpg" alt=""></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabCon_m">
+                    <div class="pro_pubtit">
+                        <div class="tabTitle">
+                            <div class="tabTitle_m">ProductDetails</div>
+                            <p>商品详情</p>
+                        </div>
+                    </div>
+                    <div class="proImg">
+                        <div style="text-align: center;">
+                            {{each details.moreImgPath}}
+                            <img src="./{{$value}}" alt="">
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+                <div class="tabCon_m">
+                    <div class="pro_pubtit">
+                        <div class="tabTitle">
+                            <div class="tabTitle_m">Guess Your Like</div>
+                            <p>猜你喜欢</p>
+                        </div>
+                    </div>
+                    <div class="pro_recommend">
+                        <ul class="clearfi">
+                            <li>
+                                <img src="./img/goods_Redrose/lbo1.jpg" alt="">
+                                <div class="pro_recommend_name">
+                                    <span class="prn_t">小幸运</span><br>
+                                    <span class="prn_m">小清新礼盒装</span><br>   
+                                    <span>￥599</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/goods_Redrose/lbo2.jpg" alt="">
+                                <div class="pro_recommend_name">
+                                    <span class="prn_t">陌上花开</span><br>
+                                    <span class="prn_m">99朵粉红雪山</span><br>   
+                                    <span>￥1199</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/goods_Redrose/lbo3.jpg" alt="">
+                                <div class="pro_recommend_name">
+                                    <span class="prn_t">闻香识爱</span><br>
+                                    <span class="prn_m">16朵戴安娜</span><br>   
+                                    <span>￥699</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/goods_Redrose/lbo5.jpg" alt="">
+                                <div class="pro_recommend_name">
+                                    <span class="prn_t">叶上胭脂</span><br>
+                                    <span class="prn_m">19朵厄瓜多尔红玫瑰</span><br>   
+                                    <span>￥1499</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/goods_Redrose/lbo6.jpg" alt="">
+                                <div class="pro_recommend_name">
+                                    <span class="prn_t">初遇</span><br>
+                                    <span class="prn_m">52朵戴安娜玫瑰</span><br>   
+                                    <span>￥799</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+             <!-- 商品详情 -->
+             <!-- 评论 -->
+             <div class="pro_main1 comment" style="display: none;">
+                <div class="tabCon_m" >
+                    <h4>全部评论</h4>
+                    <ul class="babiao_list">
+                        <!-- <li>
+                            <div class="nr">
+                                <div class="nr-titl">
+                                    <img src="./img/goods_Redrose/titl.jpg" alt="">
+                                    <div class="fl">
+                                        <span>1**7</span>
+                                        <p>
+                                           2020年7月30日
+                                        </p>
+                                    </div>
+                                </div>
+                                <p><span class="aite">
+                                    商家真的很贴心，包装的很精美，也很漂亮，花都很新鲜，送给女朋友可喜欢了，这个价格超值
+                                    </span></p>
+                                <div class="nr-foor">
+                                    <img src="./img/goods_Redrose/点赞.png" class="dianzhan">
+                                    <span class="cout">
+                                        1
+                                    </span>
+                                    <a href="JavaScript:" class="btn-shanchu" data-index="'+i+'">删除</a>
+                                </div>
+                            </div>
+                        </li> -->
+                    </ul>
+                    <div class="pinglun_box">
+                        <textarea class="W_input" placeholder="请输入发表的内容"></textarea>
+                        <a href="javascript:" class="btn_a">发表</a>
+                    </div>
+                </div>
+             </div>
+              <!-- 评论 -->
+        </div>
+        <!-- 遮罩 -->
+        <div class="loading-mask">
+            <div class="loading">
+                <div class="center_pop_txt">
+                    <div class="title">
+                        <h3>提示</h3>
+                        <a href="javascript:" class="close">X</a>
+                    </div>
+                    <div class="c_cont" style="text-align: center;">
+                        <div class="center_pop_p">
+                            <p class="ts">宝贝已成功添加到购物车！</p>
+                            <div class="desc">
+                                购物车共有件
+                                <span class="cart_num"></span>
+                                宝贝，总金额为：
+                                <em class="saleP"></em>
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <a href="/home/Shoppingcart" class="ecsc_btn">去结算</a>
+                            <a href="javascript:" class="btn_close_addcart">继续购物</a>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+        <!-- 遮罩 -->
+        <!-- 主体内容 -->
+    </div>
+    <!-- 主体 -->
+    {{include './common/footer.art'}}
+    {{/block}}
+    
+
+    {{block 'scripts'}}
+<script src="./js/goods_Redrose.js"></script>
+<script src="./js/fda.js"></script>
+<script>
+    $(".cartBtn").on("click",function(){
+        let cartId=$(this).attr("data-cartId");
+        let id=$(this).attr("data-id");
+        $.ajax({
+            type:'get',
+            url:`http://localhost/home/loadCart?cartId=${cartId}&id=${id}`,
+            success:function(data){
+                if (!data.isok) {
+                    $(".c_cont").html(data.message)
+                    $(".c_cont").css({"padding":"100px 0","font-size":"20px"})
+                }else{
+                    $(".c_cont").css({"padding":"0px 0px","font-size":"14px"})
+                    $(".cart_num").html(data.shopLength)
+                    $(".saleP").html('￥'+data.totalPrice)
+                }
+            }
+        })
+    })
+</script>
+{{/block}}

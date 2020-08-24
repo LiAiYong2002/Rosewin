@@ -1,0 +1,100 @@
+ <!-- 底部模块开始 -->
+ <div id="footer" class="w_fluid">
+    <!-- 底部上半部分 -->
+    <div class="f_top">
+        <div class="four_nav">
+            <a class="four_nav_a bg1">
+                <div class="four_nav_div">高档花材<span class="f14 f_wg_box">100%品质保证</span></div>
+            </a>
+            <a class="four_nav_a bg2">
+                <div class="four_nav_div">同城配送<span class="f14 f_wg_box">1-3小时送达</span></div>
+            </a>
+            <a class="four_nav_a bg3">
+                <div class="four_nav_div">特色服务<span class="f14 f_wg_box">高端私人定制</span></div>
+            </a>
+            <a class="four_nav_a bg4">
+                <div class="four_nav_div">时尚原创花艺<span class="f14 f_wg_box">资深花艺师独家设计</span></div>
+            </a>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!-- 底部下半部分 -->
+    <div class="f_bottom">
+        <div class="p_footer_c">
+            <div class="help_intro footspec">
+                <ul>
+                    <li class="footer_t">购物说明</li>
+                    <li><a href="javascript:" title="APP专享介绍">APP专享介绍</a></li>
+                    <li><a href="javascript:" title="购物流程">购物流程</a></li>
+                    <li><a href="javascript:" title="支付说明">支付说明</a></li>
+                </ul>
+                <ul>
+                    <li class="footer_t">配送说明</li>
+                    <li><a href="javascript:" title="配送范围">配送范围</a></li>
+                    <li><a href="javascript:" title="配送费用">配送费用</a></li>
+                    <li><a href="javascript:" title="配送时间">配送时间</a></li>
+                </ul>
+                <ul>
+                    <li class="footer_t">售后保障</li>
+                    <li><a href="javascript:" title="取消/修改订单">取消/修改订单</a></li>
+                    <li><a href="javascript:" title="关于签收">关于签收</a></li>
+                    <li><a href="javascript:" title="关于投诉">关于投诉</a></li>
+                </ul>
+                <ul>
+                    <li class="footer_t">关于我们</li>
+                    <li><a href="javascript:" title="品牌介绍">品牌介绍</a></li>
+                    <li><a href="javascript:" title="实力证明">实力证明</a></li>
+                    <!--<li><a href="/help-feedback.html" title="用户反馈渠道" target="_blank">用户反馈渠道</a></li>-->
+                    <li> <a href="javascript:" title="花语大全">花语大全</a></li>
+                    <li> <a href="javascript:" title="鲜花百科">鲜花百科</a></li>
+                </ul>
+                <ul>
+                    <li class="footer_t">同城配送</li>
+                    <li><a href="javascript:" title="北京鲜花">北京鲜花</a></li>
+                    <li><a href="javascript:" title="上海鲜花">上海鲜花</a></li>
+                    <li><a href="javascript:" title="广州鲜花">广州鲜花</a></li>
+                    <li> <a href="javascript:" title="更多城市">更多城市</a></li>
+                </ul>
+                <div class="friend_link">&nbsp;&nbsp;友情链接：<a href="javascript:" title="订花">订花</a>
+                    <a href="javascript:" title="鲜花预订">鲜花预订</a>
+                    <a href="javascript:" title="花店订花">花店订花</a>
+                    <a href="javascript:" title="风林小说网">风林小说网</a>
+                    <a href="javascript:" title="玫琳凯">玫琳凯</a>
+                    <a href="javascript:" title="至尊靓号">至尊靓号</a>
+                    <a href="javascript:" title="防伪">防伪</a>
+                    <a href="javascript:" title="网站建设">网站建设</a>
+                    <a href="javascript:" title="爱游戏">爱游戏</a>
+                    <a href="javascript:" title="芒果云">芒果云</a>
+                    <a href="javascript:" title="网赚">网赚</a>
+                    <a href="javascript:" title="租号">租号</a>
+                    <a href="javascript:" title="家居装修">家居装修</a>
+
+                </div>
+            </div>
+            <div class="service_phone">
+                <span class="footer_t">客服电话</span>
+                <h5>4000-192-520</h5>
+                <p>工作日 08:00-21:00</p>
+                <p>节假日 06:00-24:00</p>
+            </div>
+
+            <div class="download_main">
+                <div class="fl download_app">
+                    <span class="footer_t">Iphone下载</span>
+                    <div><span class="app_img"></span></div>
+                </div>
+                <div class="fr wechat">
+                    <span class="footer_t">Android下载</span>
+                    <div><span class="wechat_img"></span></div>
+                </div>
+                <div class="clear"></div>
+                <p>手机扫码即可下载Rosewin鲜花APP</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 版权信息 -->
+<div class="copyright">
+    <div class="w">© 版权所有:成都美潮广告有限公司&nbsp;&nbsp;<a href="javascript:">蜀ICP备18004735号-1</a></div>
+</div>
+<!-- 底部模块结束 -->
