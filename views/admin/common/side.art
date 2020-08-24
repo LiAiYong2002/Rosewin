@@ -1,0 +1,23 @@
+<!-- 左侧菜单 - 开始 -->
+<div class="frameMenu">
+    <div class="logo">
+       <img src="images/rosewin_logo.png"/>
+        <div class="logoText">
+            <h1>爱在花赞 轻奢浪漫</h1>
+            <!-- <p>rosewin</p> -->
+        </div>
+    </div>
+    <div class="menu">
+        <ul>
+            <li  class="select">
+                <a class="menuFA" href="/userlist"><i class="iconfont icon-liuliangyunpingtaitubiao03 left"></i>用户管理<i class="iconfont icon-dajiantouyou right"></i></a>
+                
+            </li>
+            <li>
+                <a class="menuFA" href="/goodslist"><i class="iconfont icon-shangpin left"></i>商品管理<i class="iconfont icon-dajiantouyou right"></i></a>
+                
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- 左侧菜单 - 结束 -->

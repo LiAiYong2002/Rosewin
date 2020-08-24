@@ -29,7 +29,7 @@ app.set("view engine","art");
 
 // 配置路由
 app.use("/home",require("./router/home"));
-
+app.use("/admin",require("./router/admin"));
 // 拦截错误信息
 app.use((err,req,res,next)=>{
     res.send(err.message)

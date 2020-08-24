@@ -1,0 +1,74 @@
+{{extend './common/layout.art'}}
+{{block 'content'}}
+{{include './common/side.art'}}
+		<div class="main">
+			{{include './common/header.art'}}
+			<!-- 核心区域 - 开始 -->
+			<div class="frameMain">
+				<div class="title" id="frameMainTitle">
+					<!-- 报错框 -->
+					<span class="xianshi"><i class="iconfont icon-xianshiqi"></i>修改用户</span><span class="alert_danger">mbp</span>
+				</div>
+				<div class="cBody">
+							<form id="addForm" class="layui-form" action="">
+								<div class="layui-form-item">
+									<label class="layui-form-label label_size">商品ID</label>
+									<div class="layui-input-block">
+										<input type="text" name="popularity" autocomplete="off" class="layui-input">
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label label_size">商品名称</label>
+									<div class="layui-input-block">
+										<input type="text" name="goodsName" required lay-verify="required" autocomplete="off" class="layui-input">
+									</div>
+								</div>
+								<div class="layui-form-item">
+										<label class="layui-form-label label_size chzhi">商品图片</label>
+									  <input accept=".rar" type="file" class="shangchuan" name="goodsphon"/>
+									  <img src="https://huazan.oss-cn-shanghai.aliyuncs.com/images/201811/source_img/1542186906829328368.jpg" >
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label label_size">时间</label>
+									<div class="layui-input-block">
+										<input type="date" name="date" required lay-verify="required" autocomplete="off" class="layui-input">
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label label_size">参考价格</label>
+									<div class="layui-input-block">
+										<input type="text" name="price" required lay-verify="required|number" autocomplete="off" class="layui-input">
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label label_size">分类</label>
+									<div class="layui-input-block">
+										<select class="layui-input">
+											<option value ="0">鲜花</option>
+											<option value ="1">进口鲜花</option>
+											<option value ="0">生活鲜花</option>
+											<option value ="1">开业花篮</option>
+											<option value ="0">永生花</option>
+											<option value ="1">礼品</option>
+										</select>
+										<i class="xiajianto"></i>
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label label_size">人气点击量</label>
+									<div class="layui-input-block">
+										<input type="text" name="popularity" class="layui-input" readonly>
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<div class="layui-input-block">
+										<button class="layui-btn" lay-submit lay-filter="submitBut">立即提交</button>
+										<!-- <button type="reset" class="layui-btn layui-btn-primary">重置</button> -->
+									</div>
+								</div>
+							</form>
+						</div>
+			</div>
+			<!-- 核心区域 - 结束 -->
+		</div>
+{{/block}}

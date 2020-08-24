@@ -1,0 +1,76 @@
+{{extend './common/layout.art'}}
+{{block 'content'}}
+		{{include './common/side.art'}}
+		<div class="main">
+			{{include './common/header.art'}}
+			<!-- 核心区域 - 开始 -->
+			<div class="frameMain">
+				<div class="title" id="frameMainTitle">
+					<!-- 报错框 -->
+					<span class="xianshi"><i class="iconfont icon-xianshiqi"></i>修改用户</span><span class="alert_danger">mbp</span>
+				</div>
+				<div class="cBody">
+					<div class="console">
+						<form class="layui-form" action="">
+							<div class="layui-form-item">
+								<div class="layui-input-inline">
+									<input type="text" name="name" required lay-verify="required" placeholder="输入用户名称" autocomplete="off" class="layui-input">
+								</div>
+								<button class="layui-btn" lay-submit lay-filter="formDemo">检索</button>
+							</div>
+						</form>
+					</div>
+					
+					<table class="layui-table">
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>用户名</th>
+								<th>邮箱</th>
+								<th>角色</th>
+								<th>状态</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>DLS201802281450280741</td>
+								<td>龙九山</td>
+								<td>123456789@qq.com</td>
+								<td>普通用户</td>
+								<td>可用</td>
+								<td>
+									<a href="userUpdate.html" class="layui-btn layui-btn-xs">修改</a>
+									<a href="Javascript:" class="layui-btn layui-btn-xs shanchu">删除</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					
+					<!-- layUI 分页模块 -->
+					<div id="pages"></div>
+				</div>
+			</div>
+			<!-- 核心区域 - 结束 -->
+		</div>
+		<div class="modal" style="display: none;">
+		        <div class="modal-lg">
+		            <form class="modal-content">
+		                <div class="modal-header">
+		                    <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+		                    <h4 class="modal-title">请确认</h4>
+		                </div>
+		                <div class="modal-body">
+		                    <p>您确定要删除这篇文章吗?</p>
+		                </div>
+		                <div class="modal-footer">
+		                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+		                    <input type="submit" class="btn btn-primary">
+		                </div>
+		            </form>
+		        </div>
+		</div>
+{{/block}}
+{{block 'scripts'}}
+<script src="js/frameStyle.js" type="text/javascript" charset="utf-8"></script>
+{{/block}}

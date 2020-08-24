@@ -253,7 +253,6 @@
         </div>
     </div>
     <!-- 主要显示 -->
-    {{include './common/footer.art'}}
     {{/block}}
     {{block 'scripts'}}
 <script src="./js/love_flower.js"></script>

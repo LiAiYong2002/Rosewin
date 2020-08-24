@@ -1,0 +1,108 @@
+{{extend './common/layout.art'}}
+{{block 'content'}}
+{{include './common/side.art'}}
+		
+		<div class="main">
+			{{include './common/header.art'}}
+			<!-- 核心区域 - 开始 -->
+			<div class="frameMain">
+				<div class="title" id="frameMainTitle">
+					<!-- 报错框 -->
+					<span class="xianshi"><i class="iconfont icon-xianshiqi"></i>修改用户</span><span class="alert_danger">mbp</span>
+				</div>
+				<div class="cBody">
+							<form id="addForm" class="layui-form" action="">
+								<div class="layui-form-item">
+									<label class="layui-form-label">用户名</label>
+									<div class="layui-input-inline shortInput">
+										<input type="text" name="uname" required lay-verify="required|ZHCheck" placeholder="" autocomplete="off" class="layui-input">
+									</div>
+				            		<!-- <i class="iconfont icon-huaban bt"></i> -->
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">邮箱</label>
+									<div class="layui-input-inline shortInput">
+										<input type="email" name="email" autocomplete="off" class="layui-input">
+									</div>
+								</div>
+								<!-- <div class="layui-form-item">
+									<label class="layui-form-label">登录密码</label>
+									<div class="layui-input-inline shortInput">
+										<input type="password" name="password" autocomplete="off" class="layui-input">
+									</div>
+								</div> -->
+								<div class="layui-form-item">
+									<label class="layui-form-label">密码</label>
+									<div class="layui-input-inline shortInput">
+										<input type="password" name="password2" autocomplete="off" class="layui-input">
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">角色</label>
+									<div class="layui-input-block">
+										<select class="layui-input">
+											<option value ="0">普通用户</option>
+											<option value ="1">超级用户</option>
+										</select>
+										<i class="xiajianto"></i>
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label">状态</label>
+									<div class="layui-input-block">
+										<select class="layui-input">
+											<option value ="0">可用</option>
+											<option value ="1">禁用</option>
+										</select>
+										<i class="xiajianto"></i>
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<div class="layui-input-block">
+										<button class="layui-btn" lay-submit lay-filter="submitBut">立即提交</button>
+									</div>
+								</div>
+							</form>
+				
+						</div>
+					<div class="console">
+						<form class="layui-form" action="">
+							<div class="layui-form-item">
+								<div class="layui-input-inline">
+									<input type="text" name="name" required lay-verify="required" placeholder="输入分管名称" autocomplete="off" class="layui-input">
+								</div>
+								<button class="layui-btn" lay-submit lay-filter="formDemo">检索</button>
+							</div>
+						</form>
+					</div>
+					
+					<table class="layui-table">
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>用户名</th>
+								<th>邮箱</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>DLS201802281450280741</td>
+								<td>龙九山</td>
+								<td>123456789@qq.com</td>
+								<td>
+									<button class="layui-btn layui-btn-xs">修改</button>
+									<button class="layui-btn layui-btn-xs">基本信息</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					
+					<!-- layUI 分页模块 -->
+					<div id="pages"></div>
+				</div>
+			</div>
+			<!-- 核心区域 - 结束 -->
+			
+		</div>
+{{/block}}

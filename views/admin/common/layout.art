@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!-- 公共样式 开始 -->
+		<link rel="shortcut icon" href="favicon.ico"/>
+		<link rel="bookmark" href="favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css">
+		<link rel="stylesheet" type="text/css" href="css/layui.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css">
+		<!-- 公共样式 结束 -->
+        <link rel="stylesheet" type="text/css" href="css/frameStyle.css">
+        <style>
+            .layui-form{
+                margin-right: 30%;
+            }
+        </style>
+    {{block 'links'}} {{/block}}
+</head>
+<body>
+    {{block 'content'}} {{/block}}
+
+    {{block 'scripts'}} {{/block}}
+</body>
+</html>

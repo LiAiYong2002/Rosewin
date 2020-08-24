@@ -1,0 +1,82 @@
+{{extend './common/layout.art'}}
+{{block 'content'}}
+		{{include './common/side.art'}}
+		<div class="main">
+			{{include './common/header.art'}}
+			<!-- 核心区域 - 开始 -->
+			<div class="frameMain">
+				<div class="title" id="frameMainTitle">
+					<!-- 报错框 -->
+					<span class="xianshi"><i class="iconfont icon-xianshiqi"></i>修改用户</span><span class="alert_danger">mbp</span>
+				</div>
+				<div class="cBody">
+							<div class="console">
+								<form class="layui-form" action="">
+									<div class="layui-form-item">
+										<div class="layui-input-inline">
+											<input type="text" name="name" required lay-verify="required" placeholder="输入商品名称" autocomplete="off" class="layui-input">
+										</div>
+										<button class="layui-btn" lay-submit lay-filter="formDemo">检索</button>
+									</div>
+								</form>
+							</div>
+							
+							<table class="layui-table">
+								<thead>
+									<tr>
+										<th>Id</th>
+										<th>鲜花名</th>
+										<th>价格</th>
+										<th>日期</th>
+										<th>商品分类</th>
+										<th>人气量</th>
+										<th>操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>asddasad</td>
+										<td>永不变心-11朵红玫瑰</td>
+										<td>199</td>
+										<td>2020-8-21</td>
+										<td>鲜花</td>
+										<td>2515</td>
+										<td>
+											<a href="goodsAdd.html" class="layui-btn layui-btn-xs" >修改</a>
+											<a href="Javascript:" class="layui-btn layui-btn-xs shanchu">删除</a>
+											<a href="goodsAdd.html" class="layui-btn layui-btn-xs" >新增</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							
+							<!-- layUI 分页模块 -->
+							<div id="pages"></div>
+						</div>
+			</div>
+			<!-- 核心区域 - 结束 -->
+		</div>
+		
+		<div class="modal" style="display: none;">
+		        <div class="modal-lg">
+		            <form class="modal-content">
+		                <div class="modal-header">
+		                    <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+		                    <h4 class="modal-title">请确认</h4>
+		                </div>
+		                <div class="modal-body">
+		                    <p>您确定要删除这篇文章吗?</p>
+		                </div>
+		                <div class="modal-footer">
+		                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+		                    <input type="submit" class="btn btn-primary">
+		                </div>
+		            </form>
+		        </div>
+		</div>
+	<!-- {{include './common/footer.art'}}
+	{{/block}} -->
+{{/block}}
+{{block 'scripts'}}
+<script src="js/frameStyle.js" type="text/javascript" charset="utf-8"></script>
+{{/block}}
