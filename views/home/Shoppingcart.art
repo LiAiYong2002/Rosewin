@@ -43,25 +43,25 @@
                     <div class="cartbox">
                         <table>
                             <tbody>
-                                {{each resultCart}}
+                               <%for(let i = 0; i < resultCart.length; i++){%>
                                     <tr class="ng_scope">
                                         <td class="relative">
                                             <input type="checkbox" name="" id="" class="j-checkbox">
-                                            <div class="cp_img"><img src="./{{$value.cartImgPath}}" alt=""></div>
-                                            <div class="cp_info"><a href="javascript:"> {{$value.cartName}}</a></div>
+                                            <div class="cp_img"><img src="./<%=resultCart[i].cartImgPath%>" alt=""></div>
+                                            <div class="cp_info"><a href="javascript:"> <%=resultCart[i].cartName%></a></div>
                                         </td>
-                                        <td  class="ng_binding p-price">￥{{$value.onePrice}}</td>
+                                        <td  class="ng_binding p-price">￥<%=resultCart[i].onePrice%></td>
                                         <td class="p-num">
                                             <div class="cart_num_m">
-                                                <a href="javascript:" class="decrement">-</a>
-                                                <input value="{{$value.cartCount}}" class="itxt">
-                                                <a href="javascript:" class="increment">+</a>
+                                                <a href="javascript:" class="decrement" data-pid="<%=resultCart[i].cartId%>">-</a>
+                                                <input value="<%=resultCart[i].cartCount%>" class="itxt">
+                                                <a href="javascript:" class="increment" data-pid="<%=resultCart[i].cartId%>">+</a>
                                             </div>
                                         </td>
-                                        <td class="p-sum">￥{{$value.subtotal}}</td>
-                                        <td  class="p-action"><a href="javascript:" data-id="{{$value.cartId}}" class="removeCart">删除</a></td>
+                                        <td class="p-sum">￥{{xiaoji[i]}}</td>
+                                        <td  class="p-action"><a href="javascript:" data-id="<%=resultCart[i].cartId%>" class="removeCart">删除</a></td>
                                     </tr>
-                                {{/each}}
+                                <%}%>
                             </tbody>
                         </table>
                     </div>
@@ -93,12 +93,6 @@
                           <!-- 删除下 -->
                     </div>
                     <!-- 删除 -->
-                    <!-- 猜你喜欢 -->
-                    <!-- <div class="cart_recommend">
-                        <div class="cart_recommend_title">猜你喜欢</div>
-                        <div class="cart_behavior"></div>
-                    </div> -->
-                      <!-- 猜你喜欢 -->
                 </div>
                 
             </div> 
@@ -147,25 +141,8 @@
                 </div>
             </div>
              <!-- 推荐 -->
-        </div>
-        
-        
+        </div>    
     </div>
-    <!-- <div class="layui_layer">
-        <div class="layui_layer_title">系统提示</div>
-        <div class="layui_layer_content">
-            <em class="icon_tip"></em>
-            您确定要把商品移除购物车吗？
-        </div>
-        <span class="layui_layer_setwin">
-            <a href="javascript:" class="layui_layer_close1">X</a>
-        </span>
-        <div class="layui_layer_btn">
-            <a href="javascript:" class="layui_layer_btn0">确定</a>
-            <a href="javascript:" class="layui_layer_btn1">取消</a>
-        </div>
-    </div>
-    <div class="layui_layer_shade"></div> -->
      <!-- 主体结束 -->
      {{include './common/footer.art'}}
      {{/block}}
@@ -177,12 +154,10 @@
 <script>
   let cid=$(".removeCart").attr("data-id");
     let $doc=$(document)
-
     $doc.on("ajaxStart",function(){
             NProgress.start()
         
     })
-
     $doc.on("ajaxComplete",function(){
         NProgress.done()
         setTimeout(() => {
@@ -206,7 +181,8 @@
             url:'http://localhost/home/deleteAll'
           })
         }
-       
     })
+    
+   
 </script>
 {{/block}}
