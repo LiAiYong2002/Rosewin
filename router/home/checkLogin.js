@@ -1,4 +1,4 @@
-const {User}=require("../../model/user");
+ const {User}=require("../../model/user");
 const session = require("express-session");
 module.exports=async(req,res,next)=>{
     let {email,password}=req.body
