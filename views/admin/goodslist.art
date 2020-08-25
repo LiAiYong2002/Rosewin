@@ -34,23 +34,26 @@
 									</tr>
 								</thead>
 								<tbody>
+									{{each result.records}}
 									<tr>
-										<td>asddasad</td>
-										<td>永不变心-11朵红玫瑰</td>
-										<td>199</td>
-										<td>2020-8-21</td>
-										<td>鲜花</td>
-										<td>2515</td>
+										<td>{{@$value._id}}</td>
+										<td>{{$value.flowerName}}</td>
+										<td>{{$value.shopPrice}}</td>
+										<td>{{$value.shopDate}}</td>
+										<td>{{$value.shopType}}</td>
+										<td>{{$value.shopClick}}</td>
 										<td>
 											<a href="goodsAdd.html" class="layui-btn layui-btn-xs" >修改</a>
 											<a href="Javascript:" class="layui-btn layui-btn-xs shanchu">删除</a>
-											<a href="goodsAdd.html" class="layui-btn layui-btn-xs" >新增</a>
+											<a href="/admin/goodsAdd" class="layui-btn layui-btn-xs" >新增</a>
 										</td>
-									</tr>
+									</tr>	
+									{{/each}}			
 								</tbody>
 							</table>
 							
 							<!-- layUI 分页模块 -->
+<<<<<<< HEAD
 							<!-- layUI 分页模块 -->
 							<div id="pages">
 								<div class="layui-box layui-laypage layui-laypage-default" id="layui-laypage-1">
@@ -65,6 +68,25 @@
 								  <a href="javascript:;" class="layui-laypage-next" data-page="2">下一页</a>
 								</div>
 							  </div>
+=======
+							<div id="pages">
+								<div class="layui-box layui-laypage layui-laypage-default" id="layui-laypage-1">
+									<span class="layui-laypage-count">共 {{result.total}} 条</span>
+									{{if result.page > 1}}
+									<a href="/admin/goodslist?currentPagr={{result.page-1}}" class="layui-laypage-prev">上一页</a>
+									{{/if}}
+									{{each result.display}}
+									<!-- <a href="javascript:;" data-page="1"  class="currpage" >1</a> -->
+									<a href="/admin/goodslist?currentPagr={{$value}}" data-page="{{$value}}">{{$value}}</a>
+									<!-- <a href="javascript:;" class="layui-laypage-last" title="尾页" data-page="10">10</a> -->
+									{{/each}}
+									{{if result.page < result.pages}}
+									<a href="/admin/goodslist?currentPagr={{result.page-0+1}}" class="layui-laypage-next">下一页</a>
+									{{/if}}
+								</div>
+							</div>
+
+>>>>>>> 937fa6bf05c3cf7536f1c313fa6f1b8c0cbff6ca
 						</div>
 			</div>
 			<!-- 核心区域 - 结束 -->
