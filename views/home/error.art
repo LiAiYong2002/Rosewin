@@ -7,7 +7,6 @@
     {{msg}}
   </div>
   {{/block}}
-
   {{block "scripts"}}
   <script>
     setTimeout(() => {

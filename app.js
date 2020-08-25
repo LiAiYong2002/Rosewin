@@ -27,6 +27,9 @@ app.set("views",path.join(__dirname,"views"));
 // 设置模板后缀名
 app.set("view engine","art");
 
+// 登录拦截
+app.use('/admin',require('./middleware/loginGrand'))
+
 // 配置路由
 app.use("/home",require("./router/home"));
 app.use("/admin",require("./router/admin"));
