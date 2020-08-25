@@ -10,11 +10,11 @@
     <div class="menu">
         <ul>
             <li  class="select">
-                <a class="menuFA" href="/userlist"><i class="iconfont icon-liuliangyunpingtaitubiao03 left"></i>用户管理<i class="iconfont icon-dajiantouyou right"></i></a>
+                <a class="menuFA" href="/admin/userlist"><i class="iconfont icon-liuliangyunpingtaitubiao03 left"></i>用户管理<i class="iconfont icon-dajiantouyou right"></i></a>
                 
             </li>
             <li>
-                <a class="menuFA" href="/goodslist"><i class="iconfont icon-shangpin left"></i>商品管理<i class="iconfont icon-dajiantouyou right"></i></a>
+                <a class="menuFA" href="/admin/goodslist"><i class="iconfont icon-shangpin left"></i>商品管理<i class="iconfont icon-dajiantouyou right"></i></a>
                 
             </li>
         </ul>

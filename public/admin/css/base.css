@@ -23,6 +23,7 @@ input[type="text"],[type="password"],[type="button"], input[type="submit"], inpu
 	-webkit-appearance: none;
 	outline: none;
 }
+.currpage{background-color: teal!important;color: white!important;}
 select{
 	/*-webkit-appearance: none;去掉select的下箭头*/
 	outline: none;
