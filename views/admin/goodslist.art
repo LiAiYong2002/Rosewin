@@ -39,12 +39,12 @@
 										<td>{{@$value._id}}</td>
 										<td>{{$value.flowerName}}</td>
 										<td>{{$value.shopPrice}}</td>
-										<td>{{$value.shopDate}}</td>
+										<td>{{dateFormat($value.shopDate,'yyyy-mm-dd')}}</td>
 										<td>{{$value.shopType}}</td>
 										<td>{{$value.shopClick}}</td>
 										<td>
 											<a href="goodsAdd.html" class="layui-btn layui-btn-xs" >修改</a>
-											<a href="Javascript:" class="layui-btn layui-btn-xs shanchu">删除</a>
+											<a href="javascript:" data-id="{{@$value._id}}"  class="layui-btn layui-btn-xs shanchu">删除</a>
 											<a href="/admin/goodsAdd" class="layui-btn layui-btn-xs" >新增</a>
 										</td>
 									</tr>	
@@ -61,8 +61,7 @@
 									{{/if}}
 									{{each result.display}}
 									<!-- <a href="javascript:;" data-page="1"  class="currpage" >1</a> -->
-									<a href="/admin/goodslist?currentPagr={{$value}}" data-page="{{$value}}">{{$value}}</a>
-									<!-- <a href="javascript:;" class="layui-laypage-last" title="尾页" data-page="10">10</a> -->
+									<a href="/admin/goodslist?currentPagr={{$value}}" class="{{result.page == $value?'currpage':''}}" data-page="{{$value}}">{{$value}}</a>
 									{{/each}}
 									{{if result.page < result.pages}}
 									<a href="/admin/goodslist?currentPagr={{result.page-0+1}}" class="layui-laypage-next">下一页</a>
@@ -77,13 +76,14 @@
 		
 		<div class="modal" style="display: none;">
 		        <div class="modal-lg">
-		            <form class="modal-content">
+		            <form class="modal-content" action="/admin/deletegoods" method="GET">
 		                <div class="modal-header">
-		                    <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
-		                    <h4 class="modal-title">请确认</h4>
+							<button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+							<h4 class="modal-title">请确认</h4>
 		                </div>
 		                <div class="modal-body">
-		                    <p>您确定要删除这篇文章吗?</p>
+							<p>您确定要删除这个商品吗?</p>
+							<input type="hidden" name="uid" class="uid">
 		                </div>
 		                <div class="modal-footer">
 		                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
@@ -95,4 +95,10 @@
 {{/block}}
 {{block 'scripts'}}
 <script src="js/frameStyle.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	$('.shanchu').on('click',function(){
+        let uid = $(this).attr('data-id')
+        $('.uid').val(uid)
+    })
+</script>
 {{/block}}

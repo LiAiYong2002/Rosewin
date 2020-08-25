@@ -10,10 +10,11 @@ const bodyParser=require("body-parser");
 require("./model/server")
 // 引入session
 const session= require("express-session");
-
+// 引入template
+const template = require('art-template')
 // 时间格式
-// const dateFormat = require('dateformat')
-// template.defaults.imports.dateFormat = dateFormat;
+const dateFormat = require('dateformat')
+template.defaults.imports.dateFormat = dateFormat;
 
 // 配置session
 app.use(session({secret:'liaiyong'}))
