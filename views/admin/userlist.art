@@ -48,7 +48,20 @@
 					</table>
 					
 					<!-- layUI 分页模块 -->
-					<div id="pages"></div>
+					<!-- layUI 分页模块 -->
+					<div id="pages">
+						<div class="layui-box layui-laypage layui-laypage-default" id="layui-laypage-1">
+							<span class="layui-laypage-count">共 100 条</span>
+							<a href="javascript:;" class="layui-laypage-prev layui-disabled" data-page="0">上一页</a>
+							<a href="javascript:;" data-page="1"  class="currpage" >1</a>
+							<a href="javascript:;" data-page="2">2</a>
+							<a href="javascript:;" data-page="3">3</a>
+							<a href="javascript:;" data-page="4">4</a>
+							<a href="javascript:;" data-page="5">5</a>
+							<a href="javascript:;" class="layui-laypage-last" title="尾页" data-page="10">10</a>
+							<a href="javascript:;" class="layui-laypage-next" data-page="2">下一页</a>
+						</div>
+					</div>
 				</div>
 			</div>
 			<!-- 核心区域 - 结束 -->
