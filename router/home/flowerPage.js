@@ -18,7 +18,11 @@ module.exports=async(req,res,next)=>{
  
   let titles=  await Title.find()
 
- 
+  if (!page&&!date&&!click) {
+    flowers= await pageation(Flower).find({shopType:shopType}).page(page).size(16).display(2).exec();
+    clname=1
+  }
+
   if(price>=1){
     p_num=1
     clname=2
@@ -26,16 +30,17 @@ module.exports=async(req,res,next)=>{
     prices=0;
     priceClass=1
   }else{
-    flowers= await pageation(Flower).find({shopType:shopType}).sort("-shopPrice").page(page).size(16).display(2).exec();
-    prices=1;
-    clname=2
+    if (price==undefined||price=="") {
+      flowers= await pageation(Flower).find({shopType:shopType}).page(page).size(16).display(2).exec();
+    }else{
+      p_num=0
+      prices=1;
+      clname=2
+      flowers= await pageation(Flower).find({shopType:shopType}).sort("-shopPrice").page(page).size(16).display(2).exec();
+    }
   }
 
-if (!req.query.page&&!req.query.date&&!req.query.click&&!req.query.price) {
-  flowers= await pageation(Flower).find({shopType:shopType}).page(page).size(16).display(2).exec();
-  clname=1
-}
-
+  
   
   if(date){
     count=1
@@ -49,7 +54,6 @@ if (!req.query.page&&!req.query.date&&!req.query.click&&!req.query.price) {
   }
 
   let user=req.session.user
-
   if (user) {
     let resultCart=await Cart.find({uid:user._id})
     res.render("home/flower",{
