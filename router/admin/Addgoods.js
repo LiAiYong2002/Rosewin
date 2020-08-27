@@ -19,7 +19,7 @@ module.exports=async(req,res,next)=>{
             shopType:fields.shopType,
             flowerId:fields.flowerId,
         })
-        console.log(fields);
+        res.send("succes")
         res.redirect('/admin/goodslist')
     })
 }

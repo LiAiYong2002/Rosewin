@@ -7,4 +7,5 @@ admin.get("/userUpdate",require("./admin/userUpdate"));
 admin.get("/deletegoods",require("./admin/Deletegoods"));
 
 admin.post("/Addgoods",require("./admin/Addgoods"))
+admin.post("/updaategoods",require("./admin/updaategoods"))
 module.exports=admin;

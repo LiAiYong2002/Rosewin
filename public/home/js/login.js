@@ -191,7 +191,6 @@ login_email.addEventListener("blur",function(){
 
      $("#loginFrom").submit(function(){
          let obj=arryToJson($(this));
-         console.log(obj);
          if(obj.email.trim()==""||obj.password.trim()==""){
              alert("邮箱密码必填")
             return false;

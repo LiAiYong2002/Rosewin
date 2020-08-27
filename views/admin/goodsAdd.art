@@ -10,52 +10,52 @@
 					<span class="xianshi"><i class="iconfont icon-xianshiqi"></i>修改用户</span><span class="alert_danger">mbp</span>
 				</div>
 				<div class="cBody">
-							<form id="addForm" class="layui-form" enctype="multipart/form-data" action="/admin/Addgoods" method="POST">
+							<form id="addForm" class="layui-form"  action="{{link}}?id={{@edituder && edituder._id}}" method="POST">
 								<div class="layui-form-item">
 									<label class="layui-form-label label_size">商品ID</label>
 									<div class="layui-input-block">
-										<input type="text" name="flowerId" autocomplete="off" class="layui-input" value="121">
+										<input type="text" name="flowerId" value="{{edituder && edituder.flowerId}}" class="layui-input">
 									</div>
 								</div>
 								<div class="layui-form-item">
 									<label class="layui-form-label label_size">商品名称</label>
 									<div class="layui-input-block">
-										<input type="text" name="flowerName" required lay-verify="required" value="花" autocomplete="off" class="layui-input">
+										<input type="text" name="flowerName" value="{{edituder && edituder.flowerName}}"  class="layui-input">
 									</div>
 								</div>
 								<div class="layui-form-item">
 										<label class="layui-form-label label_size chzhi">商品图片</label>
-									  <input accept=".rar" type="file" class="shangchuan" name="shopImgPath" id="cover"/>
-									  <img src="" id="preview">
+									  <input accept=".rar" type="file" class="shangchuan" value="/{{imgpath && imgpath}}" name="shopImgPath" id="cover"/>
+									  <img src="/{{imgpath && imgpath}}" id="preview">
 								</div>
 								<div class="layui-form-item">
 									<label class="layui-form-label label_size">时间</label>
 									<div class="layui-input-block">
-										<input type="date" name="shopDate" required lay-verify="required" autocomplete="off" class="layui-input">
+										<input type="date" name="shopDate"  value="{{edituder && dateFormat(edituder.shopDate,'yyyy/mm/dd')}}"  class="layui-input">
 									</div>
 								</div>
 								<div class="layui-form-item">
 									<label class="layui-form-label label_size">参考价格</label>
 									<div class="layui-input-block">
-										<input type="text" value="299" name="shopPrice" required lay-verify="required|number" autocomplete="off" class="layui-input">
+										<input type="text" name="shopPrice" value="{{edituder && edituder.shopPrice}}" class="layui-input">
 									</div>
 								</div>
 								<div class="layui-form-item">
 									<label class="layui-form-label label_size">优惠价格</label>
 									<div class="layui-input-block">
-										<input type="text" value="20" name="appPrice" required lay-verify="required|number" autocomplete="off" class="layui-input">
+										<input type="text" name="appPrice" value="{{edituder && edituder.appPrice}}"  class="layui-input">
 									</div>
 								</div>
 								<div class="layui-form-item">
 									<label class="layui-form-label label_size">分类</label>
 									<div class="layui-input-block">
 										<select class="layui-input" name="shopType">
-											<option value ="鲜花">鲜花</option>
-											<option value ="进口鲜花">进口鲜花</option>
-											<option value ="生活鲜花">生活鲜花</option>
-											<option value ="开业花篮">开业花篮</option>
-											<option value ="永生花">永生花</option>
-											<option value ="礼品">礼品</option>
+											<option value ="鲜花" {{edituder && edituder.shopType == '鲜花'?selected:''}}>鲜花</option>
+											<option value ="进口鲜花" {{edituder && edituder.shopType == '进口鲜花'?selected:''}} selected>进口鲜花</option>
+											<option value ="生活鲜花" {{edituder && edituder.shopType == '生活鲜花'?selected:''}}>生活鲜花</option>
+											<option value ="开业花篮" {{edituder && edituder.shopType == '开业花篮'?selected:''}}>开业花篮</option>
+											<option value ="永生花" {{edituder && edituder.shopType == '永生花'?selected:''}}>永生花</option>
+											<option value ="礼品" {{edituder && edituder.shopType == '礼品'?selected:''}}>礼品</option>
 										</select>
 										<i class="xiajianto"></i>
 									</div>
@@ -63,14 +63,12 @@
 								<div class="layui-form-item">
 									<label class="layui-form-label label_size">人气点击量</label>
 									<div class="layui-input-block">
-										<input type="text" name="shopClick" class="layui-input" readonly value="0">
+										<input type="text" name="shopClick" class="layui-input" value="{{edituder && edituder.shopClick}}" value="0" readonly>
 									</div>
 								</div>
 								<div class="layui-form-item">
 									<div class="layui-input-block">
-										<button class="layui-btn" lay-submit lay-filter="submitBut">
-											立即提交
-										</button>
+										<input type="submit" class="layui-btn" value="立即提交">
 									</div>
 								</div>
 							</form>
@@ -78,17 +76,35 @@
 			</div>
 			<!-- 核心区域 - 结束 -->
 		</div>
-		{{block 'script'}}
+{{/block}}
+		{{block 'scripts'}}
 		<script>
 			let cover = document.querySelector('#cover')
-        	let preview = document.querySelector('#preview')
+			let preview = document.querySelector('#preview')
+			
+			var addForm = document.querySelector('#addForm')
+			var layuiBtn = document.querySelector('.layui-btn');
+
         	cover.addEventListener('change',function(){
             let reader = new FileReader();
             reader.readAsDataURL(this.files[0]);
             reader.onload = function(){
                 preview.src = reader.result;
-            }
-        })
+			}
+		})
+		// $("#addForm").submit(function(){
+		// 		console.log(123);
+		// 		let obj=arryToJson($(this));
+		// 		if(obj.flowerId.trim() == '' || obj.flowerName.trim() == ''|| obj.shangchuan.trim() == ''|| obj.shopDate.trim() == ''
+		// 		|| obj.shopPrice.trim() == ''|| obj.appPrice.trim() == ''|| obj.shopType.trim() == ''|| obj.shopDate.trim() == ''){
+		// 			$('.alert_danger').show();
+		// 			$('.alert_danger').html('请完整填写')
+		// 			return
+		// 		}else{
+		// 			$('.alert_danger').hide();
+		// 			$('.alert_danger').html('')
+		// 		}
+		 		
+		// })
 		</script>
 		{{/block}}
-{{/block}}

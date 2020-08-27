@@ -17,6 +17,7 @@
 											<input type="text" name="name" required lay-verify="required" placeholder="输入商品名称" autocomplete="off" class="layui-input">
 										</div>
 										<button class="layui-btn" lay-submit lay-filter="formDemo">检索</button>
+										<a href="/admin/goodsAdd" class="layui-btn layui-btn-xs xinzen" >新增</a>
 									</div>
 								</form>
 							</div>
@@ -43,9 +44,9 @@
 										<td>{{$value.shopType}}</td>
 										<td>{{$value.shopClick}}</td>
 										<td>
-											<a href="goodsAdd.html" class="layui-btn layui-btn-xs" >修改</a>
+											<a href="/admin/goodsAdd?id={{@$value._id}}" class="layui-btn layui-btn-xs" >修改</a>
 											<a href="javascript:" data-id="{{@$value._id}}"  class="layui-btn layui-btn-xs shanchu">删除</a>
-											<a href="/admin/goodsAdd" class="layui-btn layui-btn-xs" >新增</a>
+											
 										</td>
 									</tr>	
 									{{/each}}			
