@@ -27,8 +27,6 @@ function LOadData(){
       var load_count=$v.find(".num").val();
       var  loadPrice=$v.find(".price").text().substr(1)
      totelLoad_price+=loadPrice*load_count
-     console.log(loadPrice);
-     console.log(load_count);
   })
 
 
@@ -46,8 +44,9 @@ if ($(".mc ul").children("li").length>=1) {
     totelLoad_price=0
 }
 
-let flag=true
-let cid=$(".remove").attr("data-id");
+        // 商品数据库加载
+            let flag=true
+            let cid=$(".remove").attr("data-id");
                 $(".remove").on("click",function(){
                     if (flag) {
                         flag=false;
@@ -61,6 +60,21 @@ let cid=$(".remove").attr("data-id");
                     }
                 })
 
+                $(".count-add").on("click",function(){
+                    let pid=$(this).attr("data-pid")
+                    $.ajax({
+                        type:'get',
+                        url:'http://localhost/home/addPrice?cartId='+pid
+                    })
+                })
+
+                $(".count-remove").on("click",function(){
+                    let pid=$(this).attr("data-pid")
+                    $.ajax({
+                        type:'get',
+                        url:'http://localhost/home/reducePrice?cartId='+pid
+                    })
+                })
 
 	// // 单个删除
 	$(".p-oper>a").click(function(){

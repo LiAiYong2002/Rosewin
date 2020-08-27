@@ -21,24 +21,24 @@ $(function(){
 		}
 		LoadData()
     }))
-    // 加减
-	$(".increment,.decrement").click(function(){
-        var clasName = $(this).prop("class");
-		var cshu = $(this).siblings(".itxt").val()
-		if(clasName == "increment"){
-            cshu++;
-		}else{
-			if(cshu == 1){
-				return false;
-			}
-			cshu--;
-        }
-		$(this).siblings(".itxt").val(cshu)
-        var dianjia = $(this).parents(".p-num").siblings(".p-price").text().substr(1)
-		var tatopice = (dianjia * cshu).toFixed(2);
-		$(this).parents(".p-num").siblings(".p-sum").text("￥"+tatopice)
-		LoadData()
-	})
+    // // 加减
+	// $(".increment,.decrement").click(function(){
+    //     var clasName = $(this).prop("class");
+	// 	var cshu = $(this).siblings(".itxt").val()
+	// 	if(clasName == "increment"){
+    //         cshu++;
+	// 	}else{
+	// 		if(cshu == 1){
+	// 			return false;
+	// 		}
+	// 		cshu--;
+    //     }
+	// 	$(this).siblings(".itxt").val(cshu)
+    //     var dianjia = $(this).parents(".p-num").siblings(".p-price").text().substr(1)
+	// 	var tatopice = (dianjia * cshu).toFixed(2);
+	// 	$(this).parents(".p-num").siblings(".p-sum").text("￥"+tatopice)
+	// 	LoadData()
+	// })
 	// 更改input值触发
 	$(".itxt").change(function(){
 		var $this = $(this);
@@ -60,23 +60,31 @@ $(function(){
 		}
 		
 		var totaPrice = 0;
-		// var Cout = $(".cartbox .ng_scope").length
 		var Cout = document.querySelectorAll(".j-checkbox:checked").length; 
 		$(".amount-sum").text(Cout);
-		// .cartbox .ng_scope
 		$(".j-checkbox:checked").each(function(i,v){
 			var $v = $(v);
 			totaPrice += parseFloat($v.parents(".ng_scope").children(".p-sum").text().substr(1));
 		})
 		$(".price-sum").text("￥"+totaPrice.toFixed(2))
 	}
-	// 单个删除
-	// $(".p-action>a").click(function(){
-	// 	$(this).parent().parent().remove();
-	// 	LoadData()
-	// })
-	
-	
+
+	$(".increment").on("click",function(){
+        let pid=$(this).attr("data-pid")
+        $.ajax({
+            type:'get',
+            url:'http://localhost/home/addPrice?cartId='+pid
+        })
+    })
+
+    $(".decrement").on("click",function(){
+        let pid=$(this).attr("data-pid")
+        $.ajax({
+            type:'get',
+            url:'http://localhost/home/reducePrice?cartId='+pid
+        })
+    })
+
 	// 删除选中的商品
 	$(".remove-batch").click(function(){
 		$(".j-checkbox:checked").parents(".ng_scope").remove()

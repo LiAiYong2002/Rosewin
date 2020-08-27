@@ -29,6 +29,7 @@ home.get("/logout",require("./home/logout"))
 home.get("/delete",require("./home/delete"))
 home.get("/loadCart",require("./home/loadCart"))
 home.get("/deleteAll",require("./home/deleteAll"))
-
+home.get("/addPrice",require("./home/addPrice"))
+home.get("/reducePrice",require("./home/reducePrice"))
 
 module.exports=home;

@@ -25,12 +25,6 @@
 										<input type="email" name="email" autocomplete="off" class="layui-input"  value="{{findUser && findUser.email}}">
 									</div>
 								</div>
-								<!-- <div class="layui-form-item">
-									<label class="layui-form-label">登录密码</label>
-									<div class="layui-input-inline shortInput">
-										<input type="password" name="password" autocomplete="off" class="layui-input">
-									</div>
-								</div> -->
 								<div class="layui-form-item">
 									<label class="layui-form-label">密码</label>
 									<div class="layui-input-inline shortInput">

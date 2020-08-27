@@ -90,8 +90,8 @@
                                     <!-- <span class="num" min_number="1">1</span> -->
                                     <input type="text" class="num" value="{{$value.cartCount}}">
                                     <div class="count">
-                                        <a href="javascript:;" class="count-add"><span class="iconfont iconicon-test"></span></a>
-                                        <a href="javascript:;" class="count-remove"><span class="iconfont iconicon-test6"></span></a></div>
+                                        <a href="javascript:;" class="count-add"  data-pid="{{$value.cartId}}"><span class="iconfont iconicon-test"></span></a>
+                                        <a href="javascript:;" class="count-remove" data-pid="{{$value.cartId}}"><span class="iconfont iconicon-test6"></span></a></div>
                                 </div>
                                 <div class="p-oper">
                                     <div class="price">¥{{$value.onePrice}}</div>
