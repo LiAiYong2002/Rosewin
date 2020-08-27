@@ -11,32 +11,32 @@
 					<span class="xianshi"><i class="iconfont icon-xianshiqi"></i>修改用户</span><span class="alert_danger">mbp</span>
 				</div>
 				<div class="cBody">
-							<form id="addForm" class="layui-form" action="">
+							<form id="addForm" class="layui-form" action="/admin/updateUser?id={{@findUser._id}}" method="POST">
 								<div class="layui-form-item">
 									<label class="layui-form-label">用户名</label>
 									<div class="layui-input-inline shortInput">
-										<input type="text" name="uname" required lay-verify="required|ZHCheck" placeholder="" autocomplete="off" class="layui-input">
+										<input type="text" name="username" required lay-verify="required|ZHCheck" placeholder="" autocomplete="off" class="layui-input"  value="{{findUser && findUser.username}}">
 									</div>
 				            		<!-- <i class="iconfont icon-huaban bt"></i> -->
 								</div>
 								<div class="layui-form-item">
 									<label class="layui-form-label">邮箱</label>
 									<div class="layui-input-inline shortInput">
-										<input type="email" name="email" autocomplete="off" class="layui-input">
+										<input type="email" name="email" autocomplete="off" class="layui-input"  value="{{findUser && findUser.email}}">
 									</div>
 								</div>
 								<div class="layui-form-item">
 									<label class="layui-form-label">密码</label>
 									<div class="layui-input-inline shortInput">
-										<input type="password" name="password2" autocomplete="off" class="layui-input">
+										<input type="password" name="password" autocomplete="off" class="layui-input"   value="{{findUser && findUser.password}}">
 									</div>
 								</div>
 								<div class="layui-form-item">
 									<label class="layui-form-label">角色</label>
 									<div class="layui-input-block">
-										<select class="layui-input">
-											<option value ="0">普通用户</option>
-											<option value ="1">超级用户</option>
+										<select class="layui-input" name="role">
+											<option value ="normal" {{findUser && findUser.role == 'normal'?selected:''}}>普通用户</option>
+											<option value ="admin" {{findUser && findUser.role == 'admin'?selected:''}}>超级用户</option>
 										</select>
 										<i class="xiajianto"></i>
 									</div>
@@ -44,9 +44,9 @@
 								<div class="layui-form-item">
 									<label class="layui-form-label">状态</label>
 									<div class="layui-input-block">
-										<select class="layui-input">
-											<option value ="0">可用</option>
-											<option value ="1">禁用</option>
+										<select class="layui-input" name="state">
+											<option value ="0" {{findUser && findUser.state == '0'?selected:''}}>可用</option>
+											<option value ="1" {{findUser && findUser.state == '1'?selected:''}}>禁用</option>
 										</select>
 										<i class="xiajianto"></i>
 									</div>

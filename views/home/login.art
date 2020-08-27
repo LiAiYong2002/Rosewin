@@ -126,6 +126,9 @@
         })
     })
 
+
+
+
     // // 登录ajax判断
     // login_email.addEventListener("blur",function(){
     //     let emailReg = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,3}){1,2})$/;
