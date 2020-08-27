@@ -44,7 +44,7 @@
 										<td>{{$value.shopClick}}</td>
 										<td>
 											<a href="goodsAdd.html" class="layui-btn layui-btn-xs" >修改</a>
-											<a href="Javascript:" class="layui-btn layui-btn-xs shanchu">删除</a>
+											<a href="Javascript:" class="layui-btn layui-btn-xs shanchu">	</a>
 											<a href="/admin/goodsAdd" class="layui-btn layui-btn-xs" >新增</a>
 										</td>
 									</tr>	
