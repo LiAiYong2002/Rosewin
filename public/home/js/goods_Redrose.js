@@ -48,62 +48,14 @@ $(function() {
 
 		textareaText = $("textarea").val()
 		if (textareaText == "") {
-			alert("发表内容不能为空");
+			// alert("发表内容不能为空");
 			return;
 		}
-
-		do
-		var  out = Math.floor(Math.random() * 10000);
-		while (out < 1000)
-		var _out = ""
-	    out	=String(out)
-		var outLength = out.length ;
-		if(outLength > 2){
-			var outLength = outLength - 2;
-			while (outLength > 0) {
-			_out += "*";
-			outLength--;
-			}
-			out = out.substr(0, 1) + _out + out.substr(out.length - 1, out.length);
-		}
-			
-		var arr = textareaText.substring(0,textareaText.indexOf(" "))
-		var wba = textareaText.substring(textareaText.indexOf(" "))
-		var $li = $(
-			'<li>\
-					<div class="nr">\
-						<div class="nr-titl">\
-                        <img src="'+path+'" alt="">\
-							<div class="fl">\
-								<span>'+out+'</span>\
-								<p>' +
-			daydate + '</p>\
-							</div>\
-						</div>\
-						<p><span class="aite">'+arr+'</span>' +
-			wba +
-			'</p>\
-						<div class="nr-foor">\
-							<img src="./img/goods_Redrose/点赞.png" class="dianzhan">\
-							<span class="cout">1</span>\
-							<a href="JavaScript:" class="btn-shanchu">删除</a>\
-						</div>\
-					</div>\
-				</li>'
-		)
-		// $("ul").append($li)
-		$(".babiao_list").prepend($li)
-		$li.slideDown();
-		$("textarea").val("")
     })
 	// 点赞
 	$("ul").on("click", ".dianzhan", function() {
 		var count = $(this).siblings(".cout").text();
-		// const conunt1 =Number(count);
-		// if(count > conunt1+1){
-		// 	alert("今日次数已用完");
-		// 	return;
-		// }
+		
 		var that=$(this)[0];
 		count++;
 		if(count>=1){
@@ -113,12 +65,12 @@ $(function() {
 		$(this).siblings(".cout").text(count)
 	})
 	// 删除
-	$(".babiao_list").on("click", "a", function() {
-		var $this = $(this);
-		$this.parents("li").slideUp(500, function() {
-			$(this).remove();
-		})
-	})
+	// $(".babiao_list").on("click", "a", function() {
+	// 	var $this = $(this);
+	// 	$this.parents("li").slideUp(500, function() {
+	// 		$(this).remove();
+	// 	})
+	// })
 	
 	// 添加内容
 	// 加入购物车

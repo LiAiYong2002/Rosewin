@@ -3,7 +3,7 @@ const mongoose=require("mongoose")
 const commentSchema=mongoose.Schema({
     cid:{
         type:mongoose.Schema.Types.ObjectId,
-        ref:"Cart"
+        ref:"Flower"
     },
     uid:{
         type:mongoose.Schema.Types.ObjectId,

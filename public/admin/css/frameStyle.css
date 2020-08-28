@@ -12,14 +12,29 @@ body{
 .layui-form-label{font-size: 16px;width: 100px;}
 .layui-form select{display: block;width: 290px;font-size: 14px;}
 .label_size{width: 80px;}
-.layui-form-item{position: relative;}
+.layui-form-item{position: relative;width: 100%;}
 /* .layui-form-item .chzhi{position: absolute;top: 50%;transform: translateY(-50%);} */
 .layui-form-item .chzhi{line-height: 80px;}
-.layui-form-item .shangchuan{margin-top: 4px;margin-left: 20px;}
+.layui-form-item .shangchuan{margin-top: 35px;margin-left: 20px;}
 .layui-form-item img{width: 100px;}
 .layui-input-block{margin-left: 130px;position: relative;}
 .xiajianto{position: absolute;right: 103px;top: 40%;}
 .layui-input[readonly]{background-color: #eee;}
+.xinzen{
+	position: absolute;
+	right: -430px;
+	display: inline-block;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 18px;
+    background-color: #009688;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;}
 .xiajianto::before{
 	content: "";
 	width: 0;
@@ -229,6 +244,7 @@ a{text-decoration: none;}
 }
 /* .frameMain .title .xianshi{width: 8%;} */
 .frameMain .title .alert_danger{
+	display: none;
 	/* width: 86.5%; */
 	width: 1393px;
 	background-color: #F8D7DA;

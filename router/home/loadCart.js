@@ -21,7 +21,9 @@ module.exports=async(req,res,next)=>{
         }
           let resultCart=await Cart.find({uid:user._id})
           resultCart.forEach((item,index) => {
-            totalPrice+=item.onePrice
+            let subtotal=item.subtotal
+            let cartCount=item.cartCount
+            totalPrice+=subtotal*cartCount
           });
           let shopLength=resultCart.length;
           res.send({resultCart,isok:true,shopLength,totalPrice})

@@ -31,12 +31,17 @@ app.set("views",path.join(__dirname,"views"));
 // 设置模板后缀名
 app.set("view engine","art");
 
+app.locals.SelectMen = 'user'
+
 // 登录拦截
 app.use('/admin',require('./middleware/loginGrand'))
+
 
 // 配置路由
 app.use("/home",require("./router/home"));
 app.use("/admin",require("./router/admin"));
+
+
 // 拦截错误信息
 app.use((err,req,res,next)=>{
     res.send(err.message)

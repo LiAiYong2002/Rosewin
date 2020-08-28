@@ -1,10 +1,10 @@
 <!-- 头部栏 - 开始 -->
 <div class="frameTop">
-    <img class="jt" src="images/top_jt.png"/>
+    <!-- <img class="jt" src="images/top_jt.png"/> -->
     <div class="topMenu">
         <ul>
-            <li><a href="javascript:void(0)" onclick="menuCAClick('tgls/modify_password.html',this)"><i class="iconfont icon-yonghu1"></i>管理员</a></li>
-            <li><a href="login.html"><i class="iconfont icon-084tuichu"></i>退出</a></li>
+            <li><a href="javascript:void(0)" onclick="menuCAClick('tgls/modify_password.html',this)"><i class="iconfont icon-yonghu1"></i>{{user.username}}</a></li>
+            <li><a href="/home/logout"><i class="iconfont icon-084tuichu"></i>退出</a></li>
         </ul>
     </div>
 </div>

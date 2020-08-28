@@ -210,36 +210,49 @@
              <!-- 评论 -->
              <div class="pro_main1 comment" style="display: none;">
                 <div class="tabCon_m" >
+                    {{if user}}
                     <h4>全部评论</h4>
+                    {{else}}
+                    <h4>请先登录再评论</h4>
+                    {{/if}}
+                
                     <ul class="babiao_list">
-                        <!-- <li>
+                        {{each comments}}
+                        <li>
                             <div class="nr">
                                 <div class="nr-titl">
-                                    <img src="./img/goods_Redrose/titl.jpg" alt="">
+                                    <img src="./{{details.bannerImgPath}}">
                                     <div class="fl">
-                                        <span>1**7</span>
+                                        <span>{{$value.uid.username}}</span>
                                         <p>
-                                           2020年7月30日
+                                            {{dateFormat($value.time,'yyyy-mm-dd')}}
                                         </p>
                                     </div>
                                 </div>
                                 <p><span class="aite">
-                                    商家真的很贴心，包装的很精美，也很漂亮，花都很新鲜，送给女朋友可喜欢了，这个价格超值
+                                    {{$value.content}}
                                     </span></p>
                                 <div class="nr-foor">
                                     <img src="./img/goods_Redrose/点赞.png" class="dianzhan">
                                     <span class="cout">
                                         1
                                     </span>
-                                    <a href="JavaScript:" class="btn-shanchu" data-index="'+i+'">删除</a>
+                                    <a href="JavaScript:" class="btn-shanchu" data-id="{{@$value._id}}" data-uid="{{@$value.uid._id}}">删除</a>
                                 </div>
                             </div>
-                        </li> -->
+                        </li>
+                        {{/each}}
                     </ul>
-                    <div class="pinglun_box">
-                        <textarea class="W_input" placeholder="请输入发表的内容"></textarea>
-                        <a href="javascript:" class="btn_a">发表</a>
+                    {{if user}}
+                    <form action="">
+                        <div class="pinglun_box">
+                        <textarea class="W_input" name="content" placeholder="请输入发表的内容"></textarea>
+                        <input type="hidden" name="aid" class="aid" value="{{@details._id}}">
+						<input type="hidden" name="uid" class="uid" value="{{@user && user._id}}">
+                        <input type="button" class="btn_a" style="cursor: pointer;" value="发表">
                     </div>
+                    </form>
+                    {{/if}}
                 </div>
              </div>
               <!-- 评论 -->
@@ -281,7 +294,11 @@
     {{block 'scripts'}}
 <script src="./js/goods_Redrose.js"></script>
 <script src="./js/fda.js"></script>
+
 <script>
+    var imgXiao=document.querySelector(".imgXiao")
+    var path=imgXiao.src
+
     $(".cartBtn").on("click",function(){
         let cartId=$(this).attr("data-cartId");
         let id=$(this).attr("data-id");
@@ -299,6 +316,81 @@
                 }
             }
         })
+    })
+
+    $(".btn_a").on("click",function(){
+        textareaText = $("textarea").val()
+        let aid=$(".aid").val();
+        let uid=$(".uid").val();
+        $.ajax({
+            type:'post',
+            url:`http://localhost/home/comment`,
+            data:{
+                aid:aid,
+                uid:uid,
+                content:textareaText
+            },
+            success:function(data){
+                if (textareaText=="") {
+                    alert("发表内容不能为空");
+			        return;
+                }
+                var date = new Date();
+                var Year = date.getFullYear();
+                var month = date.getMonth() + 1;
+                month = month < 10 ? '0' + month : month
+                var day = date.getDate();
+                day = day < 10 ? '0' + day : day;
+                var daydate = Year + "-" + month + "-" + day
+                var $li
+                data.forEach((item,index) => {
+                    $li= $(
+                	'<li>\
+                			<div class="nr">\
+                				<div class="nr-titl">\
+                                <img src="'+path+'" alt="">\
+                					<div class="fl">\
+                						<span>'+item.uid.username+'</span>\
+                						<p>' +
+                                            daydate+ '</p>\
+                					</div>\
+                				</div>\
+                				<p>'+
+                	item.content+
+                	'</p>\
+                				<div class="nr-foor">\
+                					<img src="./img/goods_Redrose/点赞.png" class="dianzhan">\
+                					<span class="cout">1</span>\
+                					<a href="JavaScript:" class="btn-shanchu" data-id='+item._id+' data-uid='+item.uid._id+'>删除</a>\
+                				</div>\
+                			</div>\
+                		</li>'
+                )
+               });
+                $(".babiao_list").append($li)
+                $("textarea").val("")
+            }
+        })
+    })
+
+    $(".babiao_list").on("click",'a',function(){
+        var $this = $(this);
+        let id=$this.attr("data-id")
+        let uid=$this.attr("data-uid")
+        $.ajax({
+            type:'get',
+            url:`http://localhost/home/deleteComment?id=${id}&uid=${uid}`,
+            success:function(data){
+                if (data.isok) {
+                    $this.parents("li").slideUp(500, function() {
+                        $(this).remove();
+                    })
+                }else{
+                    alert("没有权限")
+                }
+            }
+        })
+
     })
 </script>
 {{/block}}

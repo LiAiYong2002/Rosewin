@@ -39,7 +39,7 @@
 								<td>{{$value.username}}</td>
 								<td>{{$value.email}}</td>
 								<td>{{$value.role}}</td>
-								<td>{{$value.state == 0 ? '启用' : '禁用'}}</td>
+								<td>{{$value.state == 0 ?'启用':'禁用'}}</td>
 								<td>
 									<a href="../admin/userUpdate?id={{@$value._id}}" class="layui-btn layui-btn-xs">修改</a>
 									<a href="Javascript:" class="layui-btn layui-btn-xs shanchu" data-id="{{@$value._id}}">删除</a>
@@ -54,15 +54,17 @@
 					<div id="pages">
 						<div class="layui-box layui-laypage layui-laypage-default" id="layui-laypage-1">
 						  <span class="layui-laypage-count">共 {{result.pages}} 条</span>
+						  <a href="/admin/userlist?currentPagr=1" class="layui-laypage-next">首页</a>
 						  	{{if result.page > 1}}
 							<a href="/admin/userlist?currentPage={{result.page-1}}" class="layui-laypage-prev " data-page="0">上一页</a>
 							{{/if}}
 							{{each result.display}}
-								<a href="/admin/userlist?currentPage={{$value}}" data-page="{{$value}}">{{$value}}</a>
+								<a href="/admin/userlist?currentPage={{$value}}" data-page="{{$value}}" class="{{result.page == $value?'currpage':''}}">{{$value}}</a>
                 			{{/each}}
 						  {{if result.page < result.pages}}
 							<a href="/admin/userlist?currentPage={{result.page-0+1}}" class="layui-laypage-next" data-page="2">下一页</a>
-                			{{/if}}
+							{{/if}}
+							<a href="/admin/userlist?currentPagr={{result.pages}}" class="layui-laypage-next">尾页</a>
 						</div>
 					  </div>
 				</div>
