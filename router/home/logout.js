@@ -5,6 +5,6 @@ module.exports=(req,res,next)=>{
         // 清除本地用户数据
         res.app.locals.user=null
         // 回到登录页面
-        // res.redirect("/admin/login")
+        res.redirect("/home/login")
     })
 }

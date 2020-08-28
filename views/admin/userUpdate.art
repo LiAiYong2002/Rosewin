@@ -35,8 +35,8 @@
 									<label class="layui-form-label">角色</label>
 									<div class="layui-input-block">
 										<select class="layui-input" name="role">
-											<option value ="normal" {{findUser && findUser.role == 'normal'?selected:''}}>普通用户</option>
-											<option value ="admin" {{findUser && findUser.role == 'admin'?selected:''}}>超级用户</option>
+											<option value ="normal" {{findUser && findUser.role != 'admin'?'selected':''}}>普通用户</option>
+											<option value ="admin" {{findUser && findUser.role != 'normal'?'selected':''}}>超级用户</option>
 										</select>
 										<i class="xiajianto"></i>
 									</div>
@@ -45,8 +45,12 @@
 									<label class="layui-form-label">状态</label>
 									<div class="layui-input-block">
 										<select class="layui-input" name="state">
-											<option value ="0" {{findUser && findUser.state == '0'?selected:''}}>可用</option>
-											<option value ="1" {{findUser && findUser.state == '1'?selected:''}}>禁用</option>
+											{{if role == 'admin'}}
+											<option value ="0" {{findUser && findUser.state == '0'?'selected':''}}>可用</option>
+											{{else}}
+											<option value ="0" {{findUser && findUser.state == '0'?'selected':''}}>可用</option>
+											<option value ="1" {{findUser && findUser.state == '1'?'selected':''}}>禁用</option>
+											{{/if}}
 										</select>
 										<i class="xiajianto"></i>
 									</div>

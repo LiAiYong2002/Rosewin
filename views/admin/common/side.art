@@ -9,11 +9,12 @@
     </div>
     <div class="menu">
         <ul>
-            <li  class="select">
+            <!-- select -->
+            <li  class="{{SelectMen=='user'?'select':''}}">
                 <a class="menuFA" href="/admin/userlist"><i class="iconfont icon-liuliangyunpingtaitubiao03 left"></i>用户管理<i class="iconfont icon-dajiantouyou right"></i></a>
-                
+            
             </li>
-            <li>
+            <li  class="{{SelectMen=='goods'?'select':''}}">
                 <a class="menuFA" href="/admin/goodslist"><i class="iconfont icon-shangpin left"></i>商品管理<i class="iconfont icon-dajiantouyou right"></i></a>
                 
             </li>

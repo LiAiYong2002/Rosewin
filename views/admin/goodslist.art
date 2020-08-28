@@ -7,7 +7,7 @@
 			<div class="frameMain">
 				<div class="title" id="frameMainTitle">
 					<!-- 报错框 -->
-					<span class="xianshi"><i class="iconfont icon-xianshiqi"></i>修改用户</span><span class="alert_danger">mbp</span>
+					<span class="xianshi"><i class="iconfont icon-xianshiqi"></i>修改商品</span><span class="alert_danger">mbp</span>
 				</div>
 				<div class="cBody">
 							<div class="console">
@@ -44,19 +44,8 @@
 										<td>{{$value.shopType}}</td>
 										<td>{{$value.shopClick}}</td>
 										<td>
-<<<<<<< HEAD
 											<a href="/admin/goodsAdd?id={{@$value._id}}" class="layui-btn layui-btn-xs" >修改</a>
 											<a href="javascript:" data-id="{{@$value._id}}"  class="layui-btn layui-btn-xs shanchu">删除</a>
-											
-=======
-											<a href="goodsAdd.html" class="layui-btn layui-btn-xs" >修改</a>
-<<<<<<< HEAD
-											<a href="Javascript:" class="layui-btn layui-btn-xs shanchu">	</a>
-=======
-											<a href="javascript:" data-id="{{@$value._id}}"  class="layui-btn layui-btn-xs shanchu">删除</a>
->>>>>>> 2658ec01ae3ac9e332cbf50030f9724f602f78a3
-											<a href="/admin/goodsAdd" class="layui-btn layui-btn-xs" >新增</a>
->>>>>>> e653c6d0f32b510a8800052b4827032a52fb9b5b
 										</td>
 									</tr>	
 									{{/each}}			
@@ -67,6 +56,7 @@
 							<div id="pages">
 								<div class="layui-box layui-laypage layui-laypage-default" id="layui-laypage-1">
 									<span class="layui-laypage-count">共 {{result.total}} 条</span>
+									<a href="/admin/goodslist?currentPagr=1" class="layui-laypage-next">首页</a>
 									{{if result.page > 1}}
 									<a href="/admin/goodslist?currentPagr={{result.page-1}}" class="layui-laypage-prev">上一页</a>
 									{{/if}}
@@ -77,6 +67,7 @@
 									{{if result.page < result.pages}}
 									<a href="/admin/goodslist?currentPagr={{result.page-0+1}}" class="layui-laypage-next">下一页</a>
 									{{/if}}
+									<a href="/admin/goodslist?currentPagr={{result.pages}}" class="layui-laypage-next">尾页</a>
 								</div>
 							</div>
 

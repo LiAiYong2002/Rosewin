@@ -5,21 +5,22 @@ module.exports=async(req,res,next)=>{
      // 1.创建表单解析对象
      const form = formidable.IncomingForm();
      // 2.设置文件上传路径
-     form.uploadDir = path.join(__dirname,'../','../','public','home','uploads')
+     form.uploadDir = path.join(__dirname,'../','../','public','home','img','uploads')
      // 3.是否保留文件扩展名
      form.keepExtensions = true;
      form.parse(req,async(err,fields,files)=>{
+        console.log(files);
         await Flower.create({
             flowerName:fields.flowerName,
             shopImgPath:files.shopImgPath.path.split('public')[1],
             shopPrice:fields.shopPrice,
             appPrice:fields.appPrice,
             shopDate:fields.shopDate,
-            shopClick:fields.shopClick,
+            shopClick:0,
             shopType:fields.shopType,
             flowerId:fields.flowerId,
         })
-        res.send("succes")
+        
         res.redirect('/admin/goodslist')
     })
 }
