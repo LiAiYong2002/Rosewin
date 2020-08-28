@@ -825,6 +825,7 @@ p {
 #footer {
     margin-top: 30px;
     background: #eee;
+    overflow: hidden;
 }
 
 #footer .f_top {

@@ -5,7 +5,6 @@ lodata()
 
 
 window.addEventListener("load",function(){
-	console.log('12345');
 	var close = document.querySelector(".close")
 	var btnDefault = document.querySelector(".btn-default")
 	

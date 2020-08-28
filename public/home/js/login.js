@@ -38,26 +38,7 @@ window.addEventListener("load",function(){
 // let email_rg;
 let name_rg;
 let pwd_rg;
-// // 邮箱号验证
-// register_email.addEventListener("blur",function(){
-//     if (this.value.trim()=="") {
-//         this.nextElementSibling.innerHTML = "请输入邮箱号";
-//         email_img.src=""
-//         this.nextElementSibling.className = "error";
-//         return;
-//     }else{
-//         email_rg = /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
-//         if (email_rg.test(this.value)) {
-//             this.nextElementSibling.innerHTML = "验证成功";
-//             email_img.src="./img/login&register/true.jpg"
-//             this.nextElementSibling.className = "success";
-//         } else {
-//             this.nextElementSibling.innerHTML = "格式：2748544112@qq.com";
-//             email_img.src="./img/login&register/false.jpg"
-//             this.nextElementSibling.className = "error";
-//         }
-//     }
-// })
+
 
 
 // 用户名验证
@@ -191,7 +172,6 @@ login_email.addEventListener("blur",function(){
 
      $("#loginFrom").submit(function(){
          let obj=arryToJson($(this));
-         console.log(obj);
          if(obj.email.trim()==""||obj.password.trim()==""){
              alert("邮箱密码必填")
             return false;

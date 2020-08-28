@@ -42,7 +42,7 @@
     {{each flowers.records}}
     <li>
         <a href="/home/goodsRedrose?flowerid={{$value.flowerId}}" class="pro_imglink">
-            <img src="./{{$value.shopImgPath}}" alt="">
+            <img src="{{$value.shopImgPath}}" alt="">
         </a>
         <a href=""class="pro_name">{{$value.flowerName}}</a>
         <div class="pro_price">

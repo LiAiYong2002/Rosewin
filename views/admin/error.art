@@ -13,9 +13,13 @@
       setTimeout(() => {
         window.location="/home/login"
       },2000);
-    }else{
+    }else if("{{msg}}" == "当前账号不是管理员，无法访问"){
       setTimeout(() => {
         window.location="/home/huazan"
+      },2000);
+    }else{
+      setTimeout(() => {
+        window.location="/home/login"
       },2000);
     }
   </script>
