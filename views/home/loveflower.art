@@ -19,34 +19,22 @@
                         <img src="./img/love_flower/title1.jpg" alt="">
                     </div>
                     <ul class="spe">
-                        <li class="animated">
-                            <a href="#" class="big"><img src="./img/love_flower/热销1.jpg" alt=""></a>
-                            <img src="./img/love_flower/rexiao.png" alt="" class="hot_img">
-                            <div class="cont">
-                                <a href="#">
-                                    <div class="lt">
-                                        <p class="bt">永不变心</p>
-                                        <p class="price">活动价:￥199 <span>￥258</span></p>
-                                        <p class="sale">已售1496件</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt=""></a>
-                            </div>
-                        </li>
-                        <li class="animated">
-                            <a href="#" class="big"><img src="./img/love_flower/热销2.jpg" alt=""></a>
-                            <img src="./img/love_flower/rexiao.png" alt="" class="hot_img">
-                            <div class="cont">
-                                <a href="#">
-                                    <div class="lt">
-                                        <p class="bt">幸福即将到来</p>
-                                        <p class="price">活动价:￥299<span>￥388</span></p>
-                                        <p class="sale">已售1478件</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt=""></a>
-                            </div>
-                        </li>
+                        <%for(let i = 0; i < Loveflower.length-12; i++){%>
+                            <li class="animated">
+                                <a href="#" class="big"><img src=".<%=Loveflower[i].loveFlowerImg%>" alt=""></a>
+                                <img src="./img/love_flower/rexiao.png" alt="" class="hot_img">
+                                <div class="cont">
+                                    <a href="#">
+                                        <div class="lt">
+                                            <p class="bt"><%=Loveflower[i].loveFlowerName%></p>
+                                            <p class="price">活动价:￥<%=Loveflower[i].loveFlowerDownPrice%> <span>￥<%=Loveflower[i].loveFlowerPrice%></span></p>
+                                            <p class="sale">已售<%=Loveflower[i].loveFlowerSalesVolume%>件</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt=""></a>
+                                </div>
+                            </li>
+                            <%}%>
                     </ul>
                 </div>
                 <!-- 热销模块 -->
@@ -56,84 +44,23 @@
                         <img src="./img/love_flower/title2.jpg" alt="">
                     </div>
                     <ul class="enlarge">
+                        <%for(let i = 2; i < Loveflower.length-6; i++){%>
+
                         <li class="animated">
-                            <a href="#"><img src="./img/love_flower/bib1.jpg" alt="" style="width: 360px;height: 360px;"></a>
+                            <a href="#"><img src=".<%=Loveflower[i].loveFlowerImg%>" alt="" style="width: 360px;height: 360px;"></a>
                             <div class="cont">
                                 <a href="#">
                                     <div class="lt">
-                                        <p class="bt" style="font-size: 18px;">幸福即将到来</p>
-                                        <p class="price" style="color: #000;padding-top: 0px;">￥299<span>￥388</span></p>
-                                        <p class="sale" style="font-size: 14px;">已售1478件</p>
+                                        <p class="bt" style="font-size: 18px;"><%=Loveflower[i].loveFlowerName%></p>
+                                        <p class="price" style="color: #000;padding-top: 0px;">￥<%=Loveflower[i].loveFlowerDownPrice%><span>￥<%=Loveflower[i].loveFlowerPrice%></span></p>
+                                        <p class="sale" style="font-size: 14px;">已售<%=Loveflower[i].loveFlowerSalesVolume%>件</p>
                                     </div>
                                 </a>
                                 <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
                             </div>
                         </li>
-                        <li class="animated">
-                            <a href="#"><img src="./img/love_flower/bibl2.jpg" alt="" style="width: 360px;height: 360px;"></a>
-                            <div class="cont">
-                                <a href="#">
-                                    <div class="lt">
-                                        <p class="bt" style="font-size: 18px;">心花怒放</p>
-                                        <p class="price" style="color: #000;padding-top: 0px;">￥299<span>￥388</span></p>
-                                        <p class="sale" style="font-size: 14px;">已售13646件</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
-                            </div>
-                        </li>
-                        <li class="animated">
-                            <a href="#"><img src="./img/love_flower/bib3.jpg" alt="" style="width: 360px;height: 360px;"></a>
-                            <div class="cont">
-                                <a href="#">
-                                    <div class="lt">
-                                        <p class="bt" style="font-size: 18px;">爱的宣言</p>
-                                        <p class="price" style="color: #000;padding-top: 0px;">￥399<span>￥518</span></p>
-                                        <p class="sale" style="font-size: 14px;">已售1496件</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
-                            </div>
-                        </li>
-                        <li class="animated">
-                            <a href="#"><img src="./img/love_flower/bib4.jpg" alt="" style="width: 360px;height: 360px;"></a>
-                            <div class="cont">
-                                <a href="#">
-                                    <div class="lt">
-                                        <p class="bt" style="font-size: 18px;">告白诗</p>
-                                        <p class="price" style="color: #000;padding-top: 0px;">￥399<span>￥518</span></p>
-                                        <p class="sale" style="font-size: 14px;">已售4963件</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
-                            </div>
-                        </li>
-                        <li class="animated">
-                            <a href="#"><img src="./img/love_flower/bib5.jpg" alt="" style="width: 360px;height: 360px;"></a>
-                            <div class="cont">
-                                <a href="#">
-                                    <div class="lt">
-                                        <p class="bt" style="font-size: 18px;">爱你在身边</p>
-                                        <p class="price" style="color: #000;padding-top: 0px;">￥599<span>￥778</span></p>
-                                        <p class="sale" style="font-size: 14px;">已售14088件</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
-                            </div>
-                        </li>
-                        <li class="animated">
-                            <a href="#"><img src="./img/love_flower/bib6.jpg" alt="" style="width: 360px;height: 360px;"></a>
-                            <div class="cont">
-                                <a href="#">
-                                    <div class="lt">
-                                        <p class="bt" style="font-size: 18px;">热恋</p>
-                                        <p class="price" style="color: #000;padding-top: 0px;">￥699<span>￥908</span></p>
-                                        <p class="sale" style="font-size: 14px;">已售13289件</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
-                            </div>
-                        </li>
+                        <%}%>
+
                     </ul>
                 </div>
                    <!-- 必备 -->
@@ -143,84 +70,22 @@
                         <img src="./img/love_flower/title3.jpg" alt="">
                     </div>
                     <ul class="enlarge">
-                        <li>
-                            <a href="#"><img src="./img/love_flower/zhsh1.jpg" alt="" style="width: 360px;height: 360px;"></a>
-                            <div class="cont">
-                                <a href="#">
-                                    <div class="lt">
-                                        <p class="bt" style="font-size: 18px;">笑口常开</p>
-                                        <p class="price" style="color: #000;padding-top: 0px;">￥399<span>￥518</span></p>
-                                        <p class="sale" style="font-size: 14px;">已售1478件</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./img/love_flower/zhsh2.jpg" alt="" style="width: 360px;height: 360px;"></a>
-                            <div class="cont">
-                                <a href="#">
-                                    <div class="lt">
-                                        <p class="bt" style="font-size: 18px;">三生三世</p>
-                                        <p class="price" style="color: #000;padding-top: 0px;">￥599<span>￥778</span></p>
-                                        <p class="sale" style="font-size: 14px;">已售14102件</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./img/love_flower/zhsh3.jpg" alt="" style="width: 360px;height: 360px;"></a>
-                            <div class="cont">
-                                <a href="#">
-                                    <div class="lt">
-                                        <p class="bt" style="font-size: 18px;">我如此爱你</p>
-                                        <p class="price" style="color: #000;padding-top: 0px;">￥599<span>￥778</span></p>
-                                        <p class="sale" style="font-size: 14px;">已售14188件</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./img/love_flower/zhsh4.jpg" alt="" style="width: 360px;height: 360px;"></a>
-                            <div class="cont">
-                                <a href="#">
-                                    <div class="lt">
-                                        <p class="bt" style="font-size: 18px;">爱要大声说出来</p>
-                                        <p class="price" style="color: #000;padding-top: 0px;">￥699<span>￥908</span></p>
-                                        <p class="sale" style="font-size: 14px;">已售2178件</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./img/love_flower/zhsh5.jpg" alt="" style="width: 360px;height: 360px;"></a>
-                            <div class="cont">
-                                <a href="#">
-                                    <div class="lt">
-                                        <p class="bt" style="font-size: 18px;">给你我的心</p>
-                                        <p class="price" style="color: #000;padding-top: 0px;">￥899<span>￥1168</span></p>
-                                        <p class="sale" style="font-size: 14px;">已售4259件</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./img/love_flower/zhsh6.jpg" alt="" style="width: 360px;height: 360px;"></a>
-                            <div class="cont">
-                                <a href="#">
-                                    <div class="lt">
-                                        <p class="bt" style="font-size: 18px;">心动的感觉</p>
-                                        <p class="price" style="color: #000;padding-top: 0px;">￥999<span>￥1298</span></p>
-                                        <p class="sale" style="font-size: 14px;">已售14202件</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
-                            </div>
-                        </li>
+                        <%for(let i = 8; i < Loveflower.length; i++){%>
+
+                            <li class="animated">
+                                <a href="#"><img src=".<%=Loveflower[i].loveFlowerImg%>" alt="" style="width: 360px;height: 360px;"></a>
+                                <div class="cont">
+                                    <a href="#">
+                                        <div class="lt">
+                                            <p class="bt" style="font-size: 18px;"><%=Loveflower[i].loveFlowerName%></p>
+                                            <p class="price" style="color: #000;padding-top: 0px;">￥<%=Loveflower[i].loveFlowerDownPrice%><span>￥<%=Loveflower[i].loveFlowerPrice%></span></p>
+                                            <p class="sale" style="font-size: 14px;">已售<%=Loveflower[i].loveFlowerSalesVolume%>件</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
+                                </div>
+                            </li>
+                            <%}%>
                     </ul>
                 </div>
                    <!-- 专属 -->

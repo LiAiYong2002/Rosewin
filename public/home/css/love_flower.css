@@ -42,7 +42,7 @@
 .cont .lt .sale{color: #595959;font-size: 18px;padding-top: 5px;}
 .cont{position: relative;padding: 10px 25px;}
 .gobuy{width: 64px;position: absolute;right: 20px;top: 28px;}
-.gobuy img{width: 64px;position: absolute;right: 20px;top: 4px;}
+.gobuy img{width: 64px;position: absolute;right: 20px;    top: -6px}
 /* .jxlist li a>img{width: 360px;height: 360px;} */
 .enlarge>li>a{display: block; overflow: hidden;width: 360px;height: 360px;}
 .enlarge>li>a>img{transition: all 0.4s linear;}

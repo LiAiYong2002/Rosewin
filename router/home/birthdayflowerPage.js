@@ -1,4 +1,8 @@
 
-module.exports=(req,res,next)=>{
-    res.render("home/birthdayflower")
+const {Flowervirgo} = require('../../model/flowervirgo')
+module.exports=async(req,res,next)=>{
+    let flowervirgo = await Flowervirgo.find();
+    res.render("home/birthdayflower",{
+        flowervirgo
+    })
 }

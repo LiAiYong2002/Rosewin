@@ -17,34 +17,22 @@
                         <img src="./img/birthday_flower/shizi20_title1.jpg" alt="">
                     </div>
                     <ul class="spe">
+                        <%for(let i = 0; i < flowervirgo.length-12; i++){%>
                         <li>
-                            <a href="#" class="big"><img src="./img/birthday_flower/xy1.jpg" alt=""></a>
+                            <a href="#" class="big"><img src=".<%=flowervirgo[i].flowerImg%>" alt=""></a>
                             <img src="./img/love_flower/rexiao.png" alt="" class="hot_img">
                             <div class="cont">
                                 <a href="#">
                                     <div class="lt">
-                                        <p class="bt">笑口常开</p>
-                                        <p class="price">活动价:￥399 <span>￥518</span></p>
-                                        <p class="sale">已售1496件</p>
+                                        <p class="bt"><%=flowervirgo[i].flowerName%></p>
+                                        <p class="price">活动价:￥<%=flowervirgo[i].flowerPrice%> <span>￥<%=flowervirgo[i].flowerMoney%> </span></p>
+                                        <p class="sale">已售<%=flowervirgo[i].flowerFlowerSalesVolume%>件</p>
                                     </div>
                                 </a>
                                 <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt=""></a>
                             </div>
                         </li>
-                        <li>
-                            <a href="#" class="big"><img src="./img/birthday_flower/xy2.jpg" alt=""></a>
-                            <img src="./img/love_flower/rexiao.png" alt="" class="hot_img">
-                            <div class="cont">
-                                <a href="#">
-                                    <div class="lt">
-                                        <p class="bt">心中的太阳</p>
-                                        <p class="price">活动价:￥399<span>￥518</span></p>
-                                        <p class="sale">已售12998件</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt=""></a>
-                            </div>
-                        </li>
+                        <%}%>
                     </ul>
                 </div>
                 <!-- 许愿 -->
@@ -54,84 +42,21 @@
                         <img src="./img/birthday_flower/shizi20_title2.jpg" alt="">
                     </div>
                     <ul class="enlarge">
+                        <%for(let i = 2; i < flowervirgo.length-6; i++){%>
                         <li>
-                            <a href="#"><img src="./img/birthday_flower/da1.jpg" alt="" style="width: 360px;height: 360px;"></a>
+                            <a href="#"><img src=".<%=flowervirgo[i].flowerImg%>" alt="" style="width: 360px;height: 360px;"></a>
                             <div class="cont">
                                 <a href="#">
                                     <div class="lt">
-                                        <p class="bt" style="font-size: 18px;">多梦年华</p>
-                                        <p class="price" style="color: #000;padding-top: 0px;">￥299<span>￥388</span></p>
-                                        <p class="sale" style="font-size: 14px;">已售1459件</p>
+                                        <p class="bt" style="font-size: 18px;"><%=flowervirgo[i].flowerName%></p>
+                                        <p class="price" style="color: #000;padding-top: 0px;">￥<%=flowervirgo[i].flowerPrice%><span>￥<%=flowervirgo[i].flowerMoney%></span></p>
+                                        <p class="sale" style="font-size: 14px;">已售<%=flowervirgo[i].flowerFlowerSalesVolume%>件</p>
                                     </div>
                                 </a>
                                 <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
                             </div>
                         </li>
-                        <li>
-                            <a href="#"><img src="./img/birthday_flower/da2.jpg" alt="" style="width: 360px;height: 360px;"></a>
-                            <div class="cont">
-                                <a href="#">
-                                    <div class="lt">
-                                        <p class="bt" style="font-size: 18px;">幸福平安</p>
-                                        <p class="price" style="color: #000;padding-top: 0px;">￥299<span>￥388</span></p>
-                                        <p class="sale" style="font-size: 14px;">已售1496件</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./img/birthday_flower/da3.jpg" alt="" style="width: 360px;height: 360px;"></a>
-                            <div class="cont">
-                                <a href="#">
-                                    <div class="lt">
-                                        <p class="bt" style="font-size: 18px;">简单的幸福</p>
-                                        <p class="price" style="color: #000;padding-top: 0px;">￥399<span>￥518</span></p>
-                                        <p class="sale" style="font-size: 14px;">已售6821件</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./img/birthday_flower/da4.jpg" alt="" style="width: 360px;height: 360px;"></a>
-                            <div class="cont">
-                                <a href="#">
-                                    <div class="lt">
-                                        <p class="bt" style="font-size: 18px;">今生最大的幸福</p>
-                                        <p class="price" style="color: #000;padding-top: 0px;">￥499<span>￥648</span></p>
-                                        <p class="sale" style="font-size: 14px;">已售12699件</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./img/birthday_flower/da5.jpg" alt="" style="width: 360px;height: 360px;"></a>
-                            <div class="cont">
-                                <a href="#">
-                                    <div class="lt">
-                                        <p class="bt" style="font-size: 18px;">知心祝福</p>
-                                        <p class="price" style="color: #000;padding-top: 0px;">￥399<span>￥518</span></p>
-                                        <p class="sale" style="font-size: 14px;">已售1479件</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./img/birthday_flower/da6.jpg" alt="" style="width: 360px;height: 360px;"></a>
-                            <div class="cont">
-                                <a href="#">
-                                    <div class="lt">
-                                        <p class="bt" style="font-size: 18px;">花开富贵</p>
-                                        <p class="price" style="color: #000;padding-top: 0px;">￥499<span>￥648</span></p>
-                                        <p class="sale" style="font-size: 14px;">已售1478件</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
-                            </div>
-                        </li>
+                        <%}%>
                     </ul>
                 </div>
                    <!-- 必备 -->
@@ -141,84 +66,21 @@
                         <img src="./img/birthday_flower/shizi20_title3.jpg" alt="">
                     </div>
                     <ul class="enlarge">
-                        <li>
-                            <a href="#"><img src="./img/birthday_flower/zh1.jpg" alt="" style="width: 360px;height: 360px;"></a>
-                            <div class="cont">
-                                <a href="#">
-                                    <div class="lt">
-                                        <p class="bt" style="font-size: 18px;">千言万语</p>
-                                        <p class="price" style="color: #000;padding-top: 0px;">￥239<span>￥310</span></p>
-                                        <p class="sale" style="font-size: 14px;">已售2458件</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./img/birthday_flower/zh2.jpg" alt="" style="width: 360px;height: 360px;"></a>
-                            <div class="cont">
-                                <a href="#">
-                                    <div class="lt">
-                                        <p class="bt" style="font-size: 18px;">三生三世</p>
-                                        <p class="price" style="color: #000;padding-top: 0px;">￥299<span>￥388</span></p>
-                                        <p class="sale" style="font-size: 14px;">幸福即将到来</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./img/birthday_flower/zh3.jpg" alt="" style="width: 360px;height: 360px;"></a>
-                            <div class="cont">
-                                <a href="#">
-                                    <div class="lt">
-                                        <p class="bt" style="font-size: 18px;">一帆风顺</p>
-                                        <p class="price" style="color: #000;padding-top: 0px;">￥299<span>￥388</span></p>
-                                        <p class="sale" style="font-size: 14px;">已售2579件</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./img/birthday_flower/zh4.jpg" alt="" style="width: 360px;height: 360px;"></a>
-                            <div class="cont">
-                                <a href="#">
-                                    <div class="lt">
-                                        <p class="bt" style="font-size: 18px;">温暖常伴</p>
-                                        <p class="price" style="color: #000;padding-top: 0px;">￥399<span>￥518</span></p>
-                                        <p class="sale" style="font-size: 14px;">已售1496件</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./img/birthday_flower/zh5.jpg" alt="" style="width: 360px;height: 360px;"></a>
-                            <div class="cont">
-                                <a href="#">
-                                    <div class="lt">
-                                        <p class="bt" style="font-size: 18px;">幸福满溢</p>
-                                        <p class="price" style="color: #000;padding-top: 0px;">￥499<span>￥648</span></p>
-                                        <p class="sale" style="font-size: 14px;">已售9568件</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./img/birthday_flower/zh6.jpg" alt="" style="width: 360px;height: 360px;"></a>
-                            <div class="cont">
-                                <a href="#">
-                                    <div class="lt">
-                                        <p class="bt" style="font-size: 18px;">一生一世</p>
-                                        <p class="price" style="color: #000;padding-top: 0px;">￥499<span>￥648</span></p>
-                                        <p class="sale" style="font-size: 14px;">已售1896件</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
-                            </div>
-                        </li>
+                        <%for(let i = 8; i < flowervirgo.length; i++){%>
+                            <li>
+                                <a href="#"><img src=".<%=flowervirgo[i].flowerImg%>" alt="" style="width: 360px;height: 360px;"></a>
+                                <div class="cont">
+                                    <a href="#">
+                                        <div class="lt">
+                                            <p class="bt" style="font-size: 18px;"><%=flowervirgo[i].flowerName%></p>
+                                            <p class="price" style="color: #000;padding-top: 0px;">￥<%=flowervirgo[i].flowerPrice%><span>￥<%=flowervirgo[i].flowerMoney%></span></p>
+                                            <p class="sale" style="font-size: 14px;">已售<%=flowervirgo[i].flowerFlowerSalesVolume%>件</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="gobuy"><img src="./img/love_flower/gowche.jpg" alt="" style="width: 50px;height: 50px;"></a>
+                                </div>
+                            </li>
+                            <%}%>
                     </ul>
                 </div>
                    <!-- 专属 -->
