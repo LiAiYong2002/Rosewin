@@ -25,7 +25,7 @@
                 <!-- 登录部分开始 -->
                 <div class="login_content go_item">
                     <form action="/home/checkLogin" method="POST" id="loginFrom">
-                        <div class="item"><input type="text" name="email"  value="2748544112@qq.com" placeholder="邮箱号"
+                        <div class="item"><input type="text" name="email" value="2748544112@qq.com" placeholder="邮箱号"
                                 class="login_email"><span>请输入邮箱号</span>
                                 <img src="" class="loginEmail_img">
                             </div>
@@ -88,12 +88,6 @@
     // 注册邮箱
     let register_email = document.querySelector(".register_email");
     let email_img = document.querySelector(".email_img");
-    // // 登录邮箱
-    // let login_email = document.querySelector(".login_email");
-    // let loginEmail_img=document.querySelector(".loginEmail_img")
-    // // 登录密码
-    // let login_password = document.querySelector(".login_password");
-    // let loginpwd_img=document.querySelector(".loginpwd_img")
     // 注册ajax判断
     var flag = false
     register_email.addEventListener("blur", function () {
@@ -126,33 +120,6 @@
         })
     })
 
-    // // 登录ajax判断
-    // login_email.addEventListener("blur",function(){
-    //     let emailReg = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,3}){1,2})$/;
-    //     if (!emailReg.test(this.value)) {
-    //         this.nextElementSibling.innerHTML = "邮箱错误，请重新填写";
-    //         this.nextElementSibling.className = "error";
-    //         loginEmail_img.src = "./img/login&register/false.jpg"
-    //         return;
-    //     }
-    //     ajax({
-    //         type:'post',
-    //         url:'http://localhost/home/checkLogin',
-    //         data:{
-    //             email:this.value
-    //         },
-    //         success:function(data){
-    //             if (data.isok) {
-    //                 login_email.nextElementSibling.className = "success";
-    //                 loginEmail_img.src = "./img/login&register/true.jpg"
-    //             } else {
-    //                 login_email.nextElementSibling.className = "error";
-    //                 loginEmail_img.src = "./img/login&register/false.jpg";
-    //             }
-    //             login_email.nextElementSibling.innerHTML = data.message
-    //         }
-    //     })
-    // })
 
 </script>
 {{/block}}

@@ -16,7 +16,6 @@ home.get("/loveflower",require("./home/loveflowerPage"));
 home.get("/register",require("./home/registerPage"));
 home.get("/Shoppingcart",require("./home/ShoppingcartPage"));
 
-
 home.post("/registerUser",require("./home/registerUser"))
 home.post("/checkEmail",require("./home/checkEmail"))
 
@@ -31,5 +30,8 @@ home.get("/loadCart",require("./home/loadCart"))
 home.get("/deleteAll",require("./home/deleteAll"))
 home.get("/addPrice",require("./home/addPrice"))
 home.get("/reducePrice",require("./home/reducePrice"))
+
+home.post("/comment",require("./home/comment"))
+home.get("/deleteComment",require("./home/deleteComment"))
 
 module.exports=home;

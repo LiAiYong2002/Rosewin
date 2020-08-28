@@ -147,7 +147,7 @@ ul{
 .tabCon_m .W_input{border-radius: 5px;resize: none;padding: 4px; border: 1px solid #e8e8e8; height: 100px;font-size: 14px;overflow-wrap: break-word;line-height: 18px;overflow: hidden;width: 100%;}
 .tabCon_m .btn_a{margin-top: 10px; border-radius: 3px; display: block;text-align: center; background: #ff8140;border: 1px solid #f77c3d;color: #fff;width: 83px;font-size: 14px;height: 30px;line-height: 30px;}
 .tabCon_m h4{margin-top: 20px;}
-.babiao_list li{display: none;border-bottom: 1px solid #e8e8e8;}
+.babiao_list li{border-bottom: 1px solid #e8e8e8;}
 /* 评论 */
 /* 主体 */
 .loading-mask{display: none; z-index: 999; position: fixed;top: 0px;left: 0px;bottom: 0px;right: 0px;background-color: rgba(0,0,0,.5);width: 100%;height: 100%;}
