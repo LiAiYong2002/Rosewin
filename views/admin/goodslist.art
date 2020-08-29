@@ -44,14 +44,8 @@
 										<td>{{$value.shopType}}</td>
 										<td>{{$value.shopClick}}</td>
 										<td>
-<<<<<<< HEAD
-											<a href="goodsAdd.html" class="layui-btn layui-btn-xs" >修改</a>
-											<a href="javascript:" data-id="{{@$value._id}}"  class="layui-btn layui-btn-xs shanchu">删除</a>
-											<a href="/admin/goodsAdd" class="layui-btn layui-btn-xs" >新增</a>
-=======
 											<a href="/admin/goodsAdd?id={{@$value._id}}" class="layui-btn layui-btn-xs" >修改</a>
 											<a href="javascript:" data-id="{{@$value._id}}"  class="layui-btn layui-btn-xs shanchu">删除</a>
->>>>>>> 65bb96ea69ffed99216f38b494958a3336dad107
 										</td>
 									</tr>	
 									{{/each}}			
