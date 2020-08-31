@@ -11,4 +11,6 @@ admin.get("/userUpdate",require("./admin/userUpdate"));
 admin.post("/updateUser",require("./admin/updateUser"))
 admin.get("/deleteUser",require("./admin/deleteUser"))
 
+admin.post("/Searchgoods",require("./admin/Searchgoods"))
+admin.post("/Searchuser",require("./admin/Searchuser"))
 module.exports=admin;

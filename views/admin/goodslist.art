@@ -11,10 +11,10 @@
 				</div>
 				<div class="cBody">
 							<div class="console">
-								<form class="layui-form" action="">
+								<form class="layui-form" action="/admin/Searchgoods" method="POST">
 									<div class="layui-form-item">
 										<div class="layui-input-inline">
-											<input type="text" name="name" required lay-verify="required" placeholder="输入商品名称" autocomplete="off" class="layui-input">
+											<input type="text" name="name" required lay-verify="required" placeholder="输入商品名称" autocomplete="off" class="layui-input" value="">
 										</div>
 										<button class="layui-btn" lay-submit lay-filter="formDemo">检索</button>
 										<a href="/admin/goodsAdd" class="layui-btn layui-btn-xs xinzen" >新增</a>
@@ -54,6 +54,23 @@
 							
 							<!-- layUI 分页模块 -->
 							<div id="pages">
+								{{if search}}
+								<div class="layui-box layui-laypage layui-laypage-default" id="layui-laypage-1">
+									<span class="layui-laypage-count">共 {{result.total}} 条</span>
+									<a href="/admin/Searchgoods?currentPagr=1" class="layui-laypage-next">首页</a>
+									{{if result.page > 1}}
+									<a href="/admin/Searchgoods?currentPagr={{result.page-1}}" class="layui-laypage-prev">上一页</a>
+									{{/if}}
+									{{each result.display}}
+									<!-- <a href="javascript:;" data-page="1"  class="currpage" >1</a> -->
+									<a href="/admin/Searchgoods?currentPagr={{$value}}" class="{{result.page == $value?'currpage':''}}" data-page="{{$value}}">{{$value}}</a>
+									{{/each}}
+									{{if result.page < result.pages}}
+									<a href="/admin/Searchgoods?currentPagr={{result.page-0+1}}" class="layui-laypage-next">下一页</a>
+									{{/if}}
+									<a href="/admin/Searchgoods?currentPagr={{result.pages}}" class="layui-laypage-next">尾页</a>
+								</div>
+								{{else}}
 								<div class="layui-box layui-laypage layui-laypage-default" id="layui-laypage-1">
 									<span class="layui-laypage-count">共 {{result.total}} 条</span>
 									<a href="/admin/goodslist?currentPagr=1" class="layui-laypage-next">首页</a>
@@ -69,6 +86,7 @@
 									{{/if}}
 									<a href="/admin/goodslist?currentPagr={{result.pages}}" class="layui-laypage-next">尾页</a>
 								</div>
+								{{/if}}
 							</div>
 
 						</div>
