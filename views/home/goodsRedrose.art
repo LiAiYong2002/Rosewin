@@ -217,31 +217,35 @@
                     {{/if}}
                 
                     <ul class="babiao_list">
-                        {{each comments}}
+                        {{if user}}
+                        <%for(let i=0; i < comments.length; i++){%>
                         <li>
                             <div class="nr">
                                 <div class="nr-titl">
                                     <img src="./{{details.bannerImgPath}}">
                                     <div class="fl">
-                                        <span>{{$value.uid.username}}</span>
+                                        <span><%=comments[i].uid.username%></span>
                                         <p>
-                                            {{dateFormat($value.time,'yyyy-mm-dd')}}
+                                            <%=dateFormat(comments[i].time,'yyyy-mm-dd')%>
                                         </p>
                                     </div>
                                 </div>
                                 <p><span class="aite">
-                                    {{$value.content}}
+                                    <%=comments[i].content%>
                                     </span></p>
                                 <div class="nr-foor">
-                                    <img src="./img/goods_Redrose/点赞.png" class="dianzhan">
+                                    <img src="<%=result[i]==true?'./img/goods_Redrose/red.png':'./img/goods_Redrose/点赞.png'%>" class="dianzhan" data-uid="{{@comments[i].uid._id}}" data-id="{{@comments[i]._id}}">
                                     <span class="cout">
-                                        1
+                                        {{if comments[i].giveCount!=0}}
+                                        <%=comments[i].giveCount%>
+                                        {{/if}}
                                     </span>
-                                    <a href="JavaScript:" class="btn-shanchu" data-id="{{@$value._id}}" data-uid="{{@$value.uid._id}}">删除</a>
+                                    <a href="JavaScript:" class="btn-shanchu" data-id="{{@comments[i]._id}}" data-uid="{{@comments[i].uid._id}}">删除</a>
                                 </div>
                             </div>
                         </li>
-                        {{/each}}
+                        <%}%>
+                        {{/if}}
                     </ul>
                     {{if user}}
                     <form action="">
@@ -359,8 +363,8 @@
                 	item.content+
                 	'</p>\
                 				<div class="nr-foor">\
-                					<img src="./img/goods_Redrose/点赞.png" class="dianzhan">\
-                					<span class="cout">1</span>\
+                					<img src="./img/goods_Redrose/点赞.png" class="dianzhan" data-id='+item._id+' data-uid='+item.uid._id+'>\
+                					<span class="cout"></span>\
                 					<a href="JavaScript:" class="btn-shanchu" data-id='+item._id+' data-uid='+item.uid._id+'>删除</a>\
                 				</div>\
                 			</div>\
@@ -390,7 +394,25 @@
                 }
             }
         })
+    })
 
+    $("ul").on("click", ".dianzhan", function() {
+        let $this=$(this)
+        let uid=$(this).attr("data-uid")
+        let id=$(this).attr("data-id")
+        $.ajax({
+            type:'get',
+            url:`http://localhost/home/give?uid=${uid}&id=${id}`,
+            success:function(data){
+                if (data.isok) {
+                    var count = $this.siblings(".cout").text();
+                    var that= $this[0];
+                    count++;
+                    that.src="./img/goods_Redrose/red.png";
+                    $this.siblings(".cout").text(count)
+                }
+            }
+        })
     })
 </script>
 {{/block}}

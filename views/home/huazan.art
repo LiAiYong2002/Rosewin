@@ -89,21 +89,21 @@
             <div class="hz_index">
                 <!-- 左边部分 -->
                 <div class="hz_index_left fl">
-                    <a href="goods_Redrose.html">
-                        <img src="./img/huazan_img/index_floor1.png" alt="">
+                    <a href="/home/goodsRedrose?flowerid=19">
+                        <img src="./img/goodsImge/132_1.jpg" alt="">
                     </a>
                 </div>
                 <!-- 右边部分 -->
                 <div class="hz_index_right fr">
                     <!-- 右边图片部分 -->
                     <div class="right_img">
-                        <a href="#">
+                        <a href="/home/goodsRedrose?flowerid=5">
                             <img src="./img/huazan_img/index_floor1_right1.jpg" alt="">
                         </a>
                     </div>
                     <!-- 右边文字部分 -->
                     <div class="right_txt">
-                        <a href="#">
+                        <a href="/home/goodsRedrose?flowerid=5">
                             <p>她总说不要送她礼物...<br>但你心里自有打算。</p>
                             <h3>立即购买&gt;&gt;</h3>
                         </a>
@@ -147,7 +147,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="javascript:">
+                        <a href="/home/goodsRedrose?flowerid=9">
                             <img src="./img/huazan_img/hot4.jpg" alt="">
                             <div>
                                 <h3>我如此爱你-33朵红玫瑰</h3>

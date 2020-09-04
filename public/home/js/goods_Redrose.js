@@ -36,41 +36,8 @@ $(function() {
 
 
     var textareaText;
-    // 发表
-	$(".btn_a").on("click", function() {
-		var date = new Date();
-		var Year = date.getFullYear();
-		var month = date.getMonth() + 1;
-		month = month < 10 ? '0' + month : month
-		var day = date.getDate();
-		day = day < 10 ? '0' + day : day;
-		var daydate = Year + "-" + month + "-" + day
 
-		textareaText = $("textarea").val()
-		if (textareaText == "") {
-			// alert("发表内容不能为空");
-			return;
-		}
-    })
-	// 点赞
-	$("ul").on("click", ".dianzhan", function() {
-		var count = $(this).siblings(".cout").text();
-		
-		var that=$(this)[0];
-		count++;
-		if(count>=1){
-			that.src="./img/goods_Redrose/red.png";
-		}
-		
-		$(this).siblings(".cout").text(count)
-	})
-	// 删除
-	// $(".babiao_list").on("click", "a", function() {
-	// 	var $this = $(this);
-	// 	$this.parents("li").slideUp(500, function() {
-	// 		$(this).remove();
-	// 	})
-	// })
+	
 	
 	// 添加内容
 	// 加入购物车

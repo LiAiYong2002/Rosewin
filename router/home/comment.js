@@ -7,7 +7,9 @@ module.exports=async(req,res,next)=>{
             cid:aid,
             uid:uid,
             time:new Date(),
-            content:content
+            content:content,
+            giveCount:0,
+            stateId:[]
         })
     }
     let comments=await Comment.find({cid:aid}).populate("uid")
