@@ -22,7 +22,7 @@ body{
 .layui-input[readonly]{background-color: #eee;}
 .xinzen{
 	position: absolute;
-	right: -430px;
+	right: 0px;
 	display: inline-block;
     height: 38px;
     line-height: 38px;

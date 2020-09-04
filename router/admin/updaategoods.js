@@ -1,21 +1,27 @@
 const {Flower} = require('../../model/flower');
-const path = require('path')
+const formidable = require('formidable')
+const path = require('path');
 module.exports = async(req,res,next)=>{
-    let fields = req.body;
+    // let fields = req.body;
     let {id} = req.query;
-    // console.log(fields,id);
-    // console.log(await Flower.find({_id:id}));
-    // console.log(fields);
+    // 1.创建表单解析对象
+    const form = formidable.IncomingForm();
+    // 2.设置文件上传路径
+    form.uploadDir = path.join(__dirname,'../','../','public','home','img','uploads')
+    // 3.是否保留文件扩展名
+    form.keepExtensions = true;
+    form.parse(req,async(err,fields,files)=>{
+        // console.log(files.shopImgPath.path);
         await Flower.updateOne({_id:id},{
             flowerName:fields.flowerName,
-            // shopImgPath:fields.shopImgPath.path.split('admin')[1],
+            shopImgPath:files.shopImgPath.path.split('public')[1],
             shopPrice:fields.shopPrice,
             appPrice:fields.appPrice,
-            shopDate:fields.shopDate,
-            // shopClick:fields.shopClick,
+            shopDate:fields.shopDate, 
             shopClick:0,
             shopType:fields.shopType,
             flowerId:fields.flowerId,
         })
         res.redirect('/admin/goodslist')
+    })
 }

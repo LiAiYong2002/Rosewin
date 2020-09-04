@@ -1,13 +1,11 @@
 const {Flower} = require('../../model/flower');
 const pagnation = require('mongoose-sex-page')
 module.exports = async(req,res,next)=>{
-    let userText = req.body.name;
     let user=req.session.user
     let search = true
-    // console.log(userText);
-    let result = await pagnation(Flower).find({flowerName:{$regex:userText}}).page(1).size(10).display(3).exec()
-    // console.log(result);
+    let{name,currentPagr} = req.query;
+    let result = await pagnation(Flower).find({flowerName:{$regex:name}}).page(currentPagr).size(15).display(5).exec()
     res.render("admin/goodslist",{
-        result,user,search
+        result,user,search,name
     })
 }

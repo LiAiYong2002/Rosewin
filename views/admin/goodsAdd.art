@@ -8,13 +8,11 @@
 				<div class="title" id="frameMainTitle">
 					<!-- 报错框 -->
 					<span class="xianshi"><i class="iconfont icon-xianshiqi"></i>修改商品</span>
-					{{if isok == false}}
-					<span class="alert_danger" style="display: inline-block;">{{msg}}</span>
-					{{/if}}
+					<span class="alert_danger" style="display: none;">内容不能为空</span>
 				</div>
 				<div class="cBody">
 					<!-- multipart/form-data -->
-							<form id="addForm" class="layui-form" enctype="{{btnText == '新增'?'multipart/form-data':''}}" action="{{link}}?id={{@edituder && edituder._id}}" method="POST" >
+					<form id="addForm" class="layui-form" enctype="multipart/form-data" action="{{link}}?id={{@edituder && edituder._id}}" method="POST" >
 								<div class="layui-form-item">
 									<label class="layui-form-label label_size">商品ID</label>
 									<div class="layui-input-block">
@@ -33,7 +31,7 @@
 								</div>
 								<div class="layui-form-item">
 										<label class="layui-form-label label_size chzhi">商品图片</label>
-									  <input accept=".rar" type="file" class="shangchuan" value="/{{imgpath}}" name="shopImgPath" id="cover"/>
+									  	<input accept=".rar" type="file" class="shangchuan" value="/{{imgpath}}" name="shopImgPath" id="cover"/>
 									 {{if !imgpath}}
 										 <img src="{{imgpath}}" id="preview">
 									{{else}}
@@ -43,7 +41,7 @@
 								<div class="layui-form-item">
 									<label class="layui-form-label label_size">时间</label>
 									<div class="layui-input-block">
-										<input type="date" name="shopDate"  value="{{edituder && dateFormat(edituder.shopDate,'yyyy/mm/dd')}}"  class="layui-input">
+										<input type="date" name="shopDate"  value="{{edituder && dateFormat(edituder.shopDate,'yyyy-mm-dd')}}"  class="layui-input">
 									</div>
 								</div>
 								<div class="layui-form-item">
@@ -80,11 +78,11 @@
 								</div>
 								<div class="layui-form-item">
 									<div class="layui-input-block">
-										<input type="submit" class="layui-btn" value="立即提交">
+										<button type="submit" class="layui-btn">立即提交</button>
 									</div>
 								</div>
-							</form>
-						</div>
+					</form>
+				</div>
 			</div>
 			<!-- 核心区域 - 结束 -->
 		</div>
@@ -93,15 +91,26 @@
 		<script>
 			let cover = document.querySelector('#cover')
 			let preview = document.querySelector('#preview')
-			
-			var addForm = document.querySelector('#addForm')
 			var layuiBtn = document.querySelector('.layui-btn');
+
         	cover.addEventListener('change',function(){
             let reader = new FileReader();
             reader.readAsDataURL(this.files[0]);
             reader.onload = function(){
                 preview.src = reader.result;
-			}
+			}	
+			console.log(preview.src);
+			// cover.value = preview.src;
 		})
-		</script>
-		{{/block}}
+
+		$('#addForm').submit(function(){
+			let obj = arryToJson($(this))
+			console.log(cover.value);
+			if(obj.flowerName.trim() == "" || obj.shopPrice.trim() == "" || obj.appPrice.trim() == "" ){
+				$('.alert_danger').css('display','inline-block');
+				return false
+			}
+			$('.alert_danger').css('display','none');
+		})
+</script>
+{{/block}}

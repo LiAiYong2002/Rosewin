@@ -11,14 +11,16 @@
 				</div>
 				<div class="cBody">
 					<div class="console">
-						<form class="layui-form" action="/admin/Searchuser" method="POST">
+						<!-- <form class="layui-form" action="/admin/Searchuser" method="GET"> -->
 							<div class="layui-form-item">
 								<div class="layui-input-inline">
-									<input type="text" name="name" required lay-verify="required" placeholder="输入用户名称" autocomplete="off" class="layui-input" value="">
+									<input type="text" name="name" required lay-verify="required" placeholder="输入用户名称" autocomplete="off" class="layui-input" value="" id="inputval">
 								</div>
-								<button class="layui-btn" lay-submit lay-filter="formDemo">检索</button>
+								<a href="/admin/Searchuser?name=" id="search">
+									<button class="layui-btn" lay-submit lay-filter="formDemo">检索</button>
+								</a>
 							</div>
-						</form>
+						<!-- </form> -->
 					</div>
 					
 					<table class="layui-table">
@@ -52,20 +54,37 @@
 					<!-- layUI 分页模块 -->
 					<!-- layUI 分页模块 -->
 					<div id="pages">
+						{{if search}}
+						<div class="layui-box layui-laypage layui-laypage-default" id="layui-laypage-1">
+							<span class="layui-laypage-count">共 {{result.pages}} 条</span>
+							<a href="/admin/Searchuser?name={{name}}&currentPagr=1" class="layui-laypage-next">首页</a>
+								{{if result.page > 1}}
+							  <a href="/admin/Searchuser?name={{name}}&currentPagr={{result.page-1}}" class="layui-laypage-prev " data-page="0">上一页</a>
+							  {{/if}}
+							  {{each result.display}}
+								  <a href="/admin/Searchuser?name={{name}}&currentPagr={{$value}}" data-page="{{$value}}" class="{{result.page == $value?'currpage':''}}">{{$value}}</a>
+							  {{/each}}
+								{{if result.page < result.pages}}
+							  <a href="/admin/Searchuser?name={{name}}&currentPagr={{result.page-0+1}}" class="layui-laypage-next" data-page="2">下一页</a>
+							  {{/if}}
+							  <a href="/admin/Searchuser?name={{name}}&currentPagr={{result.pages}}" class="layui-laypage-next">尾页</a>
+						  </div>
+						{{else}}
 						<div class="layui-box layui-laypage layui-laypage-default" id="layui-laypage-1">
 						  <span class="layui-laypage-count">共 {{result.pages}} 条</span>
 						  <a href="/admin/userlist?currentPagr=1" class="layui-laypage-next">首页</a>
 						  	{{if result.page > 1}}
-							<a href="/admin/userlist?currentPage={{result.page-1}}" class="layui-laypage-prev " data-page="0">上一页</a>
+							<a href="/admin/userlist?currentPagr={{result.page-1}}" class="layui-laypage-prev " data-page="0">上一页</a>
 							{{/if}}
 							{{each result.display}}
-								<a href="/admin/userlist?currentPage={{$value}}" data-page="{{$value}}" class="{{result.page == $value?'currpage':''}}">{{$value}}</a>
+								<a href="/admin/userlist?currentPagr={{$value}}" data-page="{{$value}}" class="{{result.page == $value?'currpage':''}}">{{$value}}</a>
                 			{{/each}}
 						  	{{if result.page < result.pages}}
-							<a href="/admin/userlist?currentPage={{result.page-0+1}}" class="layui-laypage-next" data-page="2">下一页</a>
+							<a href="/admin/userlist?currentPagr={{result.page-0+1}}" class="layui-laypage-next" data-page="2">下一页</a>
 							{{/if}}
 							<a href="/admin/userlist?currentPagr={{result.pages}}" class="layui-laypage-next">尾页</a>
 						</div>
+						{{/if}}
 					  </div>
 				</div>
 			</div>
@@ -97,6 +116,11 @@
 		let uid = $(this).attr('data-id')
 		console.log(uid);
 		$('.uid').val(uid)
+	})
+	$('#inputval').on('change',function(){
+		let inpval =  $(this).val();
+		let url = $('#search').attr('href')
+		$('#search').attr('href',url+inpval);
 	})
 </script>
 {{/block}}

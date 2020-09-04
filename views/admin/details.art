@@ -1,0 +1,173 @@
+{{extend './common/layout.art'}}
+{{block 'content'}}
+{{include './common/side.art'}}
+		<div class="main">
+			{{include './common/header.art'}}
+			<!-- 核心区域 - 开始 -->
+			<div class="frameMain">
+				<div class="title" id="frameMainTitle">
+					<!-- 报错框 -->
+					<span class="xianshi"><i class="iconfont icon-xianshiqi"></i>商品详情</span><span class="alert_danger">内容不能为空</span>
+				</div>
+				<div class="cBody">
+					<form id="addForm" class="layui-form" enctype="multipart/form-data" action="{{link}}?id={{details && details._id}}" method="POST">
+						<div class="layui-form-item">
+							<label class="layui-form-label label_size">商品ID</label>
+							<div class="layui-input-block">
+								{{if flowerLegth}}
+								<input type="text" name="flowerId" autocomplete="off" class="layui-input" value="{{flowerLegth}}" readonly>
+								{{else}}
+								<input type="text" name="flowerId" autocomplete="off" class="layui-input" value="{{details && details.flowerId}}" readonly>
+								{{/if}}
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label label_size">商品细节图</label>
+							<div class="layui-input-block">
+								<input accept=".rar" type="file" class="shangchuan" multiple="multiple" name="smallImgPath" value="{{details && details.smallImgPath}}"/>
+								<div id="image-holder">
+									{{each details && details.smallImgPath}}
+									<img src="/home/{{$value}}" alt="" class="preview">
+									{{/each}}
+								</div>
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label label_size">商品名称</label>
+							<div class="layui-input-block">
+								<input type="text" name="flowerTitle" required lay-verify="required" autocomplete="off" class="layui-input"  value="{{details && details.flowerTitle}}">
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label label_size">参考价格</label>
+							<div class="layui-input-block">
+								<input type="text" name="flowerPrice" required lay-verify="required|number" autocomplete="off" class="layui-input" value="{{details && details.flowerPrice}}">
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label label_size">优惠价格</label>
+							<div class="layui-input-block">
+								<input type="text" name="appPrice" required lay-verify="required|number" autocomplete="off" class="layui-input" value="{{details && details.appPrice}}">
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label label_size">商品编号</label>
+							<div class="layui-input-block">
+								<input type="text" name="flowerNum" required autocomplete="off" class="layui-input" value="{{details && details.flowerNum}}">
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label label_size">材料</label>
+							<div class="layui-input-block">
+								<input type="text" name="material" autocomplete="off" class="layui-input"  value="{{details && details.material}}">
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label label_size">包装</label>
+							<div class="layui-input-block">
+								<input type="text" name="pack" autocomplete="off" class="layui-input" value="{{details && details.pack}}">
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label label_size">花语</label>
+							<div class="layui-input-block">
+								<input type="text" name="flowerLanguage" autocomplete="off" class="layui-input" value="{{details && details.flowerLanguage}}">
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label label_size">商品展示图</label>
+							<div class="layui-input-block">
+								<input accept=".rar" type="file" class="exhibition" multiple="multiple" name="moreImgPath" value="{{details && details.moreImgPath}}"/>
+								<div id="image-exhibition">
+									{{each details && details.moreImgPath}}
+									<img src="/home/{{$value}}" alt="">
+									{{/each}}
+								</div>
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<div class="layui-input-block">
+								<button class="layui-btn"  lay-filter="submitBut">立即{{btnText}}</button>
+								<!-- lay-submit -->
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- 核心区域 - 结束 -->
+		</div>
+{{/block}}
+{{block 'scripts'}}
+		<script>
+		// console.log($('.preview').length);
+		let preview = document.querySelector('.preview')
+		$(".exhibition").on('change', function() {
+			//Get count of selected files
+			var countFiles = $(this)[0].files.length;
+			var imgPath = $(this)[0].value;
+			var extn = imgPath.substring(imgPath.lastIndexOf('.') + 1).toLowerCase();
+			var image_holder = $("#image-exhibition");
+			image_holder.empty();
+			if (extn == "gif" || extn == "png" || extn == "jpg" || extn == "jpeg") {
+				if (typeof(FileReader) != "undefined") {
+					//loop for each file selected for uploaded.
+					for (var i = 0; i < countFiles; i++) {
+						var reader = new FileReader();
+						reader.onload = function(e) {
+							$("<img />", {
+								"src": e.target.result,
+								"class": "preview"
+							}).appendTo(image_holder);
+							preview.src = reader.result;
+						}
+						image_holder.show();
+						reader.readAsDataURL($(this)[0].files[i]);
+					}
+				} else {
+					alert("此浏览器不支持FileReader");
+				}
+			} else {
+				alert("请选择其他图片");
+			}
+		})
+		$(".shangchuan").on('change', function() {
+			//Get count of selected files
+			var countFiles = $(this)[0].files.length;
+			var imgPath = $(this)[0].value;
+			var extn = imgPath.substring(imgPath.lastIndexOf('.') + 1).toLowerCase();
+			var image_holder = $("#image-holder");
+			image_holder.empty();
+			if (extn == "gif" || extn == "png" || extn == "jpg" || extn == "jpeg") {
+				if (typeof(FileReader) != "undefined") {
+					//loop for each file selected for uploaded.
+					for (var i = 0; i < countFiles; i++) {
+						var reader = new FileReader();
+						reader.onload = function(e) {
+							$("<img />", {
+								"src": e.target.result,
+								"class": "preview"
+							}).appendTo(image_holder);
+						}
+						image_holder.show();
+						reader.readAsDataURL($(this)[0].files[i]);
+					}
+				} else {
+					alert("此浏览器不支持FileReader");
+				}
+			} else {
+				alert("请选择其他图片");
+			}
+		})
+		$('#addForm').submit(function(){
+			let obj = arryToJson($(this))
+			// console.log(obj);
+			return false
+			if(obj.flowerTitle.trim() == "" || obj.flowerPrice.trim() == "" || obj.appPrice.trim() == "" ||
+				 obj.flowerNum.trim() == "" ){
+				$('.alert_danger').css('display','inline-block');
+				return false
+			}
+			$('.alert_danger').css('display','none');
+		})
+	</script>
+{{/block}}

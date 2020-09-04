@@ -39,45 +39,39 @@
 
     <div class="product_list_type w">
         <div class="product_list_type_1">
+            <%for(let i = 2; i < borthflower.length-15; i++){%>
             <div class="product_list_type_left">
                 <a href="" class="first_flower">
                     <div class="product_list_type_bg"></div>
                     <div class="product_list_type_tu">
-                        <img class="huan1" src="./img/flowerbirthday/flowerbirthday.jpg" alt="">
+                        <img class="huan1" src=".<%=borthflower[i].flowerImg%>" alt="">
                     </div>
                     <div class="product_item_info">
-                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
-                        <p class="product-item-desc">11支卡罗拉玫瑰，代表我一生一世一心一意</br>热烈且深情爱着你</p>
-                        <p class="product_item_price">￥368</p>
+                        <p class="product_item_title"><span><%=borthflower[i].flowerName%></span></p>
+                        <p class="product-item-desc"><%=borthflower[i].flowerSay%></p>
+                        <p class="product_item_price">￥<%=borthflower[i].flowerPrice%></p>
                         <div class="but_btn">立即购买</div>
                     </div>
                 </a>
             </div>
-            <div class="product_list_type_right">
+            <%}%>
+             <div class="product_list_type_right">
+            <%for(let i = 0; i < borthflower.length-16; i++){%>
+
                 <div class="product_item">
                     <a href="">
                         <div class="product_item_pic">
-                            <img class="huan2" src="./img/flowerbirthday/flowerbirthday2.jpg" alt="">
+                            <img class="huan2" src=".<%=borthflower[i].flowerImg%>" alt="">
                         </div>
                     </a>
                     <div class="product_item_info">
-                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
-                        <p class="product_item_price">￥368</p>
+                        <p class="product_item_title"><span><%=borthflower[i].flowerName%></span></p>
+                        <p class="product_item_price">￥<%=borthflower[i].flowerPrice%></p>
                         <div class="but_btn">立即购买</div>
                     </div>
                 </div>
-                <div class="product_item">
-                    <a href="">
-                        <div class="product_item_pic">
-                            <img class="huan3" src="./img/flowerbirthday/flowerbirthday3.jpg" alt="">
-                        </div>
-                    </a>
-                    <div class="product_item_info">
-                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
-                        <p class="product_item_price">￥368</p>
-                        <div class="but_btn">立即购买</div>
-                    </div>
-                </div>
+            <%}%>
+
             </div>
             
         </div>
@@ -85,69 +79,78 @@
 
     <div class="product_list_type w">
         <div class="product_list_type_1">
+            <%for(let i = 3; i < borthflower.length-14; i++){%>
+
             <div class="product_list_type_left">
                 <a href="" class="two_flower">
                     <div class="product_list_type_bg"></div>
                     <div class="product_list_type_tu">
-                        <img class="huan4" src="./img/flower7/花1.jpg" alt="">
+                        <img class="huan4" src=".<%=borthflower[i].flowerImg%>" alt="">
                     </div>
                     <div class="product_item_info ">
-                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
-                        <p class="product-item-desc">11支卡罗拉玫瑰，代表我一生一世一心一意,热烈且深情爱着你</p>
-                        <p class="product_item_price">￥368</p>
+                        <p class="product_item_title"><span><%=borthflower[i].flowerName%></span></p>
+                        <p class="product-item-desc"><%=borthflower[i].flowerSay%></p>
+                        <p class="product_item_price">￥<%=borthflower[i].flowerPrice%></p>
                         <div class="but_btn">立即购买</div>
                     </div>
                 </a>
             </div>
+            <%}%>
+
             <div class="product_list_type_right">
+            <%for(let i = 4; i < borthflower.length-10; i++){%>
                 <div class="product_item">
                     <a href="">
                         <div class="product_item_pic">
-                            <img class="huan5" src="./img/flower7/花2.jpg"  alt="">
+                            <img class="huan5" src=".<%=borthflower[i].flowerImg%>"  alt="">
                         </div>
                     </a>
                     <div class="product_item_info">
-                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
-                        <p class="product_item_price">￥368</p>
+                        <p class="product_item_title"><span><%=borthflower[i].flowerName%></span></p>
+                        <p class="product_item_price">￥<%=borthflower[i].flowerPrice%></p>
                         <div class="but_btn">立即购买</div>
                     </div>
                 </div>
-                <div class="product_item">
-                    <a href="">
-                        <div class="product_item_pic">
-                            <img class="huan6"src="./img/flower7/花3.jpg"  alt="">
+            <%}%>
+        </div>
+            
+        </div>
+    </div>
+
+    <div class="product_list_type w top">
+        <div class="product_list_type_1">
+            <%for(let i = 8; i < borthflower.length-9; i++){%>
+
+                <div class="product_list_type_left">
+                    <a href="" class="two_flower">
+                        <div class="product_list_type_bg"></div>
+                        <div class="product_list_type_tu">
+                            <img class="huan4" src=".<%=borthflower[i].flowerImg%>" alt="">
+                        </div>
+                        <div class="product_item_info ">
+                            <p class="product_item_title"><span><%=borthflower[i].flowerName%></span></p>
+                            <p class="product-item-desc"><%=borthflower[i].flowerSay%></p>
+                            <p class="product_item_price">￥<%=borthflower[i].flowerPrice%></p>
+                            <div class="but_btn">立即购买</div>
                         </div>
                     </a>
-                    <div class="product_item_info">
-                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
-                        <p class="product_item_price">￥368</p>
-                        <div class="but_btn">立即购买</div>
-                    </div>
                 </div>
-                <div class="product_item">
-                    <a href="">
-                        <div class="product_item_pic">
-                            <img class="huan7" src="./img/flower7/花4.jpg"  alt="">
+                <%}%>
+            <div class="product_list_type_right">
+                <%for(let i = 9; i < borthflower.length-5; i++){%>
+                    <div class="product_item">
+                        <a href="">
+                            <div class="product_item_pic">
+                                <img class="huan5" src=".<%=borthflower[i].flowerImg%>"  alt="">
+                            </div>
+                        </a>
+                        <div class="product_item_info">
+                            <p class="product_item_title"><span><%=borthflower[i].flowerName%></span></p>
+                            <p class="product_item_price">￥<%=borthflower[i].flowerPrice%></p>
+                            <div class="but_btn">立即购买</div>
                         </div>
-                    </a>
-                    <div class="product_item_info">
-                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
-                        <p class="product_item_price">￥368</p>
-                        <div class="but_btn">立即购买</div>
                     </div>
-                </div>
-                <div class="product_item">
-                    <a href="">
-                        <div class="product_item_pic">
-                            <img  class="huan8" src="./img/flower7/花5.jpg"  alt="">
-                        </div>
-                    </a>
-                    <div class="product_item_info">
-                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
-                        <p class="product_item_price">￥368</p>
-                        <div class="but_btn">立即购买</div>
-                    </div>
-                </div>
+                <%}%>
             </div>
             
         </div>
@@ -155,143 +158,38 @@
 
     <div class="product_list_type w top">
         <div class="product_list_type_1">
-            <div class="product_list_type_left">
-                <a href="" class="two_flower">
-                    <div class="product_list_type_bg"></div>
-                    <div class="product_list_type_tu">
-                        <img class="huan9" src="./img/flower/花2.jpg" alt="">
-                    </div>
-                    <div class="product_item_info ">
-                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
-                        <p class="product-item-desc">11支卡罗拉玫瑰，代表我一生一世一心一意,热烈且深情爱着你</p>
-                        <p class="product_item_price">￥368</p>
-                        <div class="but_btn">立即购买</div>
-                    </div>
-                </a>
-            </div>
+            <%for(let i = 13; i < borthflower.length-4; i++){%>
+
+                <div class="product_list_type_left">
+                    <a href="" class="two_flower">
+                        <div class="product_list_type_bg"></div>
+                        <div class="product_list_type_tu">
+                            <img class="huan4" src=".<%=borthflower[i].flowerImg%>" alt="">
+                        </div>
+                        <div class="product_item_info ">
+                            <p class="product_item_title"><span><%=borthflower[i].flowerName%></span></p>
+                            <p class="product-item-desc"><%=borthflower[i].flowerSay%></p>
+                            <p class="product_item_price">￥<%=borthflower[i].flowerPrice%></p>
+                            <div class="but_btn">立即购买</div>
+                        </div>
+                    </a>
+                </div>
+                <%}%>
             <div class="product_list_type_right">
-                <div class="product_item">
-                    <a href="">
-                        <div class="product_item_pic">
-                            <img class="huan10"  src="./img/flower/花3.jpg" alt="">
+                <%for(let i = 14; i < borthflower.length; i++){%>
+                    <div class="product_item">
+                        <a href="">
+                            <div class="product_item_pic">
+                                <img class="huan5" src=".<%=borthflower[i].flowerImg%>"  alt="">
+                            </div>
+                        </a>
+                        <div class="product_item_info">
+                            <p class="product_item_title"><span><%=borthflower[i].flowerName%></span></p>
+                            <p class="product_item_price">￥<%=borthflower[i].flowerPrice%></p>
+                            <div class="but_btn">立即购买</div>
                         </div>
-                    </a>
-                    <div class="product_item_info">
-                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
-                        <p class="product_item_price">￥368</p>
-                        <div class="but_btn">立即购买</div>
                     </div>
-                </div>
-                <div class="product_item">
-                    <a href="">
-                        <div class="product_item_pic">
-                            <img class="huan11" src="./img/flower/花4.jpg" alt="">
-                        </div>
-                    </a>
-                    <div class="product_item_info">
-                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
-                        <p class="product_item_price">￥368</p>
-                        <div class="but_btn">立即购买</div>
-                    </div>
-                </div>
-                <div class="product_item">
-                    <a href="">
-                        <div class="product_item_pic">
-                            <img class="huan12" src="./img/flower/花5.jpg" alt="">
-                        </div>
-                    </a>
-                    <div class="product_item_info">
-                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
-                        <p class="product_item_price">￥368</p>
-                        <div class="but_btn">立即购买</div>
-                    </div>
-                </div>
-                <div class="product_item">
-                    <a href="">
-                        <div class="product_item_pic">
-                            <img class="huan13" src="./img/flower/花6.jpg" alt="">
-                        </div>
-                    </a>
-                    <div class="product_item_info">
-                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
-                        <p class="product_item_price">￥368</p>
-                        <div class="but_btn">立即购买</div>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-
-    <div class="product_list_type w top">
-        <div class="product_list_type_1">
-            <div class="product_list_type_left">
-                <a href="" class="two_flower">
-                    <div class="product_list_type_bg"></div>
-                    <div class="product_list_type_tu">
-                        <img class="huan14" src="./img/flower5/flower9.jpg" alt="">
-
-                    </div>
-                    <div class="product_item_info ">
-                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
-                        <p class="product-item-desc">11支卡罗拉玫瑰，代表我一生一世一心一意,热烈且深情爱着你</p>
-                        <p class="product_item_price">￥368</p>
-                        <div class="but_btn">立即购买</div>
-                    </div>
-                </a>
-            </div>
-            <div class="product_list_type_right">
-                <div class="product_item">
-                    <a href="">
-                        <div class="product_item_pic">
-                            <img class="huan15" src="./img/flower5/flower8.jpg" alt="">
-
-                        </div>
-                    </a>
-                    <div class="product_item_info">
-                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
-                        <p class="product_item_price">￥368</p>
-                        <div class="but_btn">立即购买</div>
-                    </div>
-                </div>
-                <div class="product_item">
-                    <a href="">
-                        <div class="product_item_pic">
-                            <img class="huan16" src="./img/flower5/flower7.jpg" alt="">
-
-                        </div>
-                    </a>
-                    <div class="product_item_info">
-                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
-                        <p class="product_item_price">￥368</p>
-                        <div class="but_btn">立即购买</div>
-                    </div>
-                </div>
-                <div class="product_item">
-                    <a href="">
-                        <div class="product_item_pic">
-                            <img class="huan17" src="./img/flower5/flower6.jpg" alt="">
-
-                        </div>
-                    </a>
-                    <div class="product_item_info">
-                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
-                        <p class="product_item_price">￥368</p>
-                        <div class="but_btn">立即购买</div>
-                    </div>
-                </div>
-                <div class="product_item">
-                    <a href="">
-                        <div class="product_item_pic">
-                            <img class="huan18" src="./img/flower5/flower2.jpg" alt="">
-                        </div>
-                    </a>
-                    <div class="product_item_info">
-                        <p class="product_item_title"><span>韩式系列/亲爱的你</span></p>
-                        <p class="product_item_price">￥368</p>
-                        <div class="but_btn">立即购买</div>
-                    </div>
-                </div>
+                <%}%>
             </div>
             
         </div>
