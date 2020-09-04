@@ -10,15 +10,21 @@ if (flowerid==null) {
   flowerid=1
 }
 let details=await Detail.findOne({flowerId:flowerid})
-let comments=await Comment.find({cid:details._id}).populate("uid")
 if (user) {
   let resultCart=await Cart.find({uid:user._id})
+  let comments=await Comment.find({cid:details._id}).populate("uid")
+  let result=[]
+  comments.forEach((item) => {
+    let comid=item.stateId
+     result.push(comid.some(function(item){return item==user._id}))
+  });
   res.render("home/goodsRedrose",{
     titles,
     details,
     user,
     resultCart,
-    comments
+    comments,
+    result
   })
 }else{
   res.render("home/goodsRedrose",{

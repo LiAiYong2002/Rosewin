@@ -33,5 +33,6 @@ home.get("/reducePrice",require("./home/reducePrice"))
 
 home.post("/comment",require("./home/comment"))
 home.get("/deleteComment",require("./home/deleteComment"))
+home.get("/give",require("./home/give"))
 
 module.exports=home;

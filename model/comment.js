@@ -14,6 +14,14 @@ const commentSchema=mongoose.Schema({
     },
     content:{
         type:String
+    },
+    giveCount:{
+        type:Number,
+        default:0
+    },
+    stateId:{
+        type:[mongoose.Schema.Types.ObjectId],
+        default:null
     }
 })
 
