@@ -21,6 +21,8 @@
     <script src="./js/ajax.js"></script>
     <!-- 引入登录表单数组转换对象js -->
     <script src="./js/common.js"></script>
+    <!-- 引入pcjs -->
+    <script src="js/pc.js" type="text/javascript" charset="utf-8"></script>
     {{block 'links'}} {{/block}}
 </head>
 <body>
