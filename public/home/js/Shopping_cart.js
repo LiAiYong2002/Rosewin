@@ -52,7 +52,6 @@ $(function(){
 			$(".cart_warp").hide()
 			$("#content").show()
 			$("body").css("background","#fff")
-			// f8f8f8
 		}else{
 			$(".cart_warp").show()
 			$("#content").hide()
@@ -84,6 +83,12 @@ $(function(){
             url:'http://localhost/home/reducePrice?cartId='+pid
         })
     })
+
+// 单个删除
+// $(".p-action>a").click(function(){
+// 	$(this).parent().parent().remove();
+// 	LoadData()
+// })
 
 	// 删除选中的商品
 	$(".remove-batch").click(function(){

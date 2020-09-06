@@ -7,7 +7,11 @@
 			<div class="frameMain">
 				<div class="title" id="frameMainTitle">
 					<!-- 报错框 -->
+					{{if btnText=='修改'}}
 					<span class="xianshi"><i class="iconfont icon-xianshiqi"></i>修改商品</span>
+					{{else}}
+					<span class="xianshi"><i class="iconfont icon-xianshiqi"></i>新增商品</span>
+					{{/if}}
 					<span class="alert_danger" style="display: none;">内容不能为空</span>
 				</div>
 				<div class="cBody">
@@ -99,13 +103,13 @@
             reader.onload = function(){
                 preview.src = reader.result;
 			}	
-			console.log(preview.src);
+			// console.log(preview.src);
 			// cover.value = preview.src;
 		})
 
 		$('#addForm').submit(function(){
 			let obj = arryToJson($(this))
-			console.log(cover.value);
+			console.log(obj);
 			if(obj.flowerName.trim() == "" || obj.shopPrice.trim() == "" || obj.appPrice.trim() == "" ){
 				$('.alert_danger').css('display','inline-block');
 				return false

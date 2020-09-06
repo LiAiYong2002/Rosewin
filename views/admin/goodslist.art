@@ -7,7 +7,7 @@
 			<div class="frameMain">
 				<div class="title" id="frameMainTitle">
 					<!-- 报错框 -->
-					<span class="xianshi"><i class="iconfont icon-xianshiqi"></i>修改商品</span><span class="alert_danger">mbp</span>
+					<span class="xianshi"><i class="iconfont icon-xianshiqi"></i>商品管理</span><span class="alert_danger">mbp</span>
 				</div>
 				<div class="cBody">
 							<div class="console">
@@ -132,7 +132,6 @@
 		let inpval =  $(this).val();
 		let url = $('#search').attr('href')
 		$('#search').attr('href',url+inpval); 
-		console.log($('#search').attr('href',url+inpval));
 	})
 </script>
 {{/block}}

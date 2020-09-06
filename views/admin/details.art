@@ -24,8 +24,8 @@
 						<div class="layui-form-item">
 							<label class="layui-form-label label_size">商品细节图</label>
 							<div class="layui-input-block">
-								<input accept=".rar" type="file" class="shangchuan" multiple="multiple" name="smallImgPath" value="{{details && details.smallImgPath}}"/>
-								<div id="image-holder">
+								<input accept=".rar" type="file" class="shangchuan" style="margin: 7px 0 0 0;float: left;width: 180px;" multiple="multiple" name="smallImgPath" value="{{details && details.smallImgPath}}"/>
+								<div id="image-holder" >
 									{{each details && details.smallImgPath}}
 									<img src="/home/{{$value}}" alt="" class="preview">
 									{{/each}}
@@ -77,7 +77,7 @@
 						<div class="layui-form-item">
 							<label class="layui-form-label label_size">商品展示图</label>
 							<div class="layui-input-block">
-								<input accept=".rar" type="file" class="exhibition" multiple="multiple" name="moreImgPath" value="{{details && details.moreImgPath}}"/>
+								<input accept=".rar" type="file" style="margin: 7px 0 0 0;width: 180px;" class="exhibition" multiple="multiple" name="moreImgPath" value="{{details && details.moreImgPath}}"/>
 								<div id="image-exhibition">
 									{{each details && details.moreImgPath}}
 									<img src="/home/{{$value}}" alt="">
@@ -87,7 +87,8 @@
 						</div>
 						<div class="layui-form-item">
 							<div class="layui-input-block">
-								<button class="layui-btn"  lay-filter="submitBut">立即{{btnText}}</button>
+								<input type="submit" value="立即{{btnText}}" class="layui-btn">
+								<!-- <button class="layui-btn"  lay-filter="submitBut">立即{{btnText}}</button> -->
 								<!-- lay-submit -->
 							</div>
 						</div>

@@ -234,6 +234,7 @@ a{text-decoration: none;}
 	background-color: #eee;
 }
 .frameMain .title span{
+	float: left;
 	font-size: 14px;
 	display: inline-block;
 	padding: 0 15px;
@@ -246,9 +247,10 @@ a{text-decoration: none;}
 .frameMain .title .alert_danger{
 	display: none;
 	/* width: 86.5%; */
-	width: 1393px;
+	width: 1389px;
 	background-color: #F8D7DA;
 	color: #721C24;
+	float: left;
 	/* margin-left: 10px; */
 }
 .frameMain .title span i{

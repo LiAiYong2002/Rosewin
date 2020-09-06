@@ -7,7 +7,7 @@
 			<div class="frameMain">
 				<div class="title" id="frameMainTitle">
 					<!-- 报错框 -->
-					<span class="xianshi"><i class="iconfont icon-xianshiqi"></i>修改用户</span><span class="alert_danger">mbp</span>
+					<span class="xianshi"><i class="iconfont icon-xianshiqi"></i>用户管理</span><span class="alert_danger">mbp</span>
 				</div>
 				<div class="cBody">
 					<div class="console">
@@ -40,7 +40,7 @@
 								<td>{{@$value._id}}</td>
 								<td>{{$value.username}}</td>
 								<td>{{$value.email}}</td>
-								<td>{{$value.role}}</td>
+								<td>{{$value.role=='admin'?'超级管理员':'普通用户'}}</td>
 								<td>{{$value.state == 0 ?'启用':'禁用'}}</td>
 								<td>
 									<a href="../admin/userUpdate?id={{@$value._id}}" class="layui-btn layui-btn-xs">修改</a>

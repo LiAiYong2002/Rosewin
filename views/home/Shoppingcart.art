@@ -163,7 +163,6 @@
         setTimeout(() => {
         window.location="./Shoppingcart"
         },300);
-       
     })
 
     $(".removeCart").on("click",function(){
