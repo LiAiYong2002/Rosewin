@@ -1,6 +1,10 @@
 const {Title}=require("../../model/title")
 const {Cart}=require("../../model/cart");
+const {flowerdetail} = require("../../model/flowerdetail")
 module.exports=async(req,res,next)=>{
+  let {id} = req.query
+  let Fowerdetail = await flowerdetail.findOne({flowerId:id})
+
   let titles=  await Title.find()
   let user=req.session.user
   if (user) {
@@ -8,13 +12,14 @@ module.exports=async(req,res,next)=>{
     res.render("home/flowerdetai",{
       titles,
       user,
-      resultCart
+      resultCart,
+      Fowerdetail
     })
   }else{
     res.render("home/flowerdetai",{
       titles,
-      user
+      user,
+      Fowerdetail
     })
   }
-    
 }

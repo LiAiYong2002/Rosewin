@@ -15,50 +15,46 @@
             <code>></code>
         <a href="">花语大全</a>
         <code>></code>
-        <a href=""> 七夕情人节送女朋友多少花？——七夕情人节甜蜜花束</a>
+        <a href=""> {{Fowerdetail.flowerName}}</a>
         
         </div>
         <!-- 上部结束 -->
         <!-- 左布 -->
         <div class="article_left">
-            <h3 class="article_title">七夕情人节送女朋友多少花？——七夕情人节甜蜜花束</h3>
+            <h3 class="article_title">{{Fowerdetail.flowerName}}</h3>
             <div class="noto"> 
                 类别：<a href="">情人节</a><span><i class="fa_editor"></i>编辑：Rosewin鲜花</span><span><i class="fa_calendar"></i>2020-07-17 09:50:52</span>
             </div>
             <div class="article_neiro">
-                <p>&emsp;&emsp; 七夕情人节是普遍有爱心的人的节日、这一天连空气都充满了温暖的甜蜜。 送到爱花的人面前把*深的爱情和爱情、连接两人的心。七夕情人节甜蜜花束——七夕情人节送女朋友多少花?七夕情人节就要宠爱女朋友，一起来和Rosewin
-                <strong>怎么在异地订花</strong>
-                和
-                <strong>玫瑰多少钱一支</strong>
-                小编为你推荐七夕情人节送女朋友多少花。</p>
+                <p>&emsp;&emsp; {{Fowerdetail.flowerDetailOne}}</p>
                 <p><br></p>
-                <p>&emsp;&emsp; 七夕情人节送女朋友多少花?七夕情人节七夕男孩甚至送别的礼物给女孩，玫瑰是必不可少的、而且玫瑰的数量也很细心。1朵玫瑰你是我的唯一、2朵玫瑰这世界只有我们俩，3朵我爱你、4朵至死不渝的爱、5朵无怨无悔，6朵互敬、互爱、互谅，7朵初恋、8朵感谢，9朵长长久久、10朵十全十美、11朵一生一世只爱你一人。19朵意味着爱到深处永久性、爱的*高峰。这里有一种新的讲解，那便是你将19溶解为19=11+1+2+5那麼，它的花的寓意就变为是——一生一世只爱你一个+你是我的唯一+全世界只能我与你+无悔人生。</p>
+                <p>&emsp;&emsp;{{Fowerdetail.flowerDetailTwo}}</p>
                 <p><br></p>
-                <p class="neiro_tupian"><img src="./img/flower_deltitle/人物1.jpg" alt=""></p>
+                <p class="neiro_tupian"><img src=".{{Fowerdetail.flowerImg}}" alt=""></p>
                 <p><br></p>
                 <p>
-                    <strong> &emsp;&emsp;  鲜花推荐：爱的纪念-抖音网红气球翅膀抱抱桶</strong>
+                    <strong> &emsp;&emsp;{{Fowerdetail.flowerRecommend}}</strong>
                 </p>
                 <p>
                     <strong><br></strong>
                 </p>
-                <p>&emsp;&emsp;  材料 33朵红玫瑰、白色、银色、黑色气球装饰。 包装 黑色抱抱桶包装。 附赠 免费附送精美贺卡、代写您的祝福。</p>
+                <p>&emsp;&emsp;买花还是得到rosewin里来买，各种各样的美丽鲜花全部都有，结婚，过生日，成年，送人，看病等等，rosewin值得信赖的一个鲜花平台，欢迎大家来选购</p>
                 <p><br></p>
-                <p><strong>&emsp;&emsp;七夕情人节甜蜜花束——七夕情人节送女朋友多少花</strong>?七夕情人节就要宠爱女朋友,Rosewin为你提供更多有价值的<strong><a href="">鲜花</a></strong>资讯。Rosewin鲜花轻奢鲜花品牌,提供精品<strong>鲜花</strong>、定制各种精品礼盒时尚鲜花、个性鲜花!Rosewin鲜花是全国连锁的<strong>鲜花实体店</strong>,提供24小时<strong><a href="">网上花店订花</a></strong>、送花服务,*快3小时即可将鲜花送达!</p>
+                <p>&emsp;&emsp;<strong>rosewin帅哥QQ1917730371，欢迎大家来找帅哥咨询</strong></p>
                 
             </div>
             <div class="article_tag">
                 <ul>
-                    <li><a href="#">七夕情人节甜蜜花束</a></li>
-                    <li><a href="#">七夕情人节送女朋友多少花</a></li>
+                    <li><a href="#">甜蜜花束</a></li>
+                    <li><a href="#">rosewin限定鲜花</a></li>
                 </ul>
             </div>
             <div class="baikeprevnext">
                 <div class="baikeother">
-                    上一篇<a href="">七夕情人节甜蜜花束——七夕情人节送女朋友多少花？七夕情人节就要宠爱女朋友</a>
+                    <a href="">情人节甜蜜花束——情人节送女朋友多少花？情人节就要宠爱女朋友</a>
                 </div>
                 <div class="baikeother">
-                    下一篇<a href="">拯救单身狗——七夕情人节送异性朋友送什么花？</a>
+                    <a href="">拯救单身狗——rosewin推出限定鲜花来拯救单身狗？</a>
                 </div>
             </div>
             <div class="taste">
