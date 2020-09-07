@@ -10,7 +10,7 @@
 					<span class="xianshi"><i class="iconfont icon-xianshiqi"></i>商品详情</span><span class="alert_danger">内容不能为空</span>
 				</div>
 				<div class="cBody">
-					<form id="addForm" class="layui-form" enctype="multipart/form-data" action="{{link}}?id={{@details._id}}" method="POST">
+					<form id="addForm" class="layui-form" enctype="multipart/form-data" action="{{link}}?id={{@details && details._id}}" method="POST">
 						<div class="layui-form-item">
 							<label class="layui-form-label label_size">商品ID</label>
 							<div class="layui-input-block">
