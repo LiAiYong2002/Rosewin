@@ -8,7 +8,6 @@ module.exports=async(req,res,next)=>{
      form.uploadDir = path.join(__dirname,'../','../','public','home','img','uploads')
      // 3.是否保留文件扩展名
      form.keepExtensions = true;
-    //  let detailsFlower = await Detail.find();
      form.parse(req,async(err,fields,files)=>{
          console.log(files.smallImgPath.path);
         await Detail.create({
@@ -26,5 +25,4 @@ module.exports=async(req,res,next)=>{
         })
         res.redirect('/admin/goodslist')
     })
-    // res.redirect('/admin/goodslist')
 }

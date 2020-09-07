@@ -35,7 +35,7 @@
             {{/if}}
         </div>
         
-        <!-- <div class="jieguo"><span>24</span>个结果</div> -->
+        <div class="jieguo"><span>{{flowers.total}}</span>个结果</div>
     </div>
 <div class="tu_ji big">
 <ul class="tu_list">

@@ -10,7 +10,7 @@
 					<span class="xianshi"><i class="iconfont icon-xianshiqi"></i>商品详情</span><span class="alert_danger">内容不能为空</span>
 				</div>
 				<div class="cBody">
-					<form id="addForm" class="layui-form" enctype="multipart/form-data" action="{{link}}?id={{details && details._id}}" method="POST">
+					<form id="addForm" class="layui-form" enctype="multipart/form-data" action="{{link}}?id={{@details && details._id}}" method="POST">
 						<div class="layui-form-item">
 							<label class="layui-form-label label_size">商品ID</label>
 							<div class="layui-input-block">
@@ -88,8 +88,6 @@
 						<div class="layui-form-item">
 							<div class="layui-input-block">
 								<input type="submit" value="立即{{btnText}}" class="layui-btn">
-								<!-- <button class="layui-btn"  lay-filter="submitBut">立即{{btnText}}</button> -->
-								<!-- lay-submit -->
 							</div>
 						</div>
 					</form>
@@ -100,7 +98,6 @@
 {{/block}}
 {{block 'scripts'}}
 		<script>
-		// console.log($('.preview').length);
 		let preview = document.querySelector('.preview')
 		$(".exhibition").on('change', function() {
 			//Get count of selected files
@@ -161,8 +158,6 @@
 		})
 		$('#addForm').submit(function(){
 			let obj = arryToJson($(this))
-			// console.log(obj);
-			return false
 			if(obj.flowerTitle.trim() == "" || obj.flowerPrice.trim() == "" || obj.appPrice.trim() == "" ||
 				 obj.flowerNum.trim() == "" ){
 				$('.alert_danger').css('display','inline-block');

@@ -46,6 +46,10 @@ app.use("/admin",require("./router/admin"));
 app.use((err,req,res,next)=>{
     res.send(err.message)
 })
+// 无法找到文件自定义404
+app.use((req,res,next)=>{
+    res.status(404).render("home/err",{msg:'文件无法找到(404)'})
+})
 
 
 // 设置监听端口
