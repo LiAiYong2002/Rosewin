@@ -34,7 +34,7 @@
 									</div>
 								</div>
 								<div class="layui-form-item">
-										<label class="layui-form-label label_size chzhi">商品banner图片</label>
+										<label class="layui-form-label label_size chzhi">商品图片</label>
 									  	<input accept=".rar" type="file" class="shangchuan" value="/{{imgpath}}" name="shopImgPath" id="cover"/>
 									 {{if !imgpath}}
 										 <img src="{{imgpath}}" id="preview">

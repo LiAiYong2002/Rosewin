@@ -112,11 +112,21 @@
 {{block 'scripts'}}
 <script src="js/frameStyle.js" type="text/javascript" charset="utf-8"></script>
 <script>
+	let modal=$('.modal');
 	$('.shanchu').on('click',function(){
+		console.log(123);
+		modal.show();
 		let uid = $(this).attr('data-id')
-		console.log(uid);
 		$('.uid').val(uid)
 	})
+	$('.shancu').on('click',function(){
+		modal.hide();
+	})
+
+	$('.btn-default').on('click',function(){
+		modal.hide();
+	})
+
 	$('#inputval').on('change',function(){
 		let inpval =  $(this).val();
 		let url = $('#search').attr('href')
