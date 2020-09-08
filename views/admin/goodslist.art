@@ -102,7 +102,7 @@
 		        <div class="modal-lg">
 		            <form class="modal-content" action="/admin/deletegoods?flowerId={{}}" method="GET">
 		                <div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+							<button type="button" class="close" data-dismiss="modal"><span class="shancu">×</span></button>
 							<h4 class="modal-title">请确认</h4>
 		                </div>
 		                <div class="modal-body">
@@ -121,12 +121,35 @@
 {{block 'scripts'}}
 <script src="js/frameStyle.js" type="text/javascript" charset="utf-8"></script>
 <script>
+	let thar;
+	let modal=$('.modal');
 	$('.shanchu').on('click',function(){
-        let uid = $(this).attr('data-id')
-		$('.uid').val(uid)
+		modal.show();
+		let uid = $(this).attr('data-id')
 		let fid = $(this).attr('data-flowerId')
-        $('.fid').val(fid)
+		$('.fid').val(fid)
+		$('.uid').val(uid)
+		// console.log(uid);
+		// console.log(fid);
 	})
+
+
+
+	$('.shancu').on('click',function(){
+		modal.hide();
+	})
+
+	$('.btn-default').on('click',function(){
+		modal.hide();
+	})
+
+
+
+
+
+
+
+
 	$('#inputval').on('change',function(){
 		console.log('123');
 		let inpval =  $(this).val();
