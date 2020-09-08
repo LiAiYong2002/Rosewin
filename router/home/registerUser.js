@@ -8,7 +8,9 @@ module.exports=async(req,res,next)=>{
        });
     } else {
         await User.create(user)
-        res.redirect("/home/login")
+        let find=await User.findOne({email:user.email})
+        req.session.user=find
+        res.redirect("/home/huazan")
     }
     
 }

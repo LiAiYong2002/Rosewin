@@ -17,7 +17,10 @@ await Flower.findOne({flowerId:flowerid}).findOneAndUpdate({
   shopClick:shopClick
 })
 let details=await Detail.findOne({flowerId:flowerid})
+
+
 if (user) {
+  
   let resultCart=await Cart.find({uid:user._id})
   let comments=await Comment.find({cid:details._id}).populate("uid")
   let result=[]

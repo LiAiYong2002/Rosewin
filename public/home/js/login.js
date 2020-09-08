@@ -19,6 +19,8 @@ window.addEventListener("load",function(){
     const register_btn=document.querySelector(".register_btn");
     // 注册协议
     const register_chk=document.querySelector(".register_chk")
+    // 登录报错
+    const err=document.querySelector(".err")
 
     // 登录注册切换
     for (let i = 0; i < login_toggle.length; i++) {
@@ -120,28 +122,48 @@ yan.addEventListener("blur",function(){
 // 注册按钮
 $("#registerform").submit(function(){
     if (register_email.value.trim()==""||register_name.value.trim()==""||register_pwd.value.trim()==""||yan.value.trim()=="") {
-        alert("内容均不能为空！");
+        $(".errText").html("内容均不能为空！")
+        $(".err").fadeIn()
+        setTimeout(() => {
+            $(".err").fadeOut()
+        }, 1500);
         return false
     }else if(register_chk.checked==false){
-        alert("请勾选协议")
+        $(".errText").html("请勾选协议")
+        $(".err").fadeIn()
+        setTimeout(() => {
+            $(".err").fadeOut()
+        }, 1500);
         return false
     }else{
         if(name_rg.test(register_name.value)&&pwd_rg.test(register_pwd.value)){
             if (yan.value.trim()==ma.innerHTML) {
                 if (flag) {
-                    alert("注册成功")
+                    // alert("注册成功")
                     return true
                 }else{
-                    alert("注册失败，按格式填写")
+                    $(".errText").html("注册失败，按格式填写")
+                    $(".err").fadeIn()
+                    setTimeout(() => {
+                        $(".err").fadeOut()
+                    }, 1500);
                     return false
                 }
                
             }else{
-                alert("验证码不一致")
+                $(".errText").html("验证码不一致")
+                    $(".err").fadeIn()
+                    setTimeout(() => {
+                        $(".err").fadeOut()
+                    }, 1500);
                 return false
             }
         }else{
-            alert("注册失败，按格式填写")
+             $(".errText").html("注册失败，按格式填写")
+                    $(".err").fadeIn()
+                    setTimeout(() => {
+                        $(".err").fadeOut()
+                    }, 1500);
             return false
         }
 
@@ -173,7 +195,11 @@ login_email.addEventListener("blur",function(){
      $("#loginFrom").submit(function(){
          let obj=arryToJson($(this));
          if(obj.email.trim()==""||obj.password.trim()==""){
-             alert("邮箱密码必填")
+            $(".errText").html("邮箱密码必填")
+            $(".err").fadeIn()
+            setTimeout(() => {
+                $(".err").fadeOut()
+            }, 1500);
             return false;
          }else{
 
@@ -185,7 +211,6 @@ login_email.addEventListener("blur",function(){
                     password:login_password.value
                 },
                 success:function(data){
-                    console.log(data);
                     if (data.isok) {
                         login_email.nextElementSibling.className = "success";
                         loginEmail_img.src = "./img/login&register/true.jpg"

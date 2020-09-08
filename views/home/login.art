@@ -25,11 +25,11 @@
                 <!-- 登录部分开始 -->
                 <div class="login_content go_item">
                     <form action="/home/checkLogin" method="POST" id="loginFrom">
-                        <div class="item"><input type="text" name="email" value="2748544112@qq.com" placeholder="邮箱号"
+                        <div class="item"><input type="text" name="email" value="" placeholder="邮箱号"
                                 class="login_email"><span>请输入邮箱号</span>
                                 <img src="" class="loginEmail_img">
                             </div>
-                        <div class="item"><input type="password" name="password" class="login_password" value="123456" placeholder="密码"><span>请输入密码</span><img src="" class="loginpwd_img"></div>
+                        <div class="item"><input type="password" name="password" class="login_password" value="" placeholder="密码"><span>请输入密码</span><img src="" class="loginpwd_img"></div>
                         <div class="item">
                             <!-- <input type="button" value="登录"> -->
                             <button type="submit">登录</button>
@@ -72,11 +72,18 @@
                     </form>
                 </div>
                 <!-- 注册部分结束 -->
+                <!-- 提示框报错开始 -->
+                <div class="err">
+                    <span class="errText">内容不能为空</span>
+                    <span class="san"></span>
+                </div>
+                <!-- 提示框报错结束 -->
             </div>
         </div>
     </div>
 </div>
 <!-- 登录注册模块结束 -->
+
 {{include './common/footer.art'}}
 {{/block}}
 

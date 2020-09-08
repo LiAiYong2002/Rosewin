@@ -46,7 +46,7 @@
         </a>
         <a href=""class="pro_name">{{$value.flowerName}}</a>
         <div class="pro_price">
-            <div class="saleprice"><span>￥{{$value.shopPrice}}</span></div>
+            <div class="saleprice"><span>￥{{$value.shopPrice}}</span><span>.00</span></div>
             <p class="desc"> 下载Rosewin鲜花APP，此款立省<span>{{$value.appPrice}}</span>元</p>
         </div>
     </li>

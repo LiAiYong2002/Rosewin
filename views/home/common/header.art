@@ -37,6 +37,7 @@
                             
                         </a></span>
                         {{if user}}
+                        <span><a href="/home/logout" title="退出">退出</a></span>
                         <span><a href="/admin/userlist" title="管理">管理</a></span>
                         {{else}}
                         <span><a href="/home/register" title="注册">注册</a></span>

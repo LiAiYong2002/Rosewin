@@ -72,6 +72,12 @@
                     </form>
                 </div>
                 <!-- 注册部分结束 -->
+                <!-- 提示框报错开始 -->
+                <div class="err">
+                    <span class="errText">内容不能为空</span>
+                    <span class="san"></span>
+                </div>
+                <!-- 提示框报错结束 -->
             </div>
         </div>
     </div>

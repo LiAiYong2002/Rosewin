@@ -9,6 +9,7 @@ module.exports=async(req,res,next)=>{
   let xiaoji=[]
   if (user) {
     let resultCart=await Cart.find({uid:user._id})
+    console.log(user);
     resultCart.forEach((item,index) => {
       let subtotal=item.subtotal
       let cartCount=item.cartCount

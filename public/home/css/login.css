@@ -158,3 +158,29 @@
     color: red!important;
     font-size: 14px;
 }
+.err{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: rgba(254,144,29,1);
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+}
+.san{
+    display: inline-block;
+    position: absolute;
+    left: 14px;
+    top: 13px;
+    width: 0;
+    height: 0px;
+    transform: rotate(45deg);
+    border: 10px solid;
+    border-color: transparent transparent rgba(254,144,29,.9);
+}

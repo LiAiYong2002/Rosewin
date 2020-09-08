@@ -44,7 +44,7 @@
                         <i>花赞价</i>
                         <span>
                             ￥
-                            <em>{{details.flowerPrice}}</em>
+                            <em>{{details.flowerPrice}}</em><span>.00</span>
                         </span>
                         <div class="selling_desc">
                             <div class="details_ewm">
@@ -240,7 +240,9 @@
                                         <%=comments[i].giveCount%>
                                         {{/if}}
                                     </span>
+                                    {{if comments[i].uid._id==user._id}}
                                     <a href="JavaScript:" class="btn-shanchu" data-id="{{@comments[i]._id}}" data-uid="{{@comments[i].uid._id}}">删除</a>
+                                    {{/if}}
                                 </div>
                             </div>
                         </li>
@@ -390,7 +392,7 @@
                         $(this).remove();
                     })
                 }else{
-                    alert("没有权限")
+                    
                 }
             }
         })
