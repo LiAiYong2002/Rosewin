@@ -122,13 +122,13 @@
 <script src="js/frameStyle.js" type="text/javascript" charset="utf-8"></script>
 <script>
 	$('.shanchu').on('click',function(){
+		console.log(123);
         let uid = $(this).attr('data-id')
 		$('.uid').val(uid)
 		let fid = $(this).attr('data-flowerId')
         $('.fid').val(fid)
 	})
 	$('#inputval').on('change',function(){
-		console.log('123');
 		let inpval =  $(this).val();
 		let url = $('#search').attr('href')
 		$('#search').attr('href',url+inpval); 

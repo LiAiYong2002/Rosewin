@@ -15,9 +15,9 @@
 							<label class="layui-form-label label_size">商品ID</label>
 							<div class="layui-input-block">
 								{{if flowerLegth}}
-								<input type="text" name="flowerId" autocomplete="off" class="layui-input" value="{{flowerLegth}}" readonly>
+								<input type="number" name="flowerId" autocomplete="off" class="layui-input" value="{{flowerLegth}}" readonly>
 								{{else}}
-								<input type="text" name="flowerId" autocomplete="off" class="layui-input" value="{{details && details.flowerId}}" readonly>
+								<input type="number" name="flowerId" autocomplete="off" class="layui-input" value="{{details && details.flowerId}}" readonly>
 								{{/if}}
 							</div>
 						</div>
@@ -35,19 +35,31 @@
 						<div class="layui-form-item">
 							<label class="layui-form-label label_size">商品名称</label>
 							<div class="layui-input-block">
+								{{if findflower}}
+								<input type="text" name="flowerTitle" required lay-verify="required" autocomplete="off" class="layui-input"  value="{{findflower.flowerName}}">
+								{{else}}
 								<input type="text" name="flowerTitle" required lay-verify="required" autocomplete="off" class="layui-input"  value="{{details && details.flowerTitle}}">
+								{{/if}}
 							</div>
 						</div>
 						<div class="layui-form-item">
 							<label class="layui-form-label label_size">参考价格</label>
 							<div class="layui-input-block">
-								<input type="text" name="flowerPrice" required lay-verify="required|number" autocomplete="off" class="layui-input" value="{{details && details.flowerPrice}}">
+								{{if findflower}}
+								<input type="number" name="flowerPrice" required lay-verify="required|number" autocomplete="off" class="layui-input" value="{{findflower.shopPrice}}">
+								{{else}}
+								<input type="number" name="flowerPrice" required lay-verify="required|number" autocomplete="off" class="layui-input" value="{{details && details.flowerPrice}}">
+								{{/if}}
 							</div>
 						</div>
 						<div class="layui-form-item">
 							<label class="layui-form-label label_size">优惠价格</label>
 							<div class="layui-input-block">
-								<input type="text" name="appPrice" required lay-verify="required|number" autocomplete="off" class="layui-input" value="{{details && details.appPrice}}">
+								{{if findflower}}
+								<input type="number" name="appPrice" required lay-verify="required|number" autocomplete="off" class="layui-input" value="{{findflower.appPrice}}">
+								{{else}}
+								<input type="number" name="appPrice" required lay-verify="required|number" autocomplete="off" class="layui-input" value="{{details && details.appPrice}}">
+								{{/if}}
 							</div>
 						</div>
 						<div class="layui-form-item">
