@@ -11,6 +11,7 @@ if (flowerid==null) {
   flowerid=1
 }
 let flowers= await Flower.findOne({flowerId:flowerid})
+req.app.locals.hua=flowers.shopType
 let shopClick=flowers.shopClick
 shopClick++
 await Flower.findOne({flowerId:flowerid}).findOneAndUpdate({

@@ -4,7 +4,7 @@ const {flowerdetail} = require("../../model/flowerdetail")
 module.exports=async(req,res,next)=>{
   let {id} = req.query
   let Fowerdetail = await flowerdetail.findOne({flowerId:id})
-
+req.app.locals.hua=''
   let titles=  await Title.find()
   let user=req.session.user
   if (user) {
