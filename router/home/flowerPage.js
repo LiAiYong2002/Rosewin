@@ -15,7 +15,7 @@ module.exports=async(req,res,next)=>{
   if (shopType==null) {
     shopType="鲜花"
   }
- 
+ req.app.locals.hua=shopType
   let titles=  await Title.find()
 
   if (!page&&!date&&!click) {

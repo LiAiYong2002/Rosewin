@@ -308,11 +308,11 @@
             </div>
     
             <!-- 搜索框 -->
-            <div class="header_search">
-                <div class="header_search_int fl"><input type="text" value="" placeholder="请输入关键字"></div>
-                <button class="header_search_btn fl"><em></em></button>
-            </div>
-    
+                <div class="header_search">
+                    <div class="header_search_int fl"><input type="text" value="" placeholder="请输入关键字"></div>
+                        <button class="header_search_btn fl"><em></em></button>
+                </div>
+           
             <!-- 苹果或安卓系统下载模块 -->
             <div class="header_down fr">
                 <img src="./img/common_img/down_s.png" alt="高档鲜花">
@@ -328,26 +328,26 @@
                 <div class="tl_nav_list clearfix">
                     <ul class="tl_nav_list_wp">
                         <li class="spec2">
-                            <div class="one"><a href="javascript:">首页</a></div>
-                            <div class="two"><a href="/home/huazan">首页</a></div>
+                            <div class="one {{hua=='huazan'?'out':''}}"><a href="javascript:">首页</a></div>
+                            <div class="two {{hua=='huazan'?'on':''}}"><a href="/home/huazan">首页</a></div>
                             <i>/</i>
                         </li>
                         
                         {{each titles}}
                         <li class="">
-                            <div class="one"><a href="javascript:">{{$value.shopType}}</a></div>
-                            <div class="two"><a href="/home/flower?shopType={{$value.shopType}}">{{$value.shopType}}</a></div>
+                            <div class="one {{hua==$value.shopType?'out':''}}"><a href="javascript:">{{$value.shopType}}</a></div>
+                            <div class="two {{hua==$value.shopType?'on':''}}"><a href="/home/flower?shopType={{$value.shopType}}">{{$value.shopType}}</a></div>
                             <i>/</i>
                         </li>
                         {{/each}}
 
                         <li>
-                            <div class="one"><a href="javascript:">花语大全</a></div>
-                            <div class="two"><a href="/home/flowerlanguage">花语大全</a></div><i>/</i>
+                            <div class="one {{hua=='flowerlanguage'?'out':''}}"><a href="javascript:">花语大全</a></div>
+                            <div class="two {{hua=='flowerlanguage'?'on':''}}"><a href="/home/flowerlanguage">花语大全</a></div><i>/</i>
                         </li>
                         <li>
-                            <div class="one"><a href="javascript:">鲜花百科</a></div>
-                            <div class="two"><a href="/home/flowerall">鲜花百科</a></div>
+                            <div class="one {{hua=='flowerall'?'out':''}}"><a href="javascript:">鲜花百科</a></div>
+                            <div class="two {{hua=='flowerall'?'on':''}}"><a href="/home/flowerall">鲜花百科</a></div>
                         </li>
                     </ul>
                 </div>

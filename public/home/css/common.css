@@ -592,6 +592,17 @@ p {
     left: 5px;
 }
 
+.tl_nav .tl_nav_list li .out{
+    bottom: 4px;
+    left: 5px;
+    display: none;
+}
+.tl_nav .tl_nav_list li .on{
+    bottom: 4px!important;
+    color: #c3a56e;
+}
+
+
 .tl_nav .tl_nav_list li.hasson:hover .one {
     display: none;
 }
