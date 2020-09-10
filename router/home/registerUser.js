@@ -7,7 +7,9 @@ module.exports=async(req,res,next)=>{
         msg:"所有内容必须填写后提交"
        });
     } else {
+        // 用户创建成功后向数据库添加该用户信息
         await User.create(user)
+        // 注册成功后直接登录
         let find=await User.findOne({email:user.email})
         req.session.user=find
         res.redirect("/home/huazan")

@@ -3,6 +3,7 @@ module.exports=async(req,res,next)=>{
   let totalPrice=0
     let user=req.session.user
     if (user) {
+      // 商品详情页添加购物车实现数据库添加和商品总价加载
         let {cartId,id}=req.query
         let resUser= await Cart.findOne({uid:id,cartId:cartId})
         if (cartId) {

@@ -8,8 +8,9 @@ module.exports=async(req,res,next)=>{
   let user=req.session.user
   let xiaoji=[]
   if (user) {
+    // 根据用户id查找下面的商品
     let resultCart=await Cart.find({uid:user._id})
-    console.log(user);
+    // 循环商品数量加载小计
     resultCart.forEach((item,index) => {
       let subtotal=item.subtotal
       let cartCount=item.cartCount
