@@ -32,7 +32,7 @@ app.set("views",path.join(__dirname,"views"));
 app.set("view engine","art");
 
 app.locals.SelectMen = 'user'
-app.locals.hua='huazan'
+app.locals.hua='huazan' 
 
 // 登录拦截
 app.use('/admin',require('./middleware/loginGrand'))
